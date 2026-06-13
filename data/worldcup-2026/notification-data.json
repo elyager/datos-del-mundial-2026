@@ -1,0 +1,6681 @@
+{
+  "name": "World Cup 2026 Match Alerts",
+  "generatedAt": "2026-06-13T19:40:16.567Z",
+  "source": {
+    "staticSnapshotCommit": "8f0f877f99a2b702dfdcce06357de9570dbf1fd6",
+    "scheduleSourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.json"
+  },
+  "notificationLocales": [
+    {
+      "id": "guadalajara_michoacan",
+      "label": "Guadalajara/Michoacan",
+      "timezone": "America/Mexico_City",
+      "emoji": "🍓"
+    },
+    {
+      "id": "sonora",
+      "label": "Sonora",
+      "timezone": "America/Hermosillo",
+      "emoji": "🥩"
+    }
+  ],
+  "dynamicSources": {
+    "upstream": {
+      "directoryUrl": "https://github.com/openfootball/worldcup.json/tree/master/2026",
+      "commit": "8f0f877f99a2b702dfdcce06357de9570dbf1fd6",
+      "snapshotRawFiles": {
+        "teams": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.teams.json",
+        "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.groups.json",
+        "stadiums": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.stadiums.json",
+        "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.json",
+        "squads": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.squads.json",
+        "qualifyingPlayoffs": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.quali_playoffs.json"
+      },
+      "currentRawFiles": {
+        "teams": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.teams.json",
+        "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
+        "stadiums": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.stadiums.json",
+        "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+        "squads": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.squads.json",
+        "qualifyingPlayoffs": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.quali_playoffs.json"
+      }
+    },
+    "policy": {
+      "dynamicValuesAreNotCachedLocally": true,
+      "generatedStaticSnapshotUsesPinnedCommit": true,
+      "refreshChecksShouldUseMasterDirectory": "https://github.com/openfootball/worldcup.json/tree/master/2026"
+    },
+    "dynamicFieldPaths": {
+      "worldcup.json": [
+        "matches[].score",
+        "matches[].score.ft",
+        "matches[].score.ht",
+        "matches[].score.et",
+        "matches[].score.p",
+        "matches[].goals1",
+        "matches[].goals1[].name",
+        "matches[].goals1[].minute",
+        "matches[].goals1[].penalty",
+        "matches[].goals1[].owngoal",
+        "matches[].goals2",
+        "matches[].goals2[].name",
+        "matches[].goals2[].minute",
+        "matches[].goals2[].penalty",
+        "matches[].goals2[].owngoal",
+        "matches[knockout].team1 resolved team",
+        "matches[knockout].team2 resolved team"
+      ],
+      "worldcup.squads.json": [
+        "[].players",
+        "[].players[].number",
+        "[].players[].pos",
+        "[].players[].name",
+        "[].players[].date_of_birth"
+      ],
+      "worldcup.quali_playoffs.json": [
+        "matches[].score",
+        "matches[].goals1",
+        "matches[].goals2"
+      ]
+    },
+    "staticFilesGeneratedLocally": [
+      "teams.json",
+      "groups.json",
+      "stadiums.json",
+      "matches.json",
+      "notification-data.json"
+    ]
+  },
+  "teams": {
+    "ALG": {
+      "fifaCode": "ALG",
+      "name": "Algeria",
+      "spanishName": "Argelia",
+      "aliases": [],
+      "group": "J",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇩🇿",
+      "flagUnicode": "\\u{1F1E9}\\u{1F1FF}",
+      "assignmentOwner": "Oto"
+    },
+    "ARG": {
+      "fifaCode": "ARG",
+      "name": "Argentina",
+      "spanishName": "Argentina",
+      "aliases": [],
+      "group": "J",
+      "continent": "South America",
+      "confed": "CONMEBOL",
+      "flagIcon": "🇦🇷",
+      "flagUnicode": "\\u{1F1E6}\\u{1F1F7}",
+      "assignmentOwner": "Cotty"
+    },
+    "AUS": {
+      "fifaCode": "AUS",
+      "name": "Australia",
+      "spanishName": "Australia",
+      "aliases": [],
+      "group": "D",
+      "continent": "Oceania",
+      "confed": "AFC",
+      "flagIcon": "🇦🇺",
+      "flagUnicode": "\\u{1F1E6}\\u{1F1FA}",
+      "assignmentOwner": "Vero"
+    },
+    "AUT": {
+      "fifaCode": "AUT",
+      "name": "Austria",
+      "spanishName": "Austria",
+      "aliases": [],
+      "group": "J",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇦🇹",
+      "flagUnicode": "\\u{1F1E6}\\u{1F1F9}",
+      "assignmentOwner": "Yager"
+    },
+    "BEL": {
+      "fifaCode": "BEL",
+      "name": "Belgium",
+      "spanishName": "Bélgica",
+      "aliases": [],
+      "group": "G",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇧🇪",
+      "flagUnicode": "\\u{1F1E7}\\u{1F1EA}",
+      "assignmentOwner": "Manuel"
+    },
+    "BIH": {
+      "fifaCode": "BIH",
+      "name": "Bosnia & Herzegovina",
+      "spanishName": "Bosnia y Herzegovina",
+      "aliases": [],
+      "group": "B",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇧🇦",
+      "flagUnicode": "\\u{1F1E7}\\u{1F1E6}",
+      "assignmentOwner": "Cotty"
+    },
+    "BRA": {
+      "fifaCode": "BRA",
+      "name": "Brazil",
+      "spanishName": "Brasil",
+      "aliases": [],
+      "group": "C",
+      "continent": "South America",
+      "confed": "CONMEBOL",
+      "flagIcon": "🇧🇷",
+      "flagUnicode": "\\u{1F1E7}\\u{1F1F7}",
+      "assignmentOwner": "Nikito"
+    },
+    "CAN": {
+      "fifaCode": "CAN",
+      "name": "Canada",
+      "spanishName": "Canadá",
+      "aliases": [],
+      "group": "B",
+      "continent": "North America",
+      "confed": "CONCACAF",
+      "flagIcon": "🇨🇦",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1E6}",
+      "assignmentOwner": "Oswaldo"
+    },
+    "CIV": {
+      "fifaCode": "CIV",
+      "name": "Ivory Coast",
+      "spanishName": "Costa de Marfil",
+      "aliases": [
+        "Cote d'Ivoire"
+      ],
+      "group": "E",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇨🇮",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1EE}",
+      "assignmentOwner": "Yager"
+    },
+    "COD": {
+      "fifaCode": "COD",
+      "name": "DR Congo",
+      "spanishName": "RD del Congo",
+      "aliases": [
+        "Congo DR"
+      ],
+      "group": "K",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇨🇩",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1E9}",
+      "assignmentOwner": "Manuel"
+    },
+    "COL": {
+      "fifaCode": "COL",
+      "name": "Colombia",
+      "spanishName": "Colombia",
+      "aliases": [],
+      "group": "K",
+      "continent": "South America",
+      "confed": "CONMEBOL",
+      "flagIcon": "🇨🇴",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1F4}",
+      "assignmentOwner": "Oto"
+    },
+    "CPV": {
+      "fifaCode": "CPV",
+      "name": "Cape Verde",
+      "spanishName": "Cabo Verde",
+      "aliases": [
+        "Cabo Verde"
+      ],
+      "group": "H",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇨🇻",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1FB}",
+      "assignmentOwner": "Eddy"
+    },
+    "CRO": {
+      "fifaCode": "CRO",
+      "name": "Croatia",
+      "spanishName": "Croacia",
+      "aliases": [],
+      "group": "L",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇭🇷",
+      "flagUnicode": "\\u{1F1ED}\\u{1F1F7}",
+      "assignmentOwner": "Nico"
+    },
+    "CUW": {
+      "fifaCode": "CUW",
+      "name": "Curaçao",
+      "spanishName": "Curazao",
+      "aliases": [],
+      "group": "E",
+      "continent": "North America",
+      "confed": "CONCACAF",
+      "flagIcon": "🇨🇼",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1FC}",
+      "assignmentOwner": "Vero"
+    },
+    "CZE": {
+      "fifaCode": "CZE",
+      "name": "Czech Republic",
+      "spanishName": "República Checa",
+      "aliases": [
+        "Czechia"
+      ],
+      "group": "A",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇨🇿",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1FF}",
+      "assignmentOwner": "Eddy"
+    },
+    "ECU": {
+      "fifaCode": "ECU",
+      "name": "Ecuador",
+      "spanishName": "Ecuador",
+      "aliases": [],
+      "group": "E",
+      "continent": "South America",
+      "confed": "CONMEBOL",
+      "flagIcon": "🇪🇨",
+      "flagUnicode": "\\u{1F1EA}\\u{1F1E8}",
+      "assignmentOwner": "Nikol"
+    },
+    "EGY": {
+      "fifaCode": "EGY",
+      "name": "Egypt",
+      "spanishName": "Egipto",
+      "aliases": [],
+      "group": "G",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇪🇬",
+      "flagUnicode": "\\u{1F1EA}\\u{1F1EC}",
+      "assignmentOwner": "Vero"
+    },
+    "ENG": {
+      "fifaCode": "ENG",
+      "name": "England",
+      "spanishName": "Inglaterra",
+      "aliases": [],
+      "group": "L",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "flagUnicode": "\\u{1F3F4}\\u{E0067}\\u{E0062}\\u{E0065}\\u{E006E}\\u{E0067}\\u{E007F}",
+      "assignmentOwner": "Nico"
+    },
+    "ESP": {
+      "fifaCode": "ESP",
+      "name": "Spain",
+      "spanishName": "España",
+      "aliases": [],
+      "group": "H",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇪🇸",
+      "flagUnicode": "\\u{1F1EA}\\u{1F1F8}",
+      "assignmentOwner": "Oto"
+    },
+    "FRA": {
+      "fifaCode": "FRA",
+      "name": "France",
+      "spanishName": "Francia",
+      "aliases": [],
+      "group": "I",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇫🇷",
+      "flagUnicode": "\\u{1F1EB}\\u{1F1F7}",
+      "assignmentOwner": "Nere"
+    },
+    "GER": {
+      "fifaCode": "GER",
+      "name": "Germany",
+      "spanishName": "Alemania",
+      "aliases": [],
+      "group": "E",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇩🇪",
+      "flagUnicode": "\\u{1F1E9}\\u{1F1EA}",
+      "assignmentOwner": "Eddy"
+    },
+    "GHA": {
+      "fifaCode": "GHA",
+      "name": "Ghana",
+      "spanishName": "Ghana",
+      "aliases": [],
+      "group": "L",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇬🇭",
+      "flagUnicode": "\\u{1F1EC}\\u{1F1ED}",
+      "assignmentOwner": "Oswaldo"
+    },
+    "HAI": {
+      "fifaCode": "HAI",
+      "name": "Haiti",
+      "spanishName": "Haití",
+      "aliases": [],
+      "group": "C",
+      "continent": "North America",
+      "confed": "CONCACAF",
+      "flagIcon": "🇭🇹",
+      "flagUnicode": "\\u{1F1ED}\\u{1F1F9}",
+      "assignmentOwner": "Cotty"
+    },
+    "IRN": {
+      "fifaCode": "IRN",
+      "name": "Iran",
+      "spanishName": "Irán",
+      "aliases": [
+        "IR Iran"
+      ],
+      "group": "G",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇮🇷",
+      "flagUnicode": "\\u{1F1EE}\\u{1F1F7}",
+      "assignmentOwner": "Manuel"
+    },
+    "IRQ": {
+      "fifaCode": "IRQ",
+      "name": "Iraq",
+      "spanishName": "Irak",
+      "aliases": [],
+      "group": "I",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇮🇶",
+      "flagUnicode": "\\u{1F1EE}\\u{1F1F6}",
+      "assignmentOwner": "Nere"
+    },
+    "JOR": {
+      "fifaCode": "JOR",
+      "name": "Jordan",
+      "spanishName": "Jordania",
+      "aliases": [],
+      "group": "J",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇯🇴",
+      "flagUnicode": "\\u{1F1EF}\\u{1F1F4}",
+      "assignmentOwner": "Nikol"
+    },
+    "JPN": {
+      "fifaCode": "JPN",
+      "name": "Japan",
+      "spanishName": "Japón",
+      "aliases": [],
+      "group": "F",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇯🇵",
+      "flagUnicode": "\\u{1F1EF}\\u{1F1F5}",
+      "assignmentOwner": "Eddy"
+    },
+    "KOR": {
+      "fifaCode": "KOR",
+      "name": "South Korea",
+      "spanishName": "Corea del Sur",
+      "aliases": [
+        "Korea Republic"
+      ],
+      "group": "A",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇰🇷",
+      "flagUnicode": "\\u{1F1F0}\\u{1F1F7}",
+      "assignmentOwner": "Nikito"
+    },
+    "KSA": {
+      "fifaCode": "KSA",
+      "name": "Saudi Arabia",
+      "spanishName": "Arabia Saudita",
+      "aliases": [],
+      "group": "H",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇸🇦",
+      "flagUnicode": "\\u{1F1F8}\\u{1F1E6}",
+      "assignmentOwner": "Oto"
+    },
+    "MAR": {
+      "fifaCode": "MAR",
+      "name": "Morocco",
+      "spanishName": "Marruecos",
+      "aliases": [],
+      "group": "C",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇲🇦",
+      "flagUnicode": "\\u{1F1F2}\\u{1F1E6}",
+      "assignmentOwner": "Noe"
+    },
+    "MEX": {
+      "fifaCode": "MEX",
+      "name": "Mexico",
+      "spanishName": "México",
+      "aliases": [],
+      "group": "A",
+      "continent": "North America",
+      "confed": "CONCACAF",
+      "flagIcon": "🇲🇽",
+      "flagUnicode": "\\u{1F1F2}\\u{1F1FD}",
+      "assignmentOwner": "Nikol"
+    },
+    "NED": {
+      "fifaCode": "NED",
+      "name": "Netherlands",
+      "spanishName": "Países Bajos",
+      "aliases": [],
+      "group": "F",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇳🇱",
+      "flagUnicode": "\\u{1F1F3}\\u{1F1F1}",
+      "assignmentOwner": "Vero"
+    },
+    "NOR": {
+      "fifaCode": "NOR",
+      "name": "Norway",
+      "spanishName": "Noruega",
+      "aliases": [],
+      "group": "I",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇳🇴",
+      "flagUnicode": "\\u{1F1F3}\\u{1F1F4}",
+      "assignmentOwner": "Nikito"
+    },
+    "NZL": {
+      "fifaCode": "NZL",
+      "name": "New Zealand",
+      "spanishName": "Nueva Zelanda",
+      "aliases": [],
+      "group": "G",
+      "continent": "Oceania",
+      "confed": "OFC",
+      "flagIcon": "🇳🇿",
+      "flagUnicode": "\\u{1F1F3}\\u{1F1FF}",
+      "assignmentOwner": "Yager"
+    },
+    "PAN": {
+      "fifaCode": "PAN",
+      "name": "Panama",
+      "spanishName": "Panamá",
+      "aliases": [],
+      "group": "L",
+      "continent": "North America",
+      "confed": "CONCACAF",
+      "flagIcon": "🇵🇦",
+      "flagUnicode": "\\u{1F1F5}\\u{1F1E6}",
+      "assignmentOwner": "Nere"
+    },
+    "PAR": {
+      "fifaCode": "PAR",
+      "name": "Paraguay",
+      "spanishName": "Paraguay",
+      "aliases": [],
+      "group": "D",
+      "continent": "South America",
+      "confed": "CONMEBOL",
+      "flagIcon": "🇵🇾",
+      "flagUnicode": "\\u{1F1F5}\\u{1F1FE}",
+      "assignmentOwner": "Noe"
+    },
+    "POR": {
+      "fifaCode": "POR",
+      "name": "Portugal",
+      "spanishName": "Portugal",
+      "aliases": [],
+      "group": "K",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇵🇹",
+      "flagUnicode": "\\u{1F1F5}\\u{1F1F9}",
+      "assignmentOwner": "Noe"
+    },
+    "QAT": {
+      "fifaCode": "QAT",
+      "name": "Qatar",
+      "spanishName": "Qatar",
+      "aliases": [],
+      "group": "B",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇶🇦",
+      "flagUnicode": "\\u{1F1F6}\\u{1F1E6}",
+      "assignmentOwner": "Nico"
+    },
+    "RSA": {
+      "fifaCode": "RSA",
+      "name": "South Africa",
+      "spanishName": "Sudáfrica",
+      "aliases": [],
+      "group": "A",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇿🇦",
+      "flagUnicode": "\\u{1F1FF}\\u{1F1E6}",
+      "assignmentOwner": "Nikito"
+    },
+    "SCO": {
+      "fifaCode": "SCO",
+      "name": "Scotland",
+      "spanishName": "Escocia",
+      "aliases": [],
+      "group": "C",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "flagUnicode": "\\u{1F3F4}\\u{E0067}\\u{E0062}\\u{E0073}\\u{E0063}\\u{E0074}\\u{E007F}",
+      "assignmentOwner": "Oswaldo"
+    },
+    "SEN": {
+      "fifaCode": "SEN",
+      "name": "Senegal",
+      "spanishName": "Senegal",
+      "aliases": [],
+      "group": "I",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇸🇳",
+      "flagUnicode": "\\u{1F1F8}\\u{1F1F3}",
+      "assignmentOwner": "Cotty"
+    },
+    "SUI": {
+      "fifaCode": "SUI",
+      "name": "Switzerland",
+      "spanishName": "Suiza",
+      "aliases": [],
+      "group": "B",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇨🇭",
+      "flagUnicode": "\\u{1F1E8}\\u{1F1ED}",
+      "assignmentOwner": "Oswaldo"
+    },
+    "SWE": {
+      "fifaCode": "SWE",
+      "name": "Sweden",
+      "spanishName": "Suecia",
+      "aliases": [],
+      "group": "F",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇸🇪",
+      "flagUnicode": "\\u{1F1F8}\\u{1F1EA}",
+      "assignmentOwner": "Manuel"
+    },
+    "TUN": {
+      "fifaCode": "TUN",
+      "name": "Tunisia",
+      "spanishName": "Túnez",
+      "aliases": [],
+      "group": "F",
+      "continent": "Africa",
+      "confed": "CAF",
+      "flagIcon": "🇹🇳",
+      "flagUnicode": "\\u{1F1F9}\\u{1F1F3}",
+      "assignmentOwner": "Nico"
+    },
+    "TUR": {
+      "fifaCode": "TUR",
+      "name": "Turkey",
+      "spanishName": "Turquía",
+      "aliases": [
+        "Türkiye"
+      ],
+      "group": "D",
+      "continent": "Europe",
+      "confed": "UEFA",
+      "flagIcon": "🇹🇷",
+      "flagUnicode": "\\u{1F1F9}\\u{1F1F7}",
+      "assignmentOwner": "Nikol"
+    },
+    "URU": {
+      "fifaCode": "URU",
+      "name": "Uruguay",
+      "spanishName": "Uruguay",
+      "aliases": [],
+      "group": "H",
+      "continent": "South America",
+      "confed": "CONMEBOL",
+      "flagIcon": "🇺🇾",
+      "flagUnicode": "\\u{1F1FA}\\u{1F1FE}",
+      "assignmentOwner": "Nere"
+    },
+    "USA": {
+      "fifaCode": "USA",
+      "name": "USA",
+      "spanishName": "Estados Unidos",
+      "aliases": [
+        "United States"
+      ],
+      "group": "D",
+      "continent": "North America",
+      "confed": "CONCACAF",
+      "flagIcon": "🇺🇸",
+      "flagUnicode": "\\u{1F1FA}\\u{1F1F8}",
+      "assignmentOwner": "Yager"
+    },
+    "UZB": {
+      "fifaCode": "UZB",
+      "name": "Uzbekistan",
+      "spanishName": "Uzbekistán",
+      "aliases": [],
+      "group": "K",
+      "continent": "Asia",
+      "confed": "AFC",
+      "flagIcon": "🇺🇿",
+      "flagUnicode": "\\u{1F1FA}\\u{1F1FF}",
+      "assignmentOwner": "Noe"
+    }
+  },
+  "groups": {
+    "A": {
+      "id": "A",
+      "name": "Group A",
+      "teams": [
+        "MEX",
+        "RSA",
+        "KOR",
+        "CZE"
+      ]
+    },
+    "B": {
+      "id": "B",
+      "name": "Group B",
+      "teams": [
+        "CAN",
+        "BIH",
+        "QAT",
+        "SUI"
+      ]
+    },
+    "C": {
+      "id": "C",
+      "name": "Group C",
+      "teams": [
+        "BRA",
+        "MAR",
+        "HAI",
+        "SCO"
+      ]
+    },
+    "D": {
+      "id": "D",
+      "name": "Group D",
+      "teams": [
+        "USA",
+        "PAR",
+        "AUS",
+        "TUR"
+      ]
+    },
+    "E": {
+      "id": "E",
+      "name": "Group E",
+      "teams": [
+        "GER",
+        "CUW",
+        "CIV",
+        "ECU"
+      ]
+    },
+    "F": {
+      "id": "F",
+      "name": "Group F",
+      "teams": [
+        "NED",
+        "JPN",
+        "SWE",
+        "TUN"
+      ]
+    },
+    "G": {
+      "id": "G",
+      "name": "Group G",
+      "teams": [
+        "BEL",
+        "EGY",
+        "IRN",
+        "NZL"
+      ]
+    },
+    "H": {
+      "id": "H",
+      "name": "Group H",
+      "teams": [
+        "ESP",
+        "CPV",
+        "KSA",
+        "URU"
+      ]
+    },
+    "I": {
+      "id": "I",
+      "name": "Group I",
+      "teams": [
+        "FRA",
+        "SEN",
+        "IRQ",
+        "NOR"
+      ]
+    },
+    "J": {
+      "id": "J",
+      "name": "Group J",
+      "teams": [
+        "ARG",
+        "ALG",
+        "AUT",
+        "JOR"
+      ]
+    },
+    "K": {
+      "id": "K",
+      "name": "Group K",
+      "teams": [
+        "POR",
+        "COD",
+        "UZB",
+        "COL"
+      ]
+    },
+    "L": {
+      "id": "L",
+      "name": "Group L",
+      "teams": [
+        "ENG",
+        "CRO",
+        "GHA",
+        "PAN"
+      ]
+    }
+  },
+  "stadiums": {
+    "vancouver": {
+      "id": "vancouver",
+      "city": "Vancouver",
+      "timezone": "UTC-7",
+      "countryCode": "ca",
+      "name": "BC Place",
+      "capacity": 54000,
+      "coords": "49°16'36\"N 123°6'43\"W",
+      "countryName": "Canadá",
+      "location": "Vancouver, Canadá"
+    },
+    "seattle": {
+      "id": "seattle",
+      "city": "Seattle",
+      "timezone": "UTC-7",
+      "countryCode": "us",
+      "name": "Lumen Field",
+      "capacity": 69000,
+      "coords": "47°35'43\"N 122°19'54\"W",
+      "countryName": "Estados Unidos",
+      "location": "Seattle, Estados Unidos"
+    },
+    "san-francisco-bay-area-santa-clara": {
+      "id": "san-francisco-bay-area-santa-clara",
+      "city": "San Francisco Bay Area (Santa Clara)",
+      "timezone": "UTC-7",
+      "countryCode": "us",
+      "name": "Levi's Stadium",
+      "capacity": 71000,
+      "coords": "37.403°N 121.970°W",
+      "countryName": "Estados Unidos",
+      "location": "San Francisco Bay Area (Santa Clara), Estados Unidos"
+    },
+    "los-angeles-inglewood": {
+      "id": "los-angeles-inglewood",
+      "city": "Los Angeles (Inglewood)",
+      "timezone": "UTC-7",
+      "countryCode": "us",
+      "name": "SoFi Stadium",
+      "capacity": 70000,
+      "coords": "33.953°N 118.339°W",
+      "countryName": "Estados Unidos",
+      "location": "Los Angeles (Inglewood), Estados Unidos"
+    },
+    "guadalajara-zapopan": {
+      "id": "guadalajara-zapopan",
+      "city": "Guadalajara (Zapopan)",
+      "timezone": "UTC-6",
+      "countryCode": "mx",
+      "name": "Estadio Akron",
+      "capacity": 48000,
+      "coords": "20°40'54\"N 103°27'46\"W",
+      "countryName": "México",
+      "location": "Guadalajara (Zapopan), México"
+    },
+    "mexico-city": {
+      "id": "mexico-city",
+      "city": "Mexico City",
+      "timezone": "UTC-6",
+      "countryCode": "mx",
+      "name": "Estadio Azteca",
+      "capacity": 83000,
+      "coords": "19°18'11\"N 99°09'02\"W",
+      "countryName": "México",
+      "location": "Mexico City, México"
+    },
+    "monterrey-guadalupe": {
+      "id": "monterrey-guadalupe",
+      "city": "Monterrey (Guadalupe)",
+      "timezone": "UTC-6",
+      "countryCode": "mx",
+      "name": "Estadio BBVA",
+      "capacity": 53500,
+      "coords": "25°40'9\"N 100°14'40\"W",
+      "countryName": "México",
+      "location": "Monterrey (Guadalupe), México"
+    },
+    "houston": {
+      "id": "houston",
+      "city": "Houston",
+      "timezone": "UTC-5",
+      "countryCode": "us",
+      "name": "NRG Stadium",
+      "capacity": 72000,
+      "coords": "29°41'5\"N 95°24'39\"W",
+      "countryName": "Estados Unidos",
+      "location": "Houston, Estados Unidos"
+    },
+    "dallas-arlington": {
+      "id": "dallas-arlington",
+      "city": "Dallas (Arlington)",
+      "timezone": "UTC-5",
+      "countryCode": "us",
+      "name": "AT&T Stadium",
+      "capacity": 94000,
+      "coords": "32°44'52\"N 97°5'34\"W",
+      "countryName": "Estados Unidos",
+      "location": "Dallas (Arlington), Estados Unidos"
+    },
+    "kansas-city": {
+      "id": "kansas-city",
+      "city": "Kansas City",
+      "timezone": "UTC-5",
+      "countryCode": "us",
+      "name": "Arrowhead Stadium",
+      "capacity": 73000,
+      "coords": "39°2'56\"N 94°29'2\"W",
+      "countryName": "Estados Unidos",
+      "location": "Kansas City, Estados Unidos"
+    },
+    "atlanta": {
+      "id": "atlanta",
+      "city": "Atlanta",
+      "timezone": "UTC-4",
+      "countryCode": "us",
+      "name": "Mercedes-Benz Stadium",
+      "capacity": 75000,
+      "coords": "33°45'20\"N 84°24'00\"W",
+      "countryName": "Estados Unidos",
+      "location": "Atlanta, Estados Unidos"
+    },
+    "miami-miami-gardens": {
+      "id": "miami-miami-gardens",
+      "city": "Miami (Miami Gardens)",
+      "timezone": "UTC-4",
+      "countryCode": "us",
+      "name": "Hard Rock Stadium",
+      "capacity": 65000,
+      "coords": "25°57'29\"N 80°14'20\"W",
+      "countryName": "Estados Unidos",
+      "location": "Miami (Miami Gardens), Estados Unidos"
+    },
+    "toronto": {
+      "id": "toronto",
+      "city": "Toronto",
+      "timezone": "UTC-4",
+      "countryCode": "ca",
+      "name": "BMO Field",
+      "capacity": 45000,
+      "coords": "43°38'0\"N 79°25'07\"W",
+      "countryName": "Canadá",
+      "location": "Toronto, Canadá"
+    },
+    "boston-foxborough": {
+      "id": "boston-foxborough",
+      "city": "Boston (Foxborough)",
+      "timezone": "UTC-4",
+      "countryCode": "us",
+      "name": "Gillette Stadium",
+      "capacity": 65000,
+      "coords": "42.091°N 71.264°W",
+      "countryName": "Estados Unidos",
+      "location": "Boston (Foxborough), Estados Unidos"
+    },
+    "philadelphia": {
+      "id": "philadelphia",
+      "city": "Philadelphia",
+      "timezone": "UTC-4",
+      "countryCode": "us",
+      "name": "Lincoln Financial Field",
+      "capacity": 69000,
+      "coords": "39°54'3\"N 75°10'3\"W",
+      "countryName": "Estados Unidos",
+      "location": "Philadelphia, Estados Unidos"
+    },
+    "new-york-new-jersey-east-rutherford": {
+      "id": "new-york-new-jersey-east-rutherford",
+      "city": "New York/New Jersey (East Rutherford)",
+      "timezone": "UTC-4",
+      "countryCode": "us",
+      "name": "MetLife Stadium",
+      "capacity": 82500,
+      "coords": "40°48'48.7\"N 74°4'27.7\"W",
+      "countryName": "Estados Unidos",
+      "location": "New York/New Jersey (East Rutherford), Estados Unidos"
+    }
+  },
+  "matches": [
+    {
+      "id": "M001",
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "13:00 UTC-6",
+      "venueId": "mexico-city",
+      "group": "A",
+      "participants": [
+        {
+          "type": "team",
+          "code": "MEX",
+          "name": "Mexico",
+          "spanishName": "México",
+          "displayName": "México",
+          "flagEmoji": "🇲🇽",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "RSA",
+          "name": "South Africa",
+          "spanishName": "Sudáfrica",
+          "displayName": "Sudáfrica",
+          "flagEmoji": "🇿🇦",
+          "assignmentOwner": "Nikito"
+        }
+      ],
+      "kickoffUtc": "2026-06-11T19:00:00.000Z",
+      "alertAtUtc": "2026-06-11T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 11 6 *",
+      "venue": {
+        "id": "mexico-city",
+        "city": "Mexico City",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Azteca",
+        "capacity": 83000,
+        "coords": "19°18'11\"N 99°09'02\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-11",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-11",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M002",
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "20:00 UTC-6",
+      "venueId": "guadalajara-zapopan",
+      "group": "A",
+      "participants": [
+        {
+          "type": "team",
+          "code": "KOR",
+          "name": "South Korea",
+          "spanishName": "Corea del Sur",
+          "displayName": "Corea del Sur",
+          "flagEmoji": "🇰🇷",
+          "assignmentOwner": "Nikito"
+        },
+        {
+          "type": "team",
+          "code": "CZE",
+          "name": "Czech Republic",
+          "spanishName": "República Checa",
+          "displayName": "República Checa",
+          "flagEmoji": "🇨🇿",
+          "assignmentOwner": "Eddy"
+        }
+      ],
+      "kickoffUtc": "2026-06-12T02:00:00.000Z",
+      "alertAtUtc": "2026-06-12T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 12 6 *",
+      "venue": {
+        "id": "guadalajara-zapopan",
+        "city": "Guadalajara (Zapopan)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Akron",
+        "capacity": 48000,
+        "coords": "20°40'54\"N 103°27'46\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-11",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-11",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M003",
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "time": "12:00 UTC-4",
+      "venueId": "atlanta",
+      "group": "A",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CZE",
+          "name": "Czech Republic",
+          "spanishName": "República Checa",
+          "displayName": "República Checa",
+          "flagEmoji": "🇨🇿",
+          "assignmentOwner": "Eddy"
+        },
+        {
+          "type": "team",
+          "code": "RSA",
+          "name": "South Africa",
+          "spanishName": "Sudáfrica",
+          "displayName": "Sudáfrica",
+          "flagEmoji": "🇿🇦",
+          "assignmentOwner": "Nikito"
+        }
+      ],
+      "kickoffUtc": "2026-06-18T16:00:00.000Z",
+      "alertAtUtc": "2026-06-18T15:50:00.000Z",
+      "alertCronUtc": "0 50 15 18 6 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-18",
+          "time": "10:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-18",
+          "time": "09:00"
+        }
+      }
+    },
+    {
+      "id": "M004",
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "time": "19:00 UTC-6",
+      "venueId": "guadalajara-zapopan",
+      "group": "A",
+      "participants": [
+        {
+          "type": "team",
+          "code": "MEX",
+          "name": "Mexico",
+          "spanishName": "México",
+          "displayName": "México",
+          "flagEmoji": "🇲🇽",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "KOR",
+          "name": "South Korea",
+          "spanishName": "Corea del Sur",
+          "displayName": "Corea del Sur",
+          "flagEmoji": "🇰🇷",
+          "assignmentOwner": "Nikito"
+        }
+      ],
+      "kickoffUtc": "2026-06-19T01:00:00.000Z",
+      "alertAtUtc": "2026-06-19T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 19 6 *",
+      "venue": {
+        "id": "guadalajara-zapopan",
+        "city": "Guadalajara (Zapopan)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Akron",
+        "capacity": 48000,
+        "coords": "20°40'54\"N 103°27'46\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-18",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-18",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M005",
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "time": "19:00 UTC-6",
+      "venueId": "mexico-city",
+      "group": "A",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CZE",
+          "name": "Czech Republic",
+          "spanishName": "República Checa",
+          "displayName": "República Checa",
+          "flagEmoji": "🇨🇿",
+          "assignmentOwner": "Eddy"
+        },
+        {
+          "type": "team",
+          "code": "MEX",
+          "name": "Mexico",
+          "spanishName": "México",
+          "displayName": "México",
+          "flagEmoji": "🇲🇽",
+          "assignmentOwner": "Nikol"
+        }
+      ],
+      "kickoffUtc": "2026-06-25T01:00:00.000Z",
+      "alertAtUtc": "2026-06-25T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 25 6 *",
+      "venue": {
+        "id": "mexico-city",
+        "city": "Mexico City",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Azteca",
+        "capacity": 83000,
+        "coords": "19°18'11\"N 99°09'02\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-24",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-24",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M006",
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "time": "19:00 UTC-6",
+      "venueId": "monterrey-guadalupe",
+      "group": "A",
+      "participants": [
+        {
+          "type": "team",
+          "code": "RSA",
+          "name": "South Africa",
+          "spanishName": "Sudáfrica",
+          "displayName": "Sudáfrica",
+          "flagEmoji": "🇿🇦",
+          "assignmentOwner": "Nikito"
+        },
+        {
+          "type": "team",
+          "code": "KOR",
+          "name": "South Korea",
+          "spanishName": "Corea del Sur",
+          "displayName": "Corea del Sur",
+          "flagEmoji": "🇰🇷",
+          "assignmentOwner": "Nikito"
+        }
+      ],
+      "kickoffUtc": "2026-06-25T01:00:00.000Z",
+      "alertAtUtc": "2026-06-25T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 25 6 *",
+      "venue": {
+        "id": "monterrey-guadalupe",
+        "city": "Monterrey (Guadalupe)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio BBVA",
+        "capacity": 53500,
+        "coords": "25°40'9\"N 100°14'40\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-24",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-24",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M007",
+      "round": "Matchday 2",
+      "date": "2026-06-12",
+      "time": "15:00 UTC-4",
+      "venueId": "toronto",
+      "group": "B",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CAN",
+          "name": "Canada",
+          "spanishName": "Canadá",
+          "displayName": "Canadá",
+          "flagEmoji": "🇨🇦",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "BIH",
+          "name": "Bosnia & Herzegovina",
+          "spanishName": "Bosnia y Herzegovina",
+          "displayName": "Bosnia y Herzegovina",
+          "flagEmoji": "🇧🇦",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-12T19:00:00.000Z",
+      "alertAtUtc": "2026-06-12T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 12 6 *",
+      "venue": {
+        "id": "toronto",
+        "city": "Toronto",
+        "timezone": "UTC-4",
+        "countryCode": "ca",
+        "name": "BMO Field",
+        "capacity": 45000,
+        "coords": "43°38'0\"N 79°25'07\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-12",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-12",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M008",
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "time": "12:00 UTC-7",
+      "venueId": "san-francisco-bay-area-santa-clara",
+      "group": "B",
+      "participants": [
+        {
+          "type": "team",
+          "code": "QAT",
+          "name": "Qatar",
+          "spanishName": "Qatar",
+          "displayName": "Qatar",
+          "flagEmoji": "🇶🇦",
+          "assignmentOwner": "Nico"
+        },
+        {
+          "type": "team",
+          "code": "SUI",
+          "name": "Switzerland",
+          "spanishName": "Suiza",
+          "displayName": "Suiza",
+          "flagEmoji": "🇨🇭",
+          "assignmentOwner": "Oswaldo"
+        }
+      ],
+      "kickoffUtc": "2026-06-13T19:00:00.000Z",
+      "alertAtUtc": "2026-06-13T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 13 6 *",
+      "venue": {
+        "id": "san-francisco-bay-area-santa-clara",
+        "city": "San Francisco Bay Area (Santa Clara)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Levi's Stadium",
+        "capacity": 71000,
+        "coords": "37.403°N 121.970°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-13",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-13",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M009",
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "time": "12:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "group": "B",
+      "participants": [
+        {
+          "type": "team",
+          "code": "SUI",
+          "name": "Switzerland",
+          "spanishName": "Suiza",
+          "displayName": "Suiza",
+          "flagEmoji": "🇨🇭",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "BIH",
+          "name": "Bosnia & Herzegovina",
+          "spanishName": "Bosnia y Herzegovina",
+          "displayName": "Bosnia y Herzegovina",
+          "flagEmoji": "🇧🇦",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-18T19:00:00.000Z",
+      "alertAtUtc": "2026-06-18T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 18 6 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-18",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-18",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M010",
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "time": "15:00 UTC-7",
+      "venueId": "vancouver",
+      "group": "B",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CAN",
+          "name": "Canada",
+          "spanishName": "Canadá",
+          "displayName": "Canadá",
+          "flagEmoji": "🇨🇦",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "QAT",
+          "name": "Qatar",
+          "spanishName": "Qatar",
+          "displayName": "Qatar",
+          "flagEmoji": "🇶🇦",
+          "assignmentOwner": "Nico"
+        }
+      ],
+      "kickoffUtc": "2026-06-18T22:00:00.000Z",
+      "alertAtUtc": "2026-06-18T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 18 6 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-18",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-18",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M011",
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "time": "12:00 UTC-7",
+      "venueId": "vancouver",
+      "group": "B",
+      "participants": [
+        {
+          "type": "team",
+          "code": "SUI",
+          "name": "Switzerland",
+          "spanishName": "Suiza",
+          "displayName": "Suiza",
+          "flagEmoji": "🇨🇭",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "CAN",
+          "name": "Canada",
+          "spanishName": "Canadá",
+          "displayName": "Canadá",
+          "flagEmoji": "🇨🇦",
+          "assignmentOwner": "Oswaldo"
+        }
+      ],
+      "kickoffUtc": "2026-06-24T19:00:00.000Z",
+      "alertAtUtc": "2026-06-24T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 24 6 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-24",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-24",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M012",
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "time": "12:00 UTC-7",
+      "venueId": "seattle",
+      "group": "B",
+      "participants": [
+        {
+          "type": "team",
+          "code": "BIH",
+          "name": "Bosnia & Herzegovina",
+          "spanishName": "Bosnia y Herzegovina",
+          "displayName": "Bosnia y Herzegovina",
+          "flagEmoji": "🇧🇦",
+          "assignmentOwner": "Cotty"
+        },
+        {
+          "type": "team",
+          "code": "QAT",
+          "name": "Qatar",
+          "spanishName": "Qatar",
+          "displayName": "Qatar",
+          "flagEmoji": "🇶🇦",
+          "assignmentOwner": "Nico"
+        }
+      ],
+      "kickoffUtc": "2026-06-24T19:00:00.000Z",
+      "alertAtUtc": "2026-06-24T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 24 6 *",
+      "venue": {
+        "id": "seattle",
+        "city": "Seattle",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "coords": "47°35'43\"N 122°19'54\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-24",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-24",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M013",
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "time": "18:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "group": "C",
+      "participants": [
+        {
+          "type": "team",
+          "code": "BRA",
+          "name": "Brazil",
+          "spanishName": "Brasil",
+          "displayName": "Brasil",
+          "flagEmoji": "🇧🇷",
+          "assignmentOwner": "Nikito"
+        },
+        {
+          "type": "team",
+          "code": "MAR",
+          "name": "Morocco",
+          "spanishName": "Marruecos",
+          "displayName": "Marruecos",
+          "flagEmoji": "🇲🇦",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-13T22:00:00.000Z",
+      "alertAtUtc": "2026-06-13T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 13 6 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-13",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-13",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M014",
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "time": "21:00 UTC-4",
+      "venueId": "boston-foxborough",
+      "group": "C",
+      "participants": [
+        {
+          "type": "team",
+          "code": "HAI",
+          "name": "Haiti",
+          "spanishName": "Haití",
+          "displayName": "Haití",
+          "flagEmoji": "🇭🇹",
+          "assignmentOwner": "Cotty"
+        },
+        {
+          "type": "team",
+          "code": "SCO",
+          "name": "Scotland",
+          "spanishName": "Escocia",
+          "displayName": "Escocia",
+          "flagEmoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "assignmentOwner": "Oswaldo"
+        }
+      ],
+      "kickoffUtc": "2026-06-14T01:00:00.000Z",
+      "alertAtUtc": "2026-06-14T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 14 6 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-13",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-13",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M015",
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "time": "18:00 UTC-4",
+      "venueId": "boston-foxborough",
+      "group": "C",
+      "participants": [
+        {
+          "type": "team",
+          "code": "SCO",
+          "name": "Scotland",
+          "spanishName": "Escocia",
+          "displayName": "Escocia",
+          "flagEmoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "MAR",
+          "name": "Morocco",
+          "spanishName": "Marruecos",
+          "displayName": "Marruecos",
+          "flagEmoji": "🇲🇦",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-19T22:00:00.000Z",
+      "alertAtUtc": "2026-06-19T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 19 6 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-19",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-19",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M016",
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "time": "20:30 UTC-4",
+      "venueId": "philadelphia",
+      "group": "C",
+      "participants": [
+        {
+          "type": "team",
+          "code": "BRA",
+          "name": "Brazil",
+          "spanishName": "Brasil",
+          "displayName": "Brasil",
+          "flagEmoji": "🇧🇷",
+          "assignmentOwner": "Nikito"
+        },
+        {
+          "type": "team",
+          "code": "HAI",
+          "name": "Haiti",
+          "spanishName": "Haití",
+          "displayName": "Haití",
+          "flagEmoji": "🇭🇹",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-20T00:30:00.000Z",
+      "alertAtUtc": "2026-06-20T00:20:00.000Z",
+      "alertCronUtc": "0 20 0 20 6 *",
+      "venue": {
+        "id": "philadelphia",
+        "city": "Philadelphia",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Lincoln Financial Field",
+        "capacity": 69000,
+        "coords": "39°54'3\"N 75°10'3\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-19",
+          "time": "18:30"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-19",
+          "time": "17:30"
+        }
+      }
+    },
+    {
+      "id": "M017",
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "time": "18:00 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "group": "C",
+      "participants": [
+        {
+          "type": "team",
+          "code": "SCO",
+          "name": "Scotland",
+          "spanishName": "Escocia",
+          "displayName": "Escocia",
+          "flagEmoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "BRA",
+          "name": "Brazil",
+          "spanishName": "Brasil",
+          "displayName": "Brasil",
+          "flagEmoji": "🇧🇷",
+          "assignmentOwner": "Nikito"
+        }
+      ],
+      "kickoffUtc": "2026-06-24T22:00:00.000Z",
+      "alertAtUtc": "2026-06-24T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 24 6 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-24",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-24",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M018",
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "time": "18:00 UTC-4",
+      "venueId": "atlanta",
+      "group": "C",
+      "participants": [
+        {
+          "type": "team",
+          "code": "MAR",
+          "name": "Morocco",
+          "spanishName": "Marruecos",
+          "displayName": "Marruecos",
+          "flagEmoji": "🇲🇦",
+          "assignmentOwner": "Noe"
+        },
+        {
+          "type": "team",
+          "code": "HAI",
+          "name": "Haiti",
+          "spanishName": "Haití",
+          "displayName": "Haití",
+          "flagEmoji": "🇭🇹",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-24T22:00:00.000Z",
+      "alertAtUtc": "2026-06-24T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 24 6 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-24",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-24",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M019",
+      "round": "Matchday 2",
+      "date": "2026-06-12",
+      "time": "18:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "group": "D",
+      "participants": [
+        {
+          "type": "team",
+          "code": "USA",
+          "name": "USA",
+          "spanishName": "Estados Unidos",
+          "displayName": "Estados Unidos",
+          "flagEmoji": "🇺🇸",
+          "assignmentOwner": "Yager"
+        },
+        {
+          "type": "team",
+          "code": "PAR",
+          "name": "Paraguay",
+          "spanishName": "Paraguay",
+          "displayName": "Paraguay",
+          "flagEmoji": "🇵🇾",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-13T01:00:00.000Z",
+      "alertAtUtc": "2026-06-13T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 13 6 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-12",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-12",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M020",
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "time": "21:00 UTC-7",
+      "venueId": "vancouver",
+      "group": "D",
+      "participants": [
+        {
+          "type": "team",
+          "code": "AUS",
+          "name": "Australia",
+          "spanishName": "Australia",
+          "displayName": "Australia",
+          "flagEmoji": "🇦🇺",
+          "assignmentOwner": "Vero"
+        },
+        {
+          "type": "team",
+          "code": "TUR",
+          "name": "Turkey",
+          "spanishName": "Turquía",
+          "displayName": "Turquía",
+          "flagEmoji": "🇹🇷",
+          "assignmentOwner": "Nikol"
+        }
+      ],
+      "kickoffUtc": "2026-06-14T04:00:00.000Z",
+      "alertAtUtc": "2026-06-14T03:50:00.000Z",
+      "alertCronUtc": "0 50 3 14 6 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-13",
+          "time": "22:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-13",
+          "time": "21:00"
+        }
+      }
+    },
+    {
+      "id": "M021",
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "time": "12:00 UTC-7",
+      "venueId": "seattle",
+      "group": "D",
+      "participants": [
+        {
+          "type": "team",
+          "code": "USA",
+          "name": "USA",
+          "spanishName": "Estados Unidos",
+          "displayName": "Estados Unidos",
+          "flagEmoji": "🇺🇸",
+          "assignmentOwner": "Yager"
+        },
+        {
+          "type": "team",
+          "code": "AUS",
+          "name": "Australia",
+          "spanishName": "Australia",
+          "displayName": "Australia",
+          "flagEmoji": "🇦🇺",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-19T19:00:00.000Z",
+      "alertAtUtc": "2026-06-19T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 19 6 *",
+      "venue": {
+        "id": "seattle",
+        "city": "Seattle",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "coords": "47°35'43\"N 122°19'54\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-19",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-19",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M022",
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "time": "20:00 UTC-7",
+      "venueId": "san-francisco-bay-area-santa-clara",
+      "group": "D",
+      "participants": [
+        {
+          "type": "team",
+          "code": "TUR",
+          "name": "Turkey",
+          "spanishName": "Turquía",
+          "displayName": "Turquía",
+          "flagEmoji": "🇹🇷",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "PAR",
+          "name": "Paraguay",
+          "spanishName": "Paraguay",
+          "displayName": "Paraguay",
+          "flagEmoji": "🇵🇾",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-20T03:00:00.000Z",
+      "alertAtUtc": "2026-06-20T02:50:00.000Z",
+      "alertCronUtc": "0 50 2 20 6 *",
+      "venue": {
+        "id": "san-francisco-bay-area-santa-clara",
+        "city": "San Francisco Bay Area (Santa Clara)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Levi's Stadium",
+        "capacity": 71000,
+        "coords": "37.403°N 121.970°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-19",
+          "time": "21:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-19",
+          "time": "20:00"
+        }
+      }
+    },
+    {
+      "id": "M023",
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "time": "19:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "group": "D",
+      "participants": [
+        {
+          "type": "team",
+          "code": "TUR",
+          "name": "Turkey",
+          "spanishName": "Turquía",
+          "displayName": "Turquía",
+          "flagEmoji": "🇹🇷",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "USA",
+          "name": "USA",
+          "spanishName": "Estados Unidos",
+          "displayName": "Estados Unidos",
+          "flagEmoji": "🇺🇸",
+          "assignmentOwner": "Yager"
+        }
+      ],
+      "kickoffUtc": "2026-06-26T02:00:00.000Z",
+      "alertAtUtc": "2026-06-26T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 26 6 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-25",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-25",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M024",
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "time": "19:00 UTC-7",
+      "venueId": "san-francisco-bay-area-santa-clara",
+      "group": "D",
+      "participants": [
+        {
+          "type": "team",
+          "code": "PAR",
+          "name": "Paraguay",
+          "spanishName": "Paraguay",
+          "displayName": "Paraguay",
+          "flagEmoji": "🇵🇾",
+          "assignmentOwner": "Noe"
+        },
+        {
+          "type": "team",
+          "code": "AUS",
+          "name": "Australia",
+          "spanishName": "Australia",
+          "displayName": "Australia",
+          "flagEmoji": "🇦🇺",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-26T02:00:00.000Z",
+      "alertAtUtc": "2026-06-26T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 26 6 *",
+      "venue": {
+        "id": "san-francisco-bay-area-santa-clara",
+        "city": "San Francisco Bay Area (Santa Clara)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Levi's Stadium",
+        "capacity": 71000,
+        "coords": "37.403°N 121.970°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-25",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-25",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M025",
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "time": "12:00 UTC-5",
+      "venueId": "houston",
+      "group": "E",
+      "participants": [
+        {
+          "type": "team",
+          "code": "GER",
+          "name": "Germany",
+          "spanishName": "Alemania",
+          "displayName": "Alemania",
+          "flagEmoji": "🇩🇪",
+          "assignmentOwner": "Eddy"
+        },
+        {
+          "type": "team",
+          "code": "CUW",
+          "name": "Curaçao",
+          "spanishName": "Curazao",
+          "displayName": "Curazao",
+          "flagEmoji": "🇨🇼",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-14T17:00:00.000Z",
+      "alertAtUtc": "2026-06-14T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 14 6 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-14",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-14",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M026",
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "time": "19:00 UTC-4",
+      "venueId": "philadelphia",
+      "group": "E",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CIV",
+          "name": "Ivory Coast",
+          "spanishName": "Costa de Marfil",
+          "displayName": "Costa de Marfil",
+          "flagEmoji": "🇨🇮",
+          "assignmentOwner": "Yager"
+        },
+        {
+          "type": "team",
+          "code": "ECU",
+          "name": "Ecuador",
+          "spanishName": "Ecuador",
+          "displayName": "Ecuador",
+          "flagEmoji": "🇪🇨",
+          "assignmentOwner": "Nikol"
+        }
+      ],
+      "kickoffUtc": "2026-06-14T23:00:00.000Z",
+      "alertAtUtc": "2026-06-14T22:50:00.000Z",
+      "alertCronUtc": "0 50 22 14 6 *",
+      "venue": {
+        "id": "philadelphia",
+        "city": "Philadelphia",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Lincoln Financial Field",
+        "capacity": 69000,
+        "coords": "39°54'3\"N 75°10'3\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-14",
+          "time": "17:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-14",
+          "time": "16:00"
+        }
+      }
+    },
+    {
+      "id": "M027",
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "time": "16:00 UTC-4",
+      "venueId": "toronto",
+      "group": "E",
+      "participants": [
+        {
+          "type": "team",
+          "code": "GER",
+          "name": "Germany",
+          "spanishName": "Alemania",
+          "displayName": "Alemania",
+          "flagEmoji": "🇩🇪",
+          "assignmentOwner": "Eddy"
+        },
+        {
+          "type": "team",
+          "code": "CIV",
+          "name": "Ivory Coast",
+          "spanishName": "Costa de Marfil",
+          "displayName": "Costa de Marfil",
+          "flagEmoji": "🇨🇮",
+          "assignmentOwner": "Yager"
+        }
+      ],
+      "kickoffUtc": "2026-06-20T20:00:00.000Z",
+      "alertAtUtc": "2026-06-20T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 20 6 *",
+      "venue": {
+        "id": "toronto",
+        "city": "Toronto",
+        "timezone": "UTC-4",
+        "countryCode": "ca",
+        "name": "BMO Field",
+        "capacity": 45000,
+        "coords": "43°38'0\"N 79°25'07\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-20",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-20",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M028",
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "time": "19:00 UTC-5",
+      "venueId": "kansas-city",
+      "group": "E",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ECU",
+          "name": "Ecuador",
+          "spanishName": "Ecuador",
+          "displayName": "Ecuador",
+          "flagEmoji": "🇪🇨",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "CUW",
+          "name": "Curaçao",
+          "spanishName": "Curazao",
+          "displayName": "Curazao",
+          "flagEmoji": "🇨🇼",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-21T00:00:00.000Z",
+      "alertAtUtc": "2026-06-20T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 20 6 *",
+      "venue": {
+        "id": "kansas-city",
+        "city": "Kansas City",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "Arrowhead Stadium",
+        "capacity": 73000,
+        "coords": "39°2'56\"N 94°29'2\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-20",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-20",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M029",
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "time": "16:00 UTC-4",
+      "venueId": "philadelphia",
+      "group": "E",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CUW",
+          "name": "Curaçao",
+          "spanishName": "Curazao",
+          "displayName": "Curazao",
+          "flagEmoji": "🇨🇼",
+          "assignmentOwner": "Vero"
+        },
+        {
+          "type": "team",
+          "code": "CIV",
+          "name": "Ivory Coast",
+          "spanishName": "Costa de Marfil",
+          "displayName": "Costa de Marfil",
+          "flagEmoji": "🇨🇮",
+          "assignmentOwner": "Yager"
+        }
+      ],
+      "kickoffUtc": "2026-06-25T20:00:00.000Z",
+      "alertAtUtc": "2026-06-25T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 25 6 *",
+      "venue": {
+        "id": "philadelphia",
+        "city": "Philadelphia",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Lincoln Financial Field",
+        "capacity": 69000,
+        "coords": "39°54'3\"N 75°10'3\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-25",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-25",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M030",
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "time": "16:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "group": "E",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ECU",
+          "name": "Ecuador",
+          "spanishName": "Ecuador",
+          "displayName": "Ecuador",
+          "flagEmoji": "🇪🇨",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "GER",
+          "name": "Germany",
+          "spanishName": "Alemania",
+          "displayName": "Alemania",
+          "flagEmoji": "🇩🇪",
+          "assignmentOwner": "Eddy"
+        }
+      ],
+      "kickoffUtc": "2026-06-25T20:00:00.000Z",
+      "alertAtUtc": "2026-06-25T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 25 6 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-25",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-25",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M031",
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "time": "15:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "group": "F",
+      "participants": [
+        {
+          "type": "team",
+          "code": "NED",
+          "name": "Netherlands",
+          "spanishName": "Países Bajos",
+          "displayName": "Países Bajos",
+          "flagEmoji": "🇳🇱",
+          "assignmentOwner": "Vero"
+        },
+        {
+          "type": "team",
+          "code": "JPN",
+          "name": "Japan",
+          "spanishName": "Japón",
+          "displayName": "Japón",
+          "flagEmoji": "🇯🇵",
+          "assignmentOwner": "Eddy"
+        }
+      ],
+      "kickoffUtc": "2026-06-14T20:00:00.000Z",
+      "alertAtUtc": "2026-06-14T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 14 6 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-14",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-14",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M032",
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "time": "20:00 UTC-6",
+      "venueId": "monterrey-guadalupe",
+      "group": "F",
+      "participants": [
+        {
+          "type": "team",
+          "code": "SWE",
+          "name": "Sweden",
+          "spanishName": "Suecia",
+          "displayName": "Suecia",
+          "flagEmoji": "🇸🇪",
+          "assignmentOwner": "Manuel"
+        },
+        {
+          "type": "team",
+          "code": "TUN",
+          "name": "Tunisia",
+          "spanishName": "Túnez",
+          "displayName": "Túnez",
+          "flagEmoji": "🇹🇳",
+          "assignmentOwner": "Nico"
+        }
+      ],
+      "kickoffUtc": "2026-06-15T02:00:00.000Z",
+      "alertAtUtc": "2026-06-15T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 15 6 *",
+      "venue": {
+        "id": "monterrey-guadalupe",
+        "city": "Monterrey (Guadalupe)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio BBVA",
+        "capacity": 53500,
+        "coords": "25°40'9\"N 100°14'40\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-14",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-14",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M033",
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "time": "12:00 UTC-5",
+      "venueId": "houston",
+      "group": "F",
+      "participants": [
+        {
+          "type": "team",
+          "code": "NED",
+          "name": "Netherlands",
+          "spanishName": "Países Bajos",
+          "displayName": "Países Bajos",
+          "flagEmoji": "🇳🇱",
+          "assignmentOwner": "Vero"
+        },
+        {
+          "type": "team",
+          "code": "SWE",
+          "name": "Sweden",
+          "spanishName": "Suecia",
+          "displayName": "Suecia",
+          "flagEmoji": "🇸🇪",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-20T17:00:00.000Z",
+      "alertAtUtc": "2026-06-20T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 20 6 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-20",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-20",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M034",
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "time": "22:00 UTC-6",
+      "venueId": "monterrey-guadalupe",
+      "group": "F",
+      "participants": [
+        {
+          "type": "team",
+          "code": "TUN",
+          "name": "Tunisia",
+          "spanishName": "Túnez",
+          "displayName": "Túnez",
+          "flagEmoji": "🇹🇳",
+          "assignmentOwner": "Nico"
+        },
+        {
+          "type": "team",
+          "code": "JPN",
+          "name": "Japan",
+          "spanishName": "Japón",
+          "displayName": "Japón",
+          "flagEmoji": "🇯🇵",
+          "assignmentOwner": "Eddy"
+        }
+      ],
+      "kickoffUtc": "2026-06-21T04:00:00.000Z",
+      "alertAtUtc": "2026-06-21T03:50:00.000Z",
+      "alertCronUtc": "0 50 3 21 6 *",
+      "venue": {
+        "id": "monterrey-guadalupe",
+        "city": "Monterrey (Guadalupe)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio BBVA",
+        "capacity": 53500,
+        "coords": "25°40'9\"N 100°14'40\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-20",
+          "time": "22:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-20",
+          "time": "21:00"
+        }
+      }
+    },
+    {
+      "id": "M035",
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "time": "18:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "group": "F",
+      "participants": [
+        {
+          "type": "team",
+          "code": "JPN",
+          "name": "Japan",
+          "spanishName": "Japón",
+          "displayName": "Japón",
+          "flagEmoji": "🇯🇵",
+          "assignmentOwner": "Eddy"
+        },
+        {
+          "type": "team",
+          "code": "SWE",
+          "name": "Sweden",
+          "spanishName": "Suecia",
+          "displayName": "Suecia",
+          "flagEmoji": "🇸🇪",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-25T23:00:00.000Z",
+      "alertAtUtc": "2026-06-25T22:50:00.000Z",
+      "alertCronUtc": "0 50 22 25 6 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-25",
+          "time": "17:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-25",
+          "time": "16:00"
+        }
+      }
+    },
+    {
+      "id": "M036",
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "time": "18:00 UTC-5",
+      "venueId": "kansas-city",
+      "group": "F",
+      "participants": [
+        {
+          "type": "team",
+          "code": "TUN",
+          "name": "Tunisia",
+          "spanishName": "Túnez",
+          "displayName": "Túnez",
+          "flagEmoji": "🇹🇳",
+          "assignmentOwner": "Nico"
+        },
+        {
+          "type": "team",
+          "code": "NED",
+          "name": "Netherlands",
+          "spanishName": "Países Bajos",
+          "displayName": "Países Bajos",
+          "flagEmoji": "🇳🇱",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-25T23:00:00.000Z",
+      "alertAtUtc": "2026-06-25T22:50:00.000Z",
+      "alertCronUtc": "0 50 22 25 6 *",
+      "venue": {
+        "id": "kansas-city",
+        "city": "Kansas City",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "Arrowhead Stadium",
+        "capacity": 73000,
+        "coords": "39°2'56\"N 94°29'2\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-25",
+          "time": "17:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-25",
+          "time": "16:00"
+        }
+      }
+    },
+    {
+      "id": "M037",
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "time": "12:00 UTC-7",
+      "venueId": "seattle",
+      "group": "G",
+      "participants": [
+        {
+          "type": "team",
+          "code": "BEL",
+          "name": "Belgium",
+          "spanishName": "Bélgica",
+          "displayName": "Bélgica",
+          "flagEmoji": "🇧🇪",
+          "assignmentOwner": "Manuel"
+        },
+        {
+          "type": "team",
+          "code": "EGY",
+          "name": "Egypt",
+          "spanishName": "Egipto",
+          "displayName": "Egipto",
+          "flagEmoji": "🇪🇬",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-15T19:00:00.000Z",
+      "alertAtUtc": "2026-06-15T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 15 6 *",
+      "venue": {
+        "id": "seattle",
+        "city": "Seattle",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "coords": "47°35'43\"N 122°19'54\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-15",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-15",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M038",
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "time": "18:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "group": "G",
+      "participants": [
+        {
+          "type": "team",
+          "code": "IRN",
+          "name": "Iran",
+          "spanishName": "Irán",
+          "displayName": "Irán",
+          "flagEmoji": "🇮🇷",
+          "assignmentOwner": "Manuel"
+        },
+        {
+          "type": "team",
+          "code": "NZL",
+          "name": "New Zealand",
+          "spanishName": "Nueva Zelanda",
+          "displayName": "Nueva Zelanda",
+          "flagEmoji": "🇳🇿",
+          "assignmentOwner": "Yager"
+        }
+      ],
+      "kickoffUtc": "2026-06-16T01:00:00.000Z",
+      "alertAtUtc": "2026-06-16T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 16 6 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-15",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-15",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M039",
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "time": "12:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "group": "G",
+      "participants": [
+        {
+          "type": "team",
+          "code": "BEL",
+          "name": "Belgium",
+          "spanishName": "Bélgica",
+          "displayName": "Bélgica",
+          "flagEmoji": "🇧🇪",
+          "assignmentOwner": "Manuel"
+        },
+        {
+          "type": "team",
+          "code": "IRN",
+          "name": "Iran",
+          "spanishName": "Irán",
+          "displayName": "Irán",
+          "flagEmoji": "🇮🇷",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-21T19:00:00.000Z",
+      "alertAtUtc": "2026-06-21T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 21 6 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-21",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-21",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M040",
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "time": "18:00 UTC-7",
+      "venueId": "vancouver",
+      "group": "G",
+      "participants": [
+        {
+          "type": "team",
+          "code": "NZL",
+          "name": "New Zealand",
+          "spanishName": "Nueva Zelanda",
+          "displayName": "Nueva Zelanda",
+          "flagEmoji": "🇳🇿",
+          "assignmentOwner": "Yager"
+        },
+        {
+          "type": "team",
+          "code": "EGY",
+          "name": "Egypt",
+          "spanishName": "Egipto",
+          "displayName": "Egipto",
+          "flagEmoji": "🇪🇬",
+          "assignmentOwner": "Vero"
+        }
+      ],
+      "kickoffUtc": "2026-06-22T01:00:00.000Z",
+      "alertAtUtc": "2026-06-22T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 22 6 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-21",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-21",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M041",
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "time": "20:00 UTC-7",
+      "venueId": "seattle",
+      "group": "G",
+      "participants": [
+        {
+          "type": "team",
+          "code": "EGY",
+          "name": "Egypt",
+          "spanishName": "Egipto",
+          "displayName": "Egipto",
+          "flagEmoji": "🇪🇬",
+          "assignmentOwner": "Vero"
+        },
+        {
+          "type": "team",
+          "code": "IRN",
+          "name": "Iran",
+          "spanishName": "Irán",
+          "displayName": "Irán",
+          "flagEmoji": "🇮🇷",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T03:00:00.000Z",
+      "alertAtUtc": "2026-06-27T02:50:00.000Z",
+      "alertCronUtc": "0 50 2 27 6 *",
+      "venue": {
+        "id": "seattle",
+        "city": "Seattle",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "coords": "47°35'43\"N 122°19'54\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-26",
+          "time": "21:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-26",
+          "time": "20:00"
+        }
+      }
+    },
+    {
+      "id": "M042",
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "time": "20:00 UTC-7",
+      "venueId": "vancouver",
+      "group": "G",
+      "participants": [
+        {
+          "type": "team",
+          "code": "NZL",
+          "name": "New Zealand",
+          "spanishName": "Nueva Zelanda",
+          "displayName": "Nueva Zelanda",
+          "flagEmoji": "🇳🇿",
+          "assignmentOwner": "Yager"
+        },
+        {
+          "type": "team",
+          "code": "BEL",
+          "name": "Belgium",
+          "spanishName": "Bélgica",
+          "displayName": "Bélgica",
+          "flagEmoji": "🇧🇪",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T03:00:00.000Z",
+      "alertAtUtc": "2026-06-27T02:50:00.000Z",
+      "alertCronUtc": "0 50 2 27 6 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-26",
+          "time": "21:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-26",
+          "time": "20:00"
+        }
+      }
+    },
+    {
+      "id": "M043",
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "time": "12:00 UTC-4",
+      "venueId": "atlanta",
+      "group": "H",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ESP",
+          "name": "Spain",
+          "spanishName": "España",
+          "displayName": "España",
+          "flagEmoji": "🇪🇸",
+          "assignmentOwner": "Oto"
+        },
+        {
+          "type": "team",
+          "code": "CPV",
+          "name": "Cape Verde",
+          "spanishName": "Cabo Verde",
+          "displayName": "Cabo Verde",
+          "flagEmoji": "🇨🇻",
+          "assignmentOwner": "Eddy"
+        }
+      ],
+      "kickoffUtc": "2026-06-15T16:00:00.000Z",
+      "alertAtUtc": "2026-06-15T15:50:00.000Z",
+      "alertCronUtc": "0 50 15 15 6 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-15",
+          "time": "10:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-15",
+          "time": "09:00"
+        }
+      }
+    },
+    {
+      "id": "M044",
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "time": "18:00 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "group": "H",
+      "participants": [
+        {
+          "type": "team",
+          "code": "KSA",
+          "name": "Saudi Arabia",
+          "spanishName": "Arabia Saudita",
+          "displayName": "Arabia Saudita",
+          "flagEmoji": "🇸🇦",
+          "assignmentOwner": "Oto"
+        },
+        {
+          "type": "team",
+          "code": "URU",
+          "name": "Uruguay",
+          "spanishName": "Uruguay",
+          "displayName": "Uruguay",
+          "flagEmoji": "🇺🇾",
+          "assignmentOwner": "Nere"
+        }
+      ],
+      "kickoffUtc": "2026-06-15T22:00:00.000Z",
+      "alertAtUtc": "2026-06-15T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 15 6 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-15",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-15",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M045",
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "time": "12:00 UTC-4",
+      "venueId": "atlanta",
+      "group": "H",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ESP",
+          "name": "Spain",
+          "spanishName": "España",
+          "displayName": "España",
+          "flagEmoji": "🇪🇸",
+          "assignmentOwner": "Oto"
+        },
+        {
+          "type": "team",
+          "code": "KSA",
+          "name": "Saudi Arabia",
+          "spanishName": "Arabia Saudita",
+          "displayName": "Arabia Saudita",
+          "flagEmoji": "🇸🇦",
+          "assignmentOwner": "Oto"
+        }
+      ],
+      "kickoffUtc": "2026-06-21T16:00:00.000Z",
+      "alertAtUtc": "2026-06-21T15:50:00.000Z",
+      "alertCronUtc": "0 50 15 21 6 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-21",
+          "time": "10:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-21",
+          "time": "09:00"
+        }
+      }
+    },
+    {
+      "id": "M046",
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "time": "18:00 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "group": "H",
+      "participants": [
+        {
+          "type": "team",
+          "code": "URU",
+          "name": "Uruguay",
+          "spanishName": "Uruguay",
+          "displayName": "Uruguay",
+          "flagEmoji": "🇺🇾",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "CPV",
+          "name": "Cape Verde",
+          "spanishName": "Cabo Verde",
+          "displayName": "Cabo Verde",
+          "flagEmoji": "🇨🇻",
+          "assignmentOwner": "Eddy"
+        }
+      ],
+      "kickoffUtc": "2026-06-21T22:00:00.000Z",
+      "alertAtUtc": "2026-06-21T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 21 6 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-21",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-21",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M047",
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "time": "19:00 UTC-5",
+      "venueId": "houston",
+      "group": "H",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CPV",
+          "name": "Cape Verde",
+          "spanishName": "Cabo Verde",
+          "displayName": "Cabo Verde",
+          "flagEmoji": "🇨🇻",
+          "assignmentOwner": "Eddy"
+        },
+        {
+          "type": "team",
+          "code": "KSA",
+          "name": "Saudi Arabia",
+          "spanishName": "Arabia Saudita",
+          "displayName": "Arabia Saudita",
+          "flagEmoji": "🇸🇦",
+          "assignmentOwner": "Oto"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T00:00:00.000Z",
+      "alertAtUtc": "2026-06-26T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 26 6 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-26",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-26",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M048",
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "time": "18:00 UTC-6",
+      "venueId": "guadalajara-zapopan",
+      "group": "H",
+      "participants": [
+        {
+          "type": "team",
+          "code": "URU",
+          "name": "Uruguay",
+          "spanishName": "Uruguay",
+          "displayName": "Uruguay",
+          "flagEmoji": "🇺🇾",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "ESP",
+          "name": "Spain",
+          "spanishName": "España",
+          "displayName": "España",
+          "flagEmoji": "🇪🇸",
+          "assignmentOwner": "Oto"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T00:00:00.000Z",
+      "alertAtUtc": "2026-06-26T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 26 6 *",
+      "venue": {
+        "id": "guadalajara-zapopan",
+        "city": "Guadalajara (Zapopan)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Akron",
+        "capacity": 48000,
+        "coords": "20°40'54\"N 103°27'46\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-26",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-26",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M049",
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "time": "15:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "group": "I",
+      "participants": [
+        {
+          "type": "team",
+          "code": "FRA",
+          "name": "France",
+          "spanishName": "Francia",
+          "displayName": "Francia",
+          "flagEmoji": "🇫🇷",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "SEN",
+          "name": "Senegal",
+          "spanishName": "Senegal",
+          "displayName": "Senegal",
+          "flagEmoji": "🇸🇳",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-16T19:00:00.000Z",
+      "alertAtUtc": "2026-06-16T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 16 6 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-16",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-16",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M050",
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "time": "18:00 UTC-4",
+      "venueId": "boston-foxborough",
+      "group": "I",
+      "participants": [
+        {
+          "type": "team",
+          "code": "IRQ",
+          "name": "Iraq",
+          "spanishName": "Irak",
+          "displayName": "Irak",
+          "flagEmoji": "🇮🇶",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "NOR",
+          "name": "Norway",
+          "spanishName": "Noruega",
+          "displayName": "Noruega",
+          "flagEmoji": "🇳🇴",
+          "assignmentOwner": "Nikito"
+        }
+      ],
+      "kickoffUtc": "2026-06-16T22:00:00.000Z",
+      "alertAtUtc": "2026-06-16T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 16 6 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-16",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-16",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M051",
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "time": "17:00 UTC-4",
+      "venueId": "philadelphia",
+      "group": "I",
+      "participants": [
+        {
+          "type": "team",
+          "code": "FRA",
+          "name": "France",
+          "spanishName": "Francia",
+          "displayName": "Francia",
+          "flagEmoji": "🇫🇷",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "IRQ",
+          "name": "Iraq",
+          "spanishName": "Irak",
+          "displayName": "Irak",
+          "flagEmoji": "🇮🇶",
+          "assignmentOwner": "Nere"
+        }
+      ],
+      "kickoffUtc": "2026-06-22T21:00:00.000Z",
+      "alertAtUtc": "2026-06-22T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 22 6 *",
+      "venue": {
+        "id": "philadelphia",
+        "city": "Philadelphia",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Lincoln Financial Field",
+        "capacity": 69000,
+        "coords": "39°54'3\"N 75°10'3\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-22",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-22",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M052",
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "time": "20:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "group": "I",
+      "participants": [
+        {
+          "type": "team",
+          "code": "NOR",
+          "name": "Norway",
+          "spanishName": "Noruega",
+          "displayName": "Noruega",
+          "flagEmoji": "🇳🇴",
+          "assignmentOwner": "Nikito"
+        },
+        {
+          "type": "team",
+          "code": "SEN",
+          "name": "Senegal",
+          "spanishName": "Senegal",
+          "displayName": "Senegal",
+          "flagEmoji": "🇸🇳",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-23T00:00:00.000Z",
+      "alertAtUtc": "2026-06-22T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 22 6 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-22",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-22",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M053",
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "time": "15:00 UTC-4",
+      "venueId": "boston-foxborough",
+      "group": "I",
+      "participants": [
+        {
+          "type": "team",
+          "code": "NOR",
+          "name": "Norway",
+          "spanishName": "Noruega",
+          "displayName": "Noruega",
+          "flagEmoji": "🇳🇴",
+          "assignmentOwner": "Nikito"
+        },
+        {
+          "type": "team",
+          "code": "FRA",
+          "name": "France",
+          "spanishName": "Francia",
+          "displayName": "Francia",
+          "flagEmoji": "🇫🇷",
+          "assignmentOwner": "Nere"
+        }
+      ],
+      "kickoffUtc": "2026-06-26T19:00:00.000Z",
+      "alertAtUtc": "2026-06-26T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 26 6 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-26",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-26",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M054",
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "time": "15:00 UTC-4",
+      "venueId": "toronto",
+      "group": "I",
+      "participants": [
+        {
+          "type": "team",
+          "code": "SEN",
+          "name": "Senegal",
+          "spanishName": "Senegal",
+          "displayName": "Senegal",
+          "flagEmoji": "🇸🇳",
+          "assignmentOwner": "Cotty"
+        },
+        {
+          "type": "team",
+          "code": "IRQ",
+          "name": "Iraq",
+          "spanishName": "Irak",
+          "displayName": "Irak",
+          "flagEmoji": "🇮🇶",
+          "assignmentOwner": "Nere"
+        }
+      ],
+      "kickoffUtc": "2026-06-26T19:00:00.000Z",
+      "alertAtUtc": "2026-06-26T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 26 6 *",
+      "venue": {
+        "id": "toronto",
+        "city": "Toronto",
+        "timezone": "UTC-4",
+        "countryCode": "ca",
+        "name": "BMO Field",
+        "capacity": 45000,
+        "coords": "43°38'0\"N 79°25'07\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-26",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-26",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M055",
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "time": "20:00 UTC-5",
+      "venueId": "kansas-city",
+      "group": "J",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ARG",
+          "name": "Argentina",
+          "spanishName": "Argentina",
+          "displayName": "Argentina",
+          "flagEmoji": "🇦🇷",
+          "assignmentOwner": "Cotty"
+        },
+        {
+          "type": "team",
+          "code": "ALG",
+          "name": "Algeria",
+          "spanishName": "Argelia",
+          "displayName": "Argelia",
+          "flagEmoji": "🇩🇿",
+          "assignmentOwner": "Oto"
+        }
+      ],
+      "kickoffUtc": "2026-06-17T01:00:00.000Z",
+      "alertAtUtc": "2026-06-17T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 17 6 *",
+      "venue": {
+        "id": "kansas-city",
+        "city": "Kansas City",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "Arrowhead Stadium",
+        "capacity": 73000,
+        "coords": "39°2'56\"N 94°29'2\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-16",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-16",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M056",
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "time": "21:00 UTC-7",
+      "venueId": "san-francisco-bay-area-santa-clara",
+      "group": "J",
+      "participants": [
+        {
+          "type": "team",
+          "code": "AUT",
+          "name": "Austria",
+          "spanishName": "Austria",
+          "displayName": "Austria",
+          "flagEmoji": "🇦🇹",
+          "assignmentOwner": "Yager"
+        },
+        {
+          "type": "team",
+          "code": "JOR",
+          "name": "Jordan",
+          "spanishName": "Jordania",
+          "displayName": "Jordania",
+          "flagEmoji": "🇯🇴",
+          "assignmentOwner": "Nikol"
+        }
+      ],
+      "kickoffUtc": "2026-06-17T04:00:00.000Z",
+      "alertAtUtc": "2026-06-17T03:50:00.000Z",
+      "alertCronUtc": "0 50 3 17 6 *",
+      "venue": {
+        "id": "san-francisco-bay-area-santa-clara",
+        "city": "San Francisco Bay Area (Santa Clara)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Levi's Stadium",
+        "capacity": 71000,
+        "coords": "37.403°N 121.970°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-16",
+          "time": "22:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-16",
+          "time": "21:00"
+        }
+      }
+    },
+    {
+      "id": "M057",
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "time": "12:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "group": "J",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ARG",
+          "name": "Argentina",
+          "spanishName": "Argentina",
+          "displayName": "Argentina",
+          "flagEmoji": "🇦🇷",
+          "assignmentOwner": "Cotty"
+        },
+        {
+          "type": "team",
+          "code": "AUT",
+          "name": "Austria",
+          "spanishName": "Austria",
+          "displayName": "Austria",
+          "flagEmoji": "🇦🇹",
+          "assignmentOwner": "Yager"
+        }
+      ],
+      "kickoffUtc": "2026-06-22T17:00:00.000Z",
+      "alertAtUtc": "2026-06-22T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 22 6 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-22",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-22",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M058",
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "time": "20:00 UTC-7",
+      "venueId": "san-francisco-bay-area-santa-clara",
+      "group": "J",
+      "participants": [
+        {
+          "type": "team",
+          "code": "JOR",
+          "name": "Jordan",
+          "spanishName": "Jordania",
+          "displayName": "Jordania",
+          "flagEmoji": "🇯🇴",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "ALG",
+          "name": "Algeria",
+          "spanishName": "Argelia",
+          "displayName": "Argelia",
+          "flagEmoji": "🇩🇿",
+          "assignmentOwner": "Oto"
+        }
+      ],
+      "kickoffUtc": "2026-06-23T03:00:00.000Z",
+      "alertAtUtc": "2026-06-23T02:50:00.000Z",
+      "alertCronUtc": "0 50 2 23 6 *",
+      "venue": {
+        "id": "san-francisco-bay-area-santa-clara",
+        "city": "San Francisco Bay Area (Santa Clara)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Levi's Stadium",
+        "capacity": 71000,
+        "coords": "37.403°N 121.970°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-22",
+          "time": "21:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-22",
+          "time": "20:00"
+        }
+      }
+    },
+    {
+      "id": "M059",
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "time": "21:00 UTC-5",
+      "venueId": "kansas-city",
+      "group": "J",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ALG",
+          "name": "Algeria",
+          "spanishName": "Argelia",
+          "displayName": "Argelia",
+          "flagEmoji": "🇩🇿",
+          "assignmentOwner": "Oto"
+        },
+        {
+          "type": "team",
+          "code": "AUT",
+          "name": "Austria",
+          "spanishName": "Austria",
+          "displayName": "Austria",
+          "flagEmoji": "🇦🇹",
+          "assignmentOwner": "Yager"
+        }
+      ],
+      "kickoffUtc": "2026-06-28T02:00:00.000Z",
+      "alertAtUtc": "2026-06-28T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 28 6 *",
+      "venue": {
+        "id": "kansas-city",
+        "city": "Kansas City",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "Arrowhead Stadium",
+        "capacity": 73000,
+        "coords": "39°2'56\"N 94°29'2\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-27",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-27",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M060",
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "time": "21:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "group": "J",
+      "participants": [
+        {
+          "type": "team",
+          "code": "JOR",
+          "name": "Jordan",
+          "spanishName": "Jordania",
+          "displayName": "Jordania",
+          "flagEmoji": "🇯🇴",
+          "assignmentOwner": "Nikol"
+        },
+        {
+          "type": "team",
+          "code": "ARG",
+          "name": "Argentina",
+          "spanishName": "Argentina",
+          "displayName": "Argentina",
+          "flagEmoji": "🇦🇷",
+          "assignmentOwner": "Cotty"
+        }
+      ],
+      "kickoffUtc": "2026-06-28T02:00:00.000Z",
+      "alertAtUtc": "2026-06-28T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 28 6 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-27",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-27",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M061",
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "time": "12:00 UTC-5",
+      "venueId": "houston",
+      "group": "K",
+      "participants": [
+        {
+          "type": "team",
+          "code": "POR",
+          "name": "Portugal",
+          "spanishName": "Portugal",
+          "displayName": "Portugal",
+          "flagEmoji": "🇵🇹",
+          "assignmentOwner": "Noe"
+        },
+        {
+          "type": "team",
+          "code": "COD",
+          "name": "DR Congo",
+          "spanishName": "RD del Congo",
+          "displayName": "RD del Congo",
+          "flagEmoji": "🇨🇩",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-17T17:00:00.000Z",
+      "alertAtUtc": "2026-06-17T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 17 6 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-17",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-17",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M062",
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "time": "20:00 UTC-6",
+      "venueId": "mexico-city",
+      "group": "K",
+      "participants": [
+        {
+          "type": "team",
+          "code": "UZB",
+          "name": "Uzbekistan",
+          "spanishName": "Uzbekistán",
+          "displayName": "Uzbekistán",
+          "flagEmoji": "🇺🇿",
+          "assignmentOwner": "Noe"
+        },
+        {
+          "type": "team",
+          "code": "COL",
+          "name": "Colombia",
+          "spanishName": "Colombia",
+          "displayName": "Colombia",
+          "flagEmoji": "🇨🇴",
+          "assignmentOwner": "Oto"
+        }
+      ],
+      "kickoffUtc": "2026-06-18T02:00:00.000Z",
+      "alertAtUtc": "2026-06-18T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 18 6 *",
+      "venue": {
+        "id": "mexico-city",
+        "city": "Mexico City",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Azteca",
+        "capacity": 83000,
+        "coords": "19°18'11\"N 99°09'02\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-17",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-17",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M063",
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "time": "12:00 UTC-5",
+      "venueId": "houston",
+      "group": "K",
+      "participants": [
+        {
+          "type": "team",
+          "code": "POR",
+          "name": "Portugal",
+          "spanishName": "Portugal",
+          "displayName": "Portugal",
+          "flagEmoji": "🇵🇹",
+          "assignmentOwner": "Noe"
+        },
+        {
+          "type": "team",
+          "code": "UZB",
+          "name": "Uzbekistan",
+          "spanishName": "Uzbekistán",
+          "displayName": "Uzbekistán",
+          "flagEmoji": "🇺🇿",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-23T17:00:00.000Z",
+      "alertAtUtc": "2026-06-23T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 23 6 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-23",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-23",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M064",
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "time": "20:00 UTC-6",
+      "venueId": "guadalajara-zapopan",
+      "group": "K",
+      "participants": [
+        {
+          "type": "team",
+          "code": "COL",
+          "name": "Colombia",
+          "spanishName": "Colombia",
+          "displayName": "Colombia",
+          "flagEmoji": "🇨🇴",
+          "assignmentOwner": "Oto"
+        },
+        {
+          "type": "team",
+          "code": "COD",
+          "name": "DR Congo",
+          "spanishName": "RD del Congo",
+          "displayName": "RD del Congo",
+          "flagEmoji": "🇨🇩",
+          "assignmentOwner": "Manuel"
+        }
+      ],
+      "kickoffUtc": "2026-06-24T02:00:00.000Z",
+      "alertAtUtc": "2026-06-24T01:50:00.000Z",
+      "alertCronUtc": "0 50 1 24 6 *",
+      "venue": {
+        "id": "guadalajara-zapopan",
+        "city": "Guadalajara (Zapopan)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Akron",
+        "capacity": 48000,
+        "coords": "20°40'54\"N 103°27'46\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-23",
+          "time": "20:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-23",
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "id": "M065",
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "time": "19:30 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "group": "K",
+      "participants": [
+        {
+          "type": "team",
+          "code": "COL",
+          "name": "Colombia",
+          "spanishName": "Colombia",
+          "displayName": "Colombia",
+          "flagEmoji": "🇨🇴",
+          "assignmentOwner": "Oto"
+        },
+        {
+          "type": "team",
+          "code": "POR",
+          "name": "Portugal",
+          "spanishName": "Portugal",
+          "displayName": "Portugal",
+          "flagEmoji": "🇵🇹",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T23:30:00.000Z",
+      "alertAtUtc": "2026-06-27T23:20:00.000Z",
+      "alertCronUtc": "0 20 23 27 6 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-27",
+          "time": "17:30"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-27",
+          "time": "16:30"
+        }
+      }
+    },
+    {
+      "id": "M066",
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "time": "19:30 UTC-4",
+      "venueId": "atlanta",
+      "group": "K",
+      "participants": [
+        {
+          "type": "team",
+          "code": "COD",
+          "name": "DR Congo",
+          "spanishName": "RD del Congo",
+          "displayName": "RD del Congo",
+          "flagEmoji": "🇨🇩",
+          "assignmentOwner": "Manuel"
+        },
+        {
+          "type": "team",
+          "code": "UZB",
+          "name": "Uzbekistan",
+          "spanishName": "Uzbekistán",
+          "displayName": "Uzbekistán",
+          "flagEmoji": "🇺🇿",
+          "assignmentOwner": "Noe"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T23:30:00.000Z",
+      "alertAtUtc": "2026-06-27T23:20:00.000Z",
+      "alertCronUtc": "0 20 23 27 6 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-27",
+          "time": "17:30"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-27",
+          "time": "16:30"
+        }
+      }
+    },
+    {
+      "id": "M067",
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "time": "15:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "group": "L",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ENG",
+          "name": "England",
+          "spanishName": "Inglaterra",
+          "displayName": "Inglaterra",
+          "flagEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "assignmentOwner": "Nico"
+        },
+        {
+          "type": "team",
+          "code": "CRO",
+          "name": "Croatia",
+          "spanishName": "Croacia",
+          "displayName": "Croacia",
+          "flagEmoji": "🇭🇷",
+          "assignmentOwner": "Nico"
+        }
+      ],
+      "kickoffUtc": "2026-06-17T20:00:00.000Z",
+      "alertAtUtc": "2026-06-17T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 17 6 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-17",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-17",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M068",
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "time": "19:00 UTC-4",
+      "venueId": "toronto",
+      "group": "L",
+      "participants": [
+        {
+          "type": "team",
+          "code": "GHA",
+          "name": "Ghana",
+          "spanishName": "Ghana",
+          "displayName": "Ghana",
+          "flagEmoji": "🇬🇭",
+          "assignmentOwner": "Oswaldo"
+        },
+        {
+          "type": "team",
+          "code": "PAN",
+          "name": "Panama",
+          "spanishName": "Panamá",
+          "displayName": "Panamá",
+          "flagEmoji": "🇵🇦",
+          "assignmentOwner": "Nere"
+        }
+      ],
+      "kickoffUtc": "2026-06-17T23:00:00.000Z",
+      "alertAtUtc": "2026-06-17T22:50:00.000Z",
+      "alertCronUtc": "0 50 22 17 6 *",
+      "venue": {
+        "id": "toronto",
+        "city": "Toronto",
+        "timezone": "UTC-4",
+        "countryCode": "ca",
+        "name": "BMO Field",
+        "capacity": 45000,
+        "coords": "43°38'0\"N 79°25'07\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-17",
+          "time": "17:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-17",
+          "time": "16:00"
+        }
+      }
+    },
+    {
+      "id": "M069",
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "time": "16:00 UTC-4",
+      "venueId": "boston-foxborough",
+      "group": "L",
+      "participants": [
+        {
+          "type": "team",
+          "code": "ENG",
+          "name": "England",
+          "spanishName": "Inglaterra",
+          "displayName": "Inglaterra",
+          "flagEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "assignmentOwner": "Nico"
+        },
+        {
+          "type": "team",
+          "code": "GHA",
+          "name": "Ghana",
+          "spanishName": "Ghana",
+          "displayName": "Ghana",
+          "flagEmoji": "🇬🇭",
+          "assignmentOwner": "Oswaldo"
+        }
+      ],
+      "kickoffUtc": "2026-06-23T20:00:00.000Z",
+      "alertAtUtc": "2026-06-23T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 23 6 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-23",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-23",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M070",
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "time": "19:00 UTC-4",
+      "venueId": "toronto",
+      "group": "L",
+      "participants": [
+        {
+          "type": "team",
+          "code": "PAN",
+          "name": "Panama",
+          "spanishName": "Panamá",
+          "displayName": "Panamá",
+          "flagEmoji": "🇵🇦",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "CRO",
+          "name": "Croatia",
+          "spanishName": "Croacia",
+          "displayName": "Croacia",
+          "flagEmoji": "🇭🇷",
+          "assignmentOwner": "Nico"
+        }
+      ],
+      "kickoffUtc": "2026-06-23T23:00:00.000Z",
+      "alertAtUtc": "2026-06-23T22:50:00.000Z",
+      "alertCronUtc": "0 50 22 23 6 *",
+      "venue": {
+        "id": "toronto",
+        "city": "Toronto",
+        "timezone": "UTC-4",
+        "countryCode": "ca",
+        "name": "BMO Field",
+        "capacity": 45000,
+        "coords": "43°38'0\"N 79°25'07\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-23",
+          "time": "17:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-23",
+          "time": "16:00"
+        }
+      }
+    },
+    {
+      "id": "M071",
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "time": "17:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "group": "L",
+      "participants": [
+        {
+          "type": "team",
+          "code": "PAN",
+          "name": "Panama",
+          "spanishName": "Panamá",
+          "displayName": "Panamá",
+          "flagEmoji": "🇵🇦",
+          "assignmentOwner": "Nere"
+        },
+        {
+          "type": "team",
+          "code": "ENG",
+          "name": "England",
+          "spanishName": "Inglaterra",
+          "displayName": "Inglaterra",
+          "flagEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "assignmentOwner": "Nico"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T21:00:00.000Z",
+      "alertAtUtc": "2026-06-27T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 27 6 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-27",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-27",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M072",
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "time": "17:00 UTC-4",
+      "venueId": "philadelphia",
+      "group": "L",
+      "participants": [
+        {
+          "type": "team",
+          "code": "CRO",
+          "name": "Croatia",
+          "spanishName": "Croacia",
+          "displayName": "Croacia",
+          "flagEmoji": "🇭🇷",
+          "assignmentOwner": "Nico"
+        },
+        {
+          "type": "team",
+          "code": "GHA",
+          "name": "Ghana",
+          "spanishName": "Ghana",
+          "displayName": "Ghana",
+          "flagEmoji": "🇬🇭",
+          "assignmentOwner": "Oswaldo"
+        }
+      ],
+      "kickoffUtc": "2026-06-27T21:00:00.000Z",
+      "alertAtUtc": "2026-06-27T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 27 6 *",
+      "venue": {
+        "id": "philadelphia",
+        "city": "Philadelphia",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Lincoln Financial Field",
+        "capacity": 69000,
+        "coords": "39°54'3\"N 75°10'3\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-27",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-27",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M073",
+      "upstreamNum": 73,
+      "round": "Round of 32",
+      "date": "2026-06-28",
+      "time": "12:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "2A",
+          "displayName": "2A",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2B",
+          "displayName": "2B",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-06-28T19:00:00.000Z",
+      "alertAtUtc": "2026-06-28T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 28 6 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-28",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-28",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M074",
+      "upstreamNum": 74,
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "time": "16:30 UTC-4",
+      "venueId": "boston-foxborough",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1E",
+          "displayName": "1E",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3A/B/C/D/F",
+          "displayName": "3A/B/C/D/F",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-06-29T20:30:00.000Z",
+      "alertAtUtc": "2026-06-29T20:20:00.000Z",
+      "alertCronUtc": "0 20 20 29 6 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-29",
+          "time": "14:30"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-29",
+          "time": "13:30"
+        }
+      }
+    },
+    {
+      "id": "M075",
+      "upstreamNum": 75,
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "time": "19:00 UTC-6",
+      "venueId": "monterrey-guadalupe",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1F",
+          "displayName": "1F",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2C",
+          "displayName": "2C",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-06-30T01:00:00.000Z",
+      "alertAtUtc": "2026-06-30T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 30 6 *",
+      "venue": {
+        "id": "monterrey-guadalupe",
+        "city": "Monterrey (Guadalupe)",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio BBVA",
+        "capacity": 53500,
+        "coords": "25°40'9\"N 100°14'40\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-29",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-29",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M076",
+      "upstreamNum": 76,
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "time": "12:00 UTC-5",
+      "venueId": "houston",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1C",
+          "displayName": "1C",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2F",
+          "displayName": "2F",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-06-29T17:00:00.000Z",
+      "alertAtUtc": "2026-06-29T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 29 6 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-29",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-29",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M077",
+      "upstreamNum": 77,
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "time": "17:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1I",
+          "displayName": "1I",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3C/D/F/G/H",
+          "displayName": "3C/D/F/G/H",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-06-30T21:00:00.000Z",
+      "alertAtUtc": "2026-06-30T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 30 6 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-30",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-30",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M078",
+      "upstreamNum": 78,
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "time": "12:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "2E",
+          "displayName": "2E",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2I",
+          "displayName": "2I",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-06-30T17:00:00.000Z",
+      "alertAtUtc": "2026-06-30T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 30 6 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-30",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-30",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M079",
+      "upstreamNum": 79,
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "time": "19:00 UTC-6",
+      "venueId": "mexico-city",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1A",
+          "displayName": "1A",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3C/E/F/H/I",
+          "displayName": "3C/E/F/H/I",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-01T01:00:00.000Z",
+      "alertAtUtc": "2026-07-01T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 1 7 *",
+      "venue": {
+        "id": "mexico-city",
+        "city": "Mexico City",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Azteca",
+        "capacity": 83000,
+        "coords": "19°18'11\"N 99°09'02\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-06-30",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-06-30",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M080",
+      "upstreamNum": 80,
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "time": "12:00 UTC-4",
+      "venueId": "atlanta",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1L",
+          "displayName": "1L",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3E/H/I/J/K",
+          "displayName": "3E/H/I/J/K",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-01T16:00:00.000Z",
+      "alertAtUtc": "2026-07-01T15:50:00.000Z",
+      "alertCronUtc": "0 50 15 1 7 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-01",
+          "time": "10:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-01",
+          "time": "09:00"
+        }
+      }
+    },
+    {
+      "id": "M081",
+      "upstreamNum": 81,
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "time": "17:00 UTC-7",
+      "venueId": "san-francisco-bay-area-santa-clara",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1D",
+          "displayName": "1D",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3B/E/F/I/J",
+          "displayName": "3B/E/F/I/J",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-02T00:00:00.000Z",
+      "alertAtUtc": "2026-07-01T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 1 7 *",
+      "venue": {
+        "id": "san-francisco-bay-area-santa-clara",
+        "city": "San Francisco Bay Area (Santa Clara)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Levi's Stadium",
+        "capacity": 71000,
+        "coords": "37.403°N 121.970°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-01",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-01",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M082",
+      "upstreamNum": 82,
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "time": "13:00 UTC-7",
+      "venueId": "seattle",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1G",
+          "displayName": "1G",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3A/E/H/I/J",
+          "displayName": "3A/E/H/I/J",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-01T20:00:00.000Z",
+      "alertAtUtc": "2026-07-01T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 1 7 *",
+      "venue": {
+        "id": "seattle",
+        "city": "Seattle",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "coords": "47°35'43\"N 122°19'54\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-01",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-01",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M083",
+      "upstreamNum": 83,
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "time": "19:00 UTC-4",
+      "venueId": "toronto",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "2K",
+          "displayName": "2K",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2L",
+          "displayName": "2L",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-02T23:00:00.000Z",
+      "alertAtUtc": "2026-07-02T22:50:00.000Z",
+      "alertCronUtc": "0 50 22 2 7 *",
+      "venue": {
+        "id": "toronto",
+        "city": "Toronto",
+        "timezone": "UTC-4",
+        "countryCode": "ca",
+        "name": "BMO Field",
+        "capacity": 45000,
+        "coords": "43°38'0\"N 79°25'07\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-02",
+          "time": "17:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-02",
+          "time": "16:00"
+        }
+      }
+    },
+    {
+      "id": "M084",
+      "upstreamNum": 84,
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "time": "12:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1H",
+          "displayName": "1H",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2J",
+          "displayName": "2J",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-02T19:00:00.000Z",
+      "alertAtUtc": "2026-07-02T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 2 7 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-02",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-02",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M085",
+      "upstreamNum": 85,
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "time": "20:00 UTC-7",
+      "venueId": "vancouver",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1B",
+          "displayName": "1B",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3E/F/G/I/J",
+          "displayName": "3E/F/G/I/J",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-03T03:00:00.000Z",
+      "alertAtUtc": "2026-07-03T02:50:00.000Z",
+      "alertCronUtc": "0 50 2 3 7 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-02",
+          "time": "21:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-02",
+          "time": "20:00"
+        }
+      }
+    },
+    {
+      "id": "M086",
+      "upstreamNum": 86,
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "time": "18:00 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1J",
+          "displayName": "1J",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2H",
+          "displayName": "2H",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-03T22:00:00.000Z",
+      "alertAtUtc": "2026-07-03T21:50:00.000Z",
+      "alertCronUtc": "0 50 21 3 7 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-03",
+          "time": "16:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-03",
+          "time": "15:00"
+        }
+      }
+    },
+    {
+      "id": "M087",
+      "upstreamNum": 87,
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "time": "20:30 UTC-5",
+      "venueId": "kansas-city",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "1K",
+          "displayName": "1K",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "3D/E/I/J/L",
+          "displayName": "3D/E/I/J/L",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-04T01:30:00.000Z",
+      "alertAtUtc": "2026-07-04T01:20:00.000Z",
+      "alertCronUtc": "0 20 1 4 7 *",
+      "venue": {
+        "id": "kansas-city",
+        "city": "Kansas City",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "Arrowhead Stadium",
+        "capacity": 73000,
+        "coords": "39°2'56\"N 94°29'2\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-03",
+          "time": "19:30"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-03",
+          "time": "18:30"
+        }
+      }
+    },
+    {
+      "id": "M088",
+      "upstreamNum": 88,
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "time": "13:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "2D",
+          "displayName": "2D",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "2G",
+          "displayName": "2G",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-03T18:00:00.000Z",
+      "alertAtUtc": "2026-07-03T17:50:00.000Z",
+      "alertCronUtc": "0 50 17 3 7 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-03",
+          "time": "12:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-03",
+          "time": "11:00"
+        }
+      }
+    },
+    {
+      "id": "M089",
+      "upstreamNum": 89,
+      "round": "Round of 16",
+      "date": "2026-07-04",
+      "time": "17:00 UTC-4",
+      "venueId": "philadelphia",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W74",
+          "displayName": "W74",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W77",
+          "displayName": "W77",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-04T21:00:00.000Z",
+      "alertAtUtc": "2026-07-04T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 4 7 *",
+      "venue": {
+        "id": "philadelphia",
+        "city": "Philadelphia",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Lincoln Financial Field",
+        "capacity": 69000,
+        "coords": "39°54'3\"N 75°10'3\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-04",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-04",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M090",
+      "upstreamNum": 90,
+      "round": "Round of 16",
+      "date": "2026-07-04",
+      "time": "12:00 UTC-5",
+      "venueId": "houston",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W73",
+          "displayName": "W73",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W75",
+          "displayName": "W75",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-04T17:00:00.000Z",
+      "alertAtUtc": "2026-07-04T16:50:00.000Z",
+      "alertCronUtc": "0 50 16 4 7 *",
+      "venue": {
+        "id": "houston",
+        "city": "Houston",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "NRG Stadium",
+        "capacity": 72000,
+        "coords": "29°41'5\"N 95°24'39\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-04",
+          "time": "11:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-04",
+          "time": "10:00"
+        }
+      }
+    },
+    {
+      "id": "M091",
+      "upstreamNum": 91,
+      "round": "Round of 16",
+      "date": "2026-07-05",
+      "time": "16:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W76",
+          "displayName": "W76",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W78",
+          "displayName": "W78",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-05T20:00:00.000Z",
+      "alertAtUtc": "2026-07-05T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 5 7 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-05",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-05",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M092",
+      "upstreamNum": 92,
+      "round": "Round of 16",
+      "date": "2026-07-05",
+      "time": "18:00 UTC-6",
+      "venueId": "mexico-city",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W79",
+          "displayName": "W79",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W80",
+          "displayName": "W80",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-06T00:00:00.000Z",
+      "alertAtUtc": "2026-07-05T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 5 7 *",
+      "venue": {
+        "id": "mexico-city",
+        "city": "Mexico City",
+        "timezone": "UTC-6",
+        "countryCode": "mx",
+        "name": "Estadio Azteca",
+        "capacity": 83000,
+        "coords": "19°18'11\"N 99°09'02\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-05",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-05",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M093",
+      "upstreamNum": 93,
+      "round": "Round of 16",
+      "date": "2026-07-06",
+      "time": "14:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W83",
+          "displayName": "W83",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W84",
+          "displayName": "W84",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-06T19:00:00.000Z",
+      "alertAtUtc": "2026-07-06T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 6 7 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-06",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-06",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M094",
+      "upstreamNum": 94,
+      "round": "Round of 16",
+      "date": "2026-07-06",
+      "time": "17:00 UTC-7",
+      "venueId": "seattle",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W81",
+          "displayName": "W81",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W82",
+          "displayName": "W82",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-07T00:00:00.000Z",
+      "alertAtUtc": "2026-07-06T23:50:00.000Z",
+      "alertCronUtc": "0 50 23 6 7 *",
+      "venue": {
+        "id": "seattle",
+        "city": "Seattle",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "Lumen Field",
+        "capacity": 69000,
+        "coords": "47°35'43\"N 122°19'54\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-06",
+          "time": "18:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-06",
+          "time": "17:00"
+        }
+      }
+    },
+    {
+      "id": "M095",
+      "upstreamNum": 95,
+      "round": "Round of 16",
+      "date": "2026-07-07",
+      "time": "12:00 UTC-4",
+      "venueId": "atlanta",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W86",
+          "displayName": "W86",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W88",
+          "displayName": "W88",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-07T16:00:00.000Z",
+      "alertAtUtc": "2026-07-07T15:50:00.000Z",
+      "alertCronUtc": "0 50 15 7 7 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-07",
+          "time": "10:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-07",
+          "time": "09:00"
+        }
+      }
+    },
+    {
+      "id": "M096",
+      "upstreamNum": 96,
+      "round": "Round of 16",
+      "date": "2026-07-07",
+      "time": "13:00 UTC-7",
+      "venueId": "vancouver",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W85",
+          "displayName": "W85",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W87",
+          "displayName": "W87",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-07T20:00:00.000Z",
+      "alertAtUtc": "2026-07-07T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 7 7 *",
+      "venue": {
+        "id": "vancouver",
+        "city": "Vancouver",
+        "timezone": "UTC-7",
+        "countryCode": "ca",
+        "name": "BC Place",
+        "capacity": 54000,
+        "coords": "49°16'36\"N 123°6'43\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-07",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-07",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M097",
+      "upstreamNum": 97,
+      "round": "Quarter-final",
+      "date": "2026-07-09",
+      "time": "16:00 UTC-4",
+      "venueId": "boston-foxborough",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W89",
+          "displayName": "W89",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W90",
+          "displayName": "W90",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-09T20:00:00.000Z",
+      "alertAtUtc": "2026-07-09T19:50:00.000Z",
+      "alertCronUtc": "0 50 19 9 7 *",
+      "venue": {
+        "id": "boston-foxborough",
+        "city": "Boston (Foxborough)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Gillette Stadium",
+        "capacity": 65000,
+        "coords": "42.091°N 71.264°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-09",
+          "time": "14:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-09",
+          "time": "13:00"
+        }
+      }
+    },
+    {
+      "id": "M098",
+      "upstreamNum": 98,
+      "round": "Quarter-final",
+      "date": "2026-07-10",
+      "time": "12:00 UTC-7",
+      "venueId": "los-angeles-inglewood",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W93",
+          "displayName": "W93",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W94",
+          "displayName": "W94",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-10T19:00:00.000Z",
+      "alertAtUtc": "2026-07-10T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 10 7 *",
+      "venue": {
+        "id": "los-angeles-inglewood",
+        "city": "Los Angeles (Inglewood)",
+        "timezone": "UTC-7",
+        "countryCode": "us",
+        "name": "SoFi Stadium",
+        "capacity": 70000,
+        "coords": "33.953°N 118.339°W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-10",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-10",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M099",
+      "upstreamNum": 99,
+      "round": "Quarter-final",
+      "date": "2026-07-11",
+      "time": "17:00 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W91",
+          "displayName": "W91",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W92",
+          "displayName": "W92",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-11T21:00:00.000Z",
+      "alertAtUtc": "2026-07-11T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 11 7 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-11",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-11",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M100",
+      "upstreamNum": 100,
+      "round": "Quarter-final",
+      "date": "2026-07-11",
+      "time": "20:00 UTC-5",
+      "venueId": "kansas-city",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W95",
+          "displayName": "W95",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W96",
+          "displayName": "W96",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-12T01:00:00.000Z",
+      "alertAtUtc": "2026-07-12T00:50:00.000Z",
+      "alertCronUtc": "0 50 0 12 7 *",
+      "venue": {
+        "id": "kansas-city",
+        "city": "Kansas City",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "Arrowhead Stadium",
+        "capacity": 73000,
+        "coords": "39°2'56\"N 94°29'2\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-11",
+          "time": "19:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-11",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "id": "M101",
+      "upstreamNum": 101,
+      "round": "Semi-final",
+      "date": "2026-07-14",
+      "time": "14:00 UTC-5",
+      "venueId": "dallas-arlington",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W97",
+          "displayName": "W97",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W98",
+          "displayName": "W98",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-14T19:00:00.000Z",
+      "alertAtUtc": "2026-07-14T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 14 7 *",
+      "venue": {
+        "id": "dallas-arlington",
+        "city": "Dallas (Arlington)",
+        "timezone": "UTC-5",
+        "countryCode": "us",
+        "name": "AT&T Stadium",
+        "capacity": 94000,
+        "coords": "32°44'52\"N 97°5'34\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-14",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-14",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M102",
+      "upstreamNum": 102,
+      "round": "Semi-final",
+      "date": "2026-07-15",
+      "time": "15:00 UTC-4",
+      "venueId": "atlanta",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W99",
+          "displayName": "W99",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W100",
+          "displayName": "W100",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-15T19:00:00.000Z",
+      "alertAtUtc": "2026-07-15T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 15 7 *",
+      "venue": {
+        "id": "atlanta",
+        "city": "Atlanta",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Mercedes-Benz Stadium",
+        "capacity": 75000,
+        "coords": "33°45'20\"N 84°24'00\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-15",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-15",
+          "time": "12:00"
+        }
+      }
+    },
+    {
+      "id": "M103",
+      "upstreamNum": 103,
+      "round": "Match for third place",
+      "date": "2026-07-18",
+      "time": "17:00 UTC-4",
+      "venueId": "miami-miami-gardens",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "L101",
+          "displayName": "L101",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "L102",
+          "displayName": "L102",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-18T21:00:00.000Z",
+      "alertAtUtc": "2026-07-18T20:50:00.000Z",
+      "alertCronUtc": "0 50 20 18 7 *",
+      "venue": {
+        "id": "miami-miami-gardens",
+        "city": "Miami (Miami Gardens)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "Hard Rock Stadium",
+        "capacity": 65000,
+        "coords": "25°57'29\"N 80°14'20\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-18",
+          "time": "15:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-18",
+          "time": "14:00"
+        }
+      }
+    },
+    {
+      "id": "M104",
+      "upstreamNum": 104,
+      "round": "Final",
+      "date": "2026-07-19",
+      "time": "15:00 UTC-4",
+      "venueId": "new-york-new-jersey-east-rutherford",
+      "participants": [
+        {
+          "type": "slot",
+          "value": "W101",
+          "displayName": "W101",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        },
+        {
+          "type": "slot",
+          "value": "W102",
+          "displayName": "W102",
+          "assignmentOwner": null,
+          "flagEmoji": null
+        }
+      ],
+      "kickoffUtc": "2026-07-19T19:00:00.000Z",
+      "alertAtUtc": "2026-07-19T18:50:00.000Z",
+      "alertCronUtc": "0 50 18 19 7 *",
+      "venue": {
+        "id": "new-york-new-jersey-east-rutherford",
+        "city": "New York/New Jersey (East Rutherford)",
+        "timezone": "UTC-4",
+        "countryCode": "us",
+        "name": "MetLife Stadium",
+        "capacity": 82500,
+        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+      },
+      "localTimes": {
+        "guadalajara_michoacan": {
+          "label": "Guadalajara/Michoacan",
+          "emoji": "🍓",
+          "timezone": "America/Mexico_City",
+          "date": "2026-07-19",
+          "time": "13:00"
+        },
+        "sonora": {
+          "label": "Sonora",
+          "emoji": "🥩",
+          "timezone": "America/Hermosillo",
+          "date": "2026-07-19",
+          "time": "12:00"
+        }
+      }
+    }
+  ]
+}

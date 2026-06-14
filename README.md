@@ -36,6 +36,8 @@ Las imagenes publicas del repositorio viven en `assets/images/`.
 
 Las camisetas locales de selecciones viven en `assets/images/jerseys/`.
 
+Las imagenes locales de estadios viven en `assets/images/stadiums/`.
+
 URLs publicas para campos de imagen en n8n como `person1Url` o `person2Url`:
 
 ```text

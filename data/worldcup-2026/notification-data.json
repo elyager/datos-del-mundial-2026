@@ -1,6 +1,6 @@
 {
   "name": "World Cup 2026 Match Alerts",
-  "generatedAt": "2026-06-13T19:40:16.567Z",
+  "generatedAt": "2026-06-14T05:17:04.053Z",
   "source": {
     "staticSnapshotCommit": "8f0f877f99a2b702dfdcce06357de9570dbf1fd6",
     "scheduleSourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.json"
@@ -811,7 +811,11 @@
       "name": "BC Place",
       "capacity": 54000,
       "coords": "49°16'36\"N 123°6'43\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Canadá",
+      "countryFlag": "🇨🇦",
       "location": "Vancouver, Canadá"
     },
     "seattle": {
@@ -822,7 +826,11 @@
       "name": "Lumen Field",
       "capacity": 69000,
       "coords": "47°35'43\"N 122°19'54\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Seattle, Estados Unidos"
     },
     "san-francisco-bay-area-santa-clara": {
@@ -833,7 +841,11 @@
       "name": "Levi's Stadium",
       "capacity": 71000,
       "coords": "37.403°N 121.970°W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "San Francisco Bay Area (Santa Clara), Estados Unidos"
     },
     "los-angeles-inglewood": {
@@ -844,7 +856,11 @@
       "name": "SoFi Stadium",
       "capacity": 70000,
       "coords": "33.953°N 118.339°W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Los Angeles (Inglewood), Estados Unidos"
     },
     "guadalajara-zapopan": {
@@ -855,7 +871,11 @@
       "name": "Estadio Akron",
       "capacity": 48000,
       "coords": "20°40'54\"N 103°27'46\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/guadalajara-zapopan.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_(3).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "México",
+      "countryFlag": "🇲🇽",
       "location": "Guadalajara (Zapopan), México"
     },
     "mexico-city": {
@@ -866,7 +886,11 @@
       "name": "Estadio Azteca",
       "capacity": 83000,
       "coords": "19°18'11\"N 99°09'02\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/mexico-city.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "México",
+      "countryFlag": "🇲🇽",
       "location": "Mexico City, México"
     },
     "monterrey-guadalupe": {
@@ -877,7 +901,11 @@
       "name": "Estadio BBVA",
       "capacity": 53500,
       "coords": "25°40'9\"N 100°14'40\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/monterrey-guadalupe.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "México",
+      "countryFlag": "🇲🇽",
       "location": "Monterrey (Guadalupe), México"
     },
     "houston": {
@@ -888,7 +916,11 @@
       "name": "NRG Stadium",
       "capacity": 72000,
       "coords": "29°41'5\"N 95°24'39\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Houston, Estados Unidos"
     },
     "dallas-arlington": {
@@ -899,7 +931,11 @@
       "name": "AT&T Stadium",
       "capacity": 94000,
       "coords": "32°44'52\"N 97°5'34\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Dallas (Arlington), Estados Unidos"
     },
     "kansas-city": {
@@ -910,7 +946,11 @@
       "name": "Arrowhead Stadium",
       "capacity": 73000,
       "coords": "39°2'56\"N 94°29'2\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Kansas City, Estados Unidos"
     },
     "atlanta": {
@@ -921,7 +961,11 @@
       "name": "Mercedes-Benz Stadium",
       "capacity": 75000,
       "coords": "33°45'20\"N 84°24'00\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Atlanta, Estados Unidos"
     },
     "miami-miami-gardens": {
@@ -932,7 +976,11 @@
       "name": "Hard Rock Stadium",
       "capacity": 65000,
       "coords": "25°57'29\"N 80°14'20\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Miami (Miami Gardens), Estados Unidos"
     },
     "toronto": {
@@ -943,7 +991,11 @@
       "name": "BMO Field",
       "capacity": 45000,
       "coords": "43°38'0\"N 79°25'07\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Canadá",
+      "countryFlag": "🇨🇦",
       "location": "Toronto, Canadá"
     },
     "boston-foxborough": {
@@ -954,7 +1006,11 @@
       "name": "Gillette Stadium",
       "capacity": 65000,
       "coords": "42.091°N 71.264°W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Boston (Foxborough), Estados Unidos"
     },
     "philadelphia": {
@@ -965,7 +1021,11 @@
       "name": "Lincoln Financial Field",
       "capacity": 69000,
       "coords": "39°54'3\"N 75°10'3\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "Philadelphia, Estados Unidos"
     },
     "new-york-new-jersey-east-rutherford": {
@@ -976,7 +1036,11 @@
       "name": "MetLife Stadium",
       "capacity": 82500,
       "coords": "40°48'48.7\"N 74°4'27.7\"W",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+      "imageSourceName": "Wikimedia Commons",
       "countryName": "Estados Unidos",
+      "countryFlag": "🇺🇸",
       "location": "New York/New Jersey (East Rutherford), Estados Unidos"
     }
   },
@@ -1018,7 +1082,10 @@
         "countryCode": "mx",
         "name": "Estadio Azteca",
         "capacity": 83000,
-        "coords": "19°18'11\"N 99°09'02\"W"
+        "coords": "19°18'11\"N 99°09'02\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/mexico-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1074,7 +1141,10 @@
         "countryCode": "mx",
         "name": "Estadio Akron",
         "capacity": 48000,
-        "coords": "20°40'54\"N 103°27'46\"W"
+        "coords": "20°40'54\"N 103°27'46\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/guadalajara-zapopan.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_(3).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1130,7 +1200,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1186,7 +1259,10 @@
         "countryCode": "mx",
         "name": "Estadio Akron",
         "capacity": 48000,
-        "coords": "20°40'54\"N 103°27'46\"W"
+        "coords": "20°40'54\"N 103°27'46\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/guadalajara-zapopan.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_(3).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1242,7 +1318,10 @@
         "countryCode": "mx",
         "name": "Estadio Azteca",
         "capacity": 83000,
-        "coords": "19°18'11\"N 99°09'02\"W"
+        "coords": "19°18'11\"N 99°09'02\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/mexico-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1298,7 +1377,10 @@
         "countryCode": "mx",
         "name": "Estadio BBVA",
         "capacity": 53500,
-        "coords": "25°40'9\"N 100°14'40\"W"
+        "coords": "25°40'9\"N 100°14'40\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/monterrey-guadalupe.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1354,7 +1436,10 @@
         "countryCode": "ca",
         "name": "BMO Field",
         "capacity": 45000,
-        "coords": "43°38'0\"N 79°25'07\"W"
+        "coords": "43°38'0\"N 79°25'07\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1410,7 +1495,10 @@
         "countryCode": "us",
         "name": "Levi's Stadium",
         "capacity": 71000,
-        "coords": "37.403°N 121.970°W"
+        "coords": "37.403°N 121.970°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1466,7 +1554,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1522,7 +1613,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1578,7 +1672,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1634,7 +1731,10 @@
         "countryCode": "us",
         "name": "Lumen Field",
         "capacity": 69000,
-        "coords": "47°35'43\"N 122°19'54\"W"
+        "coords": "47°35'43\"N 122°19'54\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1690,7 +1790,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1746,7 +1849,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1802,7 +1908,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1858,7 +1967,10 @@
         "countryCode": "us",
         "name": "Lincoln Financial Field",
         "capacity": 69000,
-        "coords": "39°54'3\"N 75°10'3\"W"
+        "coords": "39°54'3\"N 75°10'3\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1914,7 +2026,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -1970,7 +2085,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2026,7 +2144,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2082,7 +2203,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2138,7 +2262,10 @@
         "countryCode": "us",
         "name": "Lumen Field",
         "capacity": 69000,
-        "coords": "47°35'43\"N 122°19'54\"W"
+        "coords": "47°35'43\"N 122°19'54\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2194,7 +2321,10 @@
         "countryCode": "us",
         "name": "Levi's Stadium",
         "capacity": 71000,
-        "coords": "37.403°N 121.970°W"
+        "coords": "37.403°N 121.970°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2250,7 +2380,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2306,7 +2439,10 @@
         "countryCode": "us",
         "name": "Levi's Stadium",
         "capacity": 71000,
-        "coords": "37.403°N 121.970°W"
+        "coords": "37.403°N 121.970°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2362,7 +2498,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2418,7 +2557,10 @@
         "countryCode": "us",
         "name": "Lincoln Financial Field",
         "capacity": 69000,
-        "coords": "39°54'3\"N 75°10'3\"W"
+        "coords": "39°54'3\"N 75°10'3\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2474,7 +2616,10 @@
         "countryCode": "ca",
         "name": "BMO Field",
         "capacity": 45000,
-        "coords": "43°38'0\"N 79°25'07\"W"
+        "coords": "43°38'0\"N 79°25'07\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2530,7 +2675,10 @@
         "countryCode": "us",
         "name": "Arrowhead Stadium",
         "capacity": 73000,
-        "coords": "39°2'56\"N 94°29'2\"W"
+        "coords": "39°2'56\"N 94°29'2\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2586,7 +2734,10 @@
         "countryCode": "us",
         "name": "Lincoln Financial Field",
         "capacity": 69000,
-        "coords": "39°54'3\"N 75°10'3\"W"
+        "coords": "39°54'3\"N 75°10'3\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2642,7 +2793,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2698,7 +2852,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2754,7 +2911,10 @@
         "countryCode": "mx",
         "name": "Estadio BBVA",
         "capacity": 53500,
-        "coords": "25°40'9\"N 100°14'40\"W"
+        "coords": "25°40'9\"N 100°14'40\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/monterrey-guadalupe.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2810,7 +2970,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2866,7 +3029,10 @@
         "countryCode": "mx",
         "name": "Estadio BBVA",
         "capacity": 53500,
-        "coords": "25°40'9\"N 100°14'40\"W"
+        "coords": "25°40'9\"N 100°14'40\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/monterrey-guadalupe.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2922,7 +3088,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -2978,7 +3147,10 @@
         "countryCode": "us",
         "name": "Arrowhead Stadium",
         "capacity": 73000,
-        "coords": "39°2'56\"N 94°29'2\"W"
+        "coords": "39°2'56\"N 94°29'2\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3034,7 +3206,10 @@
         "countryCode": "us",
         "name": "Lumen Field",
         "capacity": 69000,
-        "coords": "47°35'43\"N 122°19'54\"W"
+        "coords": "47°35'43\"N 122°19'54\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3090,7 +3265,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3146,7 +3324,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3202,7 +3383,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3258,7 +3442,10 @@
         "countryCode": "us",
         "name": "Lumen Field",
         "capacity": 69000,
-        "coords": "47°35'43\"N 122°19'54\"W"
+        "coords": "47°35'43\"N 122°19'54\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3314,7 +3501,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3370,7 +3560,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3426,7 +3619,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3482,7 +3678,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3538,7 +3737,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3594,7 +3796,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3650,7 +3855,10 @@
         "countryCode": "mx",
         "name": "Estadio Akron",
         "capacity": 48000,
-        "coords": "20°40'54\"N 103°27'46\"W"
+        "coords": "20°40'54\"N 103°27'46\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/guadalajara-zapopan.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_(3).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3706,7 +3914,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3762,7 +3973,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3818,7 +4032,10 @@
         "countryCode": "us",
         "name": "Lincoln Financial Field",
         "capacity": 69000,
-        "coords": "39°54'3\"N 75°10'3\"W"
+        "coords": "39°54'3\"N 75°10'3\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3874,7 +4091,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3930,7 +4150,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -3986,7 +4209,10 @@
         "countryCode": "ca",
         "name": "BMO Field",
         "capacity": 45000,
-        "coords": "43°38'0\"N 79°25'07\"W"
+        "coords": "43°38'0\"N 79°25'07\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4042,7 +4268,10 @@
         "countryCode": "us",
         "name": "Arrowhead Stadium",
         "capacity": 73000,
-        "coords": "39°2'56\"N 94°29'2\"W"
+        "coords": "39°2'56\"N 94°29'2\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4098,7 +4327,10 @@
         "countryCode": "us",
         "name": "Levi's Stadium",
         "capacity": 71000,
-        "coords": "37.403°N 121.970°W"
+        "coords": "37.403°N 121.970°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4154,7 +4386,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4210,7 +4445,10 @@
         "countryCode": "us",
         "name": "Levi's Stadium",
         "capacity": 71000,
-        "coords": "37.403°N 121.970°W"
+        "coords": "37.403°N 121.970°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4266,7 +4504,10 @@
         "countryCode": "us",
         "name": "Arrowhead Stadium",
         "capacity": 73000,
-        "coords": "39°2'56\"N 94°29'2\"W"
+        "coords": "39°2'56\"N 94°29'2\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4322,7 +4563,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4378,7 +4622,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4434,7 +4681,10 @@
         "countryCode": "mx",
         "name": "Estadio Azteca",
         "capacity": 83000,
-        "coords": "19°18'11\"N 99°09'02\"W"
+        "coords": "19°18'11\"N 99°09'02\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/mexico-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4490,7 +4740,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4546,7 +4799,10 @@
         "countryCode": "mx",
         "name": "Estadio Akron",
         "capacity": 48000,
-        "coords": "20°40'54\"N 103°27'46\"W"
+        "coords": "20°40'54\"N 103°27'46\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/guadalajara-zapopan.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_(3).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4602,7 +4858,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4658,7 +4917,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4714,7 +4976,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4770,7 +5035,10 @@
         "countryCode": "ca",
         "name": "BMO Field",
         "capacity": 45000,
-        "coords": "43°38'0\"N 79°25'07\"W"
+        "coords": "43°38'0\"N 79°25'07\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4826,7 +5094,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4882,7 +5153,10 @@
         "countryCode": "ca",
         "name": "BMO Field",
         "capacity": 45000,
-        "coords": "43°38'0\"N 79°25'07\"W"
+        "coords": "43°38'0\"N 79°25'07\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4938,7 +5212,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -4994,7 +5271,10 @@
         "countryCode": "us",
         "name": "Lincoln Financial Field",
         "capacity": 69000,
-        "coords": "39°54'3\"N 75°10'3\"W"
+        "coords": "39°54'3\"N 75°10'3\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5046,7 +5326,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5098,7 +5381,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5150,7 +5436,10 @@
         "countryCode": "mx",
         "name": "Estadio BBVA",
         "capacity": 53500,
-        "coords": "25°40'9\"N 100°14'40\"W"
+        "coords": "25°40'9\"N 100°14'40\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/monterrey-guadalupe.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5202,7 +5491,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5254,7 +5546,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5306,7 +5601,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5358,7 +5656,10 @@
         "countryCode": "mx",
         "name": "Estadio Azteca",
         "capacity": 83000,
-        "coords": "19°18'11\"N 99°09'02\"W"
+        "coords": "19°18'11\"N 99°09'02\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/mexico-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5410,7 +5711,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5462,7 +5766,10 @@
         "countryCode": "us",
         "name": "Levi's Stadium",
         "capacity": 71000,
-        "coords": "37.403°N 121.970°W"
+        "coords": "37.403°N 121.970°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/san-francisco-bay-area-santa-clara.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5514,7 +5821,10 @@
         "countryCode": "us",
         "name": "Lumen Field",
         "capacity": 69000,
-        "coords": "47°35'43\"N 122°19'54\"W"
+        "coords": "47°35'43\"N 122°19'54\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5566,7 +5876,10 @@
         "countryCode": "ca",
         "name": "BMO Field",
         "capacity": 45000,
-        "coords": "43°38'0\"N 79°25'07\"W"
+        "coords": "43°38'0\"N 79°25'07\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/toronto.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5618,7 +5931,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5670,7 +5986,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5722,7 +6041,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5774,7 +6096,10 @@
         "countryCode": "us",
         "name": "Arrowhead Stadium",
         "capacity": 73000,
-        "coords": "39°2'56\"N 94°29'2\"W"
+        "coords": "39°2'56\"N 94°29'2\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5826,7 +6151,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5878,7 +6206,10 @@
         "countryCode": "us",
         "name": "Lincoln Financial Field",
         "capacity": 69000,
-        "coords": "39°54'3\"N 75°10'3\"W"
+        "coords": "39°54'3\"N 75°10'3\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/philadelphia.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5930,7 +6261,10 @@
         "countryCode": "us",
         "name": "NRG Stadium",
         "capacity": 72000,
-        "coords": "29°41'5\"N 95°24'39\"W"
+        "coords": "29°41'5\"N 95°24'39\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/houston.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -5982,7 +6316,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6034,7 +6371,10 @@
         "countryCode": "mx",
         "name": "Estadio Azteca",
         "capacity": 83000,
-        "coords": "19°18'11\"N 99°09'02\"W"
+        "coords": "19°18'11\"N 99°09'02\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/mexico-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6086,7 +6426,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6138,7 +6481,10 @@
         "countryCode": "us",
         "name": "Lumen Field",
         "capacity": 69000,
-        "coords": "47°35'43\"N 122°19'54\"W"
+        "coords": "47°35'43\"N 122°19'54\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/seattle.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6190,7 +6536,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6242,7 +6591,10 @@
         "countryCode": "ca",
         "name": "BC Place",
         "capacity": 54000,
-        "coords": "49°16'36\"N 123°6'43\"W"
+        "coords": "49°16'36\"N 123°6'43\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/vancouver.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6294,7 +6646,10 @@
         "countryCode": "us",
         "name": "Gillette Stadium",
         "capacity": 65000,
-        "coords": "42.091°N 71.264°W"
+        "coords": "42.091°N 71.264°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/boston-foxborough.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6346,7 +6701,10 @@
         "countryCode": "us",
         "name": "SoFi Stadium",
         "capacity": 70000,
-        "coords": "33.953°N 118.339°W"
+        "coords": "33.953°N 118.339°W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/los-angeles-inglewood.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6398,7 +6756,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6450,7 +6811,10 @@
         "countryCode": "us",
         "name": "Arrowhead Stadium",
         "capacity": 73000,
-        "coords": "39°2'56\"N 94°29'2\"W"
+        "coords": "39°2'56\"N 94°29'2\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/kansas-city.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6502,7 +6866,10 @@
         "countryCode": "us",
         "name": "AT&T Stadium",
         "capacity": 94000,
-        "coords": "32°44'52\"N 97°5'34\"W"
+        "coords": "32°44'52\"N 97°5'34\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/dallas-arlington.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6554,7 +6921,10 @@
         "countryCode": "us",
         "name": "Mercedes-Benz Stadium",
         "capacity": 75000,
-        "coords": "33°45'20\"N 84°24'00\"W"
+        "coords": "33°45'20\"N 84°24'00\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/atlanta.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6606,7 +6976,10 @@
         "countryCode": "us",
         "name": "Hard Rock Stadium",
         "capacity": 65000,
-        "coords": "25°57'29\"N 80°14'20\"W"
+        "coords": "25°57'29\"N 80°14'20\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/miami-miami-gardens.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {
@@ -6658,7 +7031,10 @@
         "countryCode": "us",
         "name": "MetLife Stadium",
         "capacity": 82500,
-        "coords": "40°48'48.7\"N 74°4'27.7\"W"
+        "coords": "40°48'48.7\"N 74°4'27.7\"W",
+        "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/stadiums/new-york-new-jersey-east-rutherford.jpg",
+        "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+        "imageSourceName": "Wikimedia Commons"
       },
       "localTimes": {
         "guadalajara_michoacan": {

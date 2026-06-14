@@ -61,6 +61,102 @@ const countryFlagByCode = {
   us: "🇺🇸",
 };
 
+const rawGitHubAssetBase =
+  "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images";
+
+const stadiumImageMetadataById = {
+  vancouver: {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/vancouver.jpg`,
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:BC_Place_2015_Women%27s_FIFA_World_Cup.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  seattle: {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/seattle.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:2025_FIFA_Club_World_Cup_-_Seattle_Sounders_FC_vs._Atl%C3%A9tico_Madrid_-_05.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "san-francisco-bay-area-santa-clara": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/san-francisco-bay-area-santa-clara.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Levi%27s_Stadium_in_February_2016_prior_to_Super_Bowl_50_(24398261729).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "los-angeles-inglewood": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/los-angeles-inglewood.jpg`,
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:SoFi_Stadium_2023.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "guadalajara-zapopan": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/guadalajara-zapopan.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Estadio_Akron_02-07-2022_cabecera_sur_lado_derecho_(3).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "mexico-city": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/mexico-city.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "monterrey-guadalupe": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/monterrey-guadalupe.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Mexico_Guadalupe_Monterrey_Estadio_BBVA_Bancomer_fifa_world_cup_2026_6.JPG",
+    imageSourceName: "Wikimedia Commons",
+  },
+  houston: {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/houston.jpg`,
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:Nrg_stadium.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "dallas-arlington": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/dallas-arlington.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "kansas-city": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/kansas-city.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Arrowhead_Stadium_08-31-2013.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  atlanta: {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/atlanta.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "miami-miami-gardens": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/miami-miami-gardens.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Hard_Rock_Stadium_for_Super_Bowl_LIV_(49606710103).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  toronto: {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/toronto.jpg`,
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:Toronto_BMO_Field_in_2024.jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "boston-foxborough": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/boston-foxborough.jpg`,
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:Gillette_Stadium_(Top_View).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  philadelphia: {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/philadelphia.jpg`,
+    imageSourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Lincoln_Financial_Field_(Aerial_view).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+  "new-york-new-jersey-east-rutherford": {
+    imageUrl: `${rawGitHubAssetBase}/stadiums/new-york-new-jersey-east-rutherford.jpg`,
+    imageSourceUrl: "https://commons.wikimedia.org/wiki/File:Metlife_stadium_(Aerial_view).jpg",
+    imageSourceName: "Wikimedia Commons",
+  },
+};
+
 const spanishNameByCode = {
   ARG: "Argentina",
   SEN: "Senegal",
@@ -264,6 +360,8 @@ function normalizeStadiums(stadiumsData) {
   return Object.fromEntries(
     stadiumsData.stadiums.map((stadium) => {
       const id = slugify(stadium.city);
+      const imageMetadata = stadiumImageMetadataById[id];
+
       return [
         id,
         {
@@ -274,6 +372,7 @@ function normalizeStadiums(stadiumsData) {
           name: stadium.name,
           capacity: stadium.capacity,
           coords: stadium.coords,
+          ...imageMetadata,
         },
       ];
     }),
@@ -361,6 +460,12 @@ function validateOutput({ teams, groups, stadiums, matches, assignments }) {
         );
       }
     }
+  }
+
+  for (const [stadiumId, stadium] of Object.entries(stadiums)) {
+    assert(stadium.imageUrl, `Stadium ${stadiumId} is missing imageUrl`);
+    assert(stadium.imageSourceUrl, `Stadium ${stadiumId} is missing imageSourceUrl`);
+    assert(stadium.imageSourceName, `Stadium ${stadiumId} is missing imageSourceName`);
   }
 }
 
@@ -504,6 +609,12 @@ function validateNotificationData(notificationData) {
   for (const team of Object.values(notificationData.teams)) {
     assert(team.flagIcon, `Team ${team.fifaCode} is missing flagIcon`);
     assert(team.assignmentOwner, `Team ${team.fifaCode} is missing assignmentOwner`);
+  }
+
+  for (const [stadiumId, stadium] of Object.entries(notificationData.stadiums)) {
+    assert(stadium.imageUrl, `Notification stadium ${stadiumId} is missing imageUrl`);
+    assert(stadium.imageSourceUrl, `Notification stadium ${stadiumId} is missing imageSourceUrl`);
+    assert(stadium.imageSourceName, `Notification stadium ${stadiumId} is missing imageSourceName`);
   }
 
   for (const match of notificationData.matches) {

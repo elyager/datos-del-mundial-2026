@@ -34,10 +34,11 @@ El archivo `data/worldcup-2026/notification-data.json` es el bundle publico para
 
 Las imagenes publicas del repositorio viven en `assets/images/`.
 
-URL publica de Yager para campos de imagen en n8n como `person1Url` o `person2Url`:
+URLs publicas para campos de imagen en n8n como `person1Url` o `person2Url`:
 
 ```text
 https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/yager.jpeg
+https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nere.jpeg
 ```
 
 ## Workflow de tarjetas con OpenRouter

@@ -34,6 +34,8 @@ El archivo `data/worldcup-2026/notification-data.json` es el bundle publico para
 
 Las imagenes publicas del repositorio viven en `assets/images/`.
 
+Las camisetas locales de selecciones viven en `assets/images/jerseys/`.
+
 URLs publicas para campos de imagen en n8n como `person1Url` o `person2Url`:
 
 ```text
@@ -65,12 +67,14 @@ Ejemplo de cuerpo:
   "person2Name": "Noe",
   "venue": "MetLife Stadium",
   "location": "New York/New Jersey",
-  "person1Url": "https://i.pravatar.cc/1024?img=12",
-  "person2Url": "https://i.pravatar.cc/1024?img=32",
-  "team1ShirtUrl": "https://flagcdn.com/w640/br.png",
-  "team2ShirtUrl": "https://flagcdn.com/w640/ma.png",
+  "person1Url": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/yager.jpeg",
+  "person2Url": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nere.jpeg",
+  "team1ShirtUrl": "https://store.fifa.com/cdn/shop/files/image_02047e33-3b4e-41f2-869b-ac361dd4b283.jpg",
+  "team2ShirtUrl": "https://store.fifa.com/cdn/shop/files/image_54f59fd1-10b1-4430-b581-a46bbd87255c.jpg",
   "templateUrl": "https://picsum.photos/seed/world-cup-card-template/1024/1024"
 }
 ```
 
-El workflow valida que las cinco URLs sean imagenes publicas alcanzables antes de llamar a `openai/gpt-5.4-image-2` via `https://openrouter.ai/api/v1/chat/completions`.
+El workflow valida que los campos requeridos existan y que las cinco URLs usen `http` o `https` antes de llamar a `openai/gpt-5.4-image-2` via `https://openrouter.ai/api/v1/chat/completions`.
+
+El nodo `Extract generated image` convierte la respuesta `data:image/png;base64,...` a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, agregar un nodo WhatsApp de media upload despues de `Extract generated image` y usar `data` como binary/input data field.

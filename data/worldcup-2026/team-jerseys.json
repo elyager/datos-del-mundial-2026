@@ -1,0 +1,338 @@
+{
+  "ALG": {
+    "fifaCode": "ALG",
+    "name": "Algeria",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/ALG.webp",
+    "sourceUrl": "https://www.adidas.com/us/algeria-26-home-jersey/JN4457.html",
+    "sourceName": "adidas"
+  },
+  "ARG": {
+    "fifaCode": "ARG",
+    "name": "Argentina",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/ARG.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-argentina-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "AUS": {
+    "fifaCode": "AUS",
+    "name": "Australia",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/AUS.png",
+    "sourceUrl": "https://www.nike.com/t/australia-2026-stadium-home-mens-dri-fit-soccer-jersey-ZeKy9e58/IB5256-704",
+    "sourceName": "Nike"
+  },
+  "AUT": {
+    "fifaCode": "AUT",
+    "name": "Austria",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/AUT.webp",
+    "sourceUrl": "https://us.puma.com/us/en/search?q=783200-01",
+    "sourceName": "PUMA"
+  },
+  "BEL": {
+    "fifaCode": "BEL",
+    "name": "Belgium",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/BEL.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-belgium-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "BIH": {
+    "fifaCode": "BIH",
+    "name": "Bosnia & Herzegovina",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/BIH.webp",
+    "sourceUrl": "https://kelme.com/en/products/camiseta-1%C2%AA-equipacion-bosnia-herzegovina-mundial-2026-player-version",
+    "sourceName": "Kelme"
+  },
+  "BRA": {
+    "fifaCode": "BRA",
+    "name": "Brazil",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/BRA.webp",
+    "sourceUrl": "https://store.fifa.com/products/brazil-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "CAN": {
+    "fifaCode": "CAN",
+    "name": "Canada",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/CAN.webp",
+    "sourceUrl": "https://store.fifa.com/products/canada-2026-home-authentic-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "CIV": {
+    "fifaCode": "CIV",
+    "name": "Ivory Coast",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/CIV.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-ivory-coast-2026-home-replica-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "COD": {
+    "fifaCode": "COD",
+    "name": "DR Congo",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/COD.webp",
+    "sourceUrl": "https://umbroteam.com/products/drc-2026-home-short-sleeve-jersey-copy",
+    "sourceName": "Umbro Team"
+  },
+  "COL": {
+    "fifaCode": "COL",
+    "name": "Colombia",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/COL.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-colombia-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "CPV": {
+    "fifaCode": "CPV",
+    "name": "Cape Verde",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/CPV.webp",
+    "sourceUrl": "https://store.fifa.com/products/cabo-verde-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "CRO": {
+    "fifaCode": "CRO",
+    "name": "Croatia",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/CRO.png",
+    "sourceUrl": "https://www.nike.com/t/croatia-2026-stadium-home-mens-dri-fit-soccer-jersey-lpjc33lz",
+    "sourceName": "Nike"
+  },
+  "CUW": {
+    "fifaCode": "CUW",
+    "name": "Curaçao",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/CUW.jpg",
+    "sourceUrl": "https://www.adidas.com/us/curacao-26-home-jersey/LE3408.html",
+    "sourceName": "adidas"
+  },
+  "CZE": {
+    "fifaCode": "CZE",
+    "name": "Czech Republic",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/CZE.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-czech-republic-2026-home-replica-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "ECU": {
+    "fifaCode": "ECU",
+    "name": "Ecuador",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/ECU.jpg",
+    "sourceUrl": "https://www.marathon.store/ec/productos/marca/marathon-sports/camiseta-fef-oficial-mundial-2026/p/bt_AM_11073596",
+    "sourceName": "Marathon Sports Ecuador"
+  },
+  "EGY": {
+    "fifaCode": "EGY",
+    "name": "Egypt",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/EGY.webp",
+    "sourceUrl": "https://us.puma.com/us/en/sport/soccer/egypt",
+    "sourceName": "PUMA"
+  },
+  "ENG": {
+    "fifaCode": "ENG",
+    "name": "England",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/ENG.webp",
+    "sourceUrl": "https://store.fifa.com/products/england-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "ESP": {
+    "fifaCode": "ESP",
+    "name": "Spain",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/ESP.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-spain-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "FRA": {
+    "fifaCode": "FRA",
+    "name": "France",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/FRA.webp",
+    "sourceUrl": "https://store.fifa.com/products/france-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "GER": {
+    "fifaCode": "GER",
+    "name": "Germany",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/GER.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-germany-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "GHA": {
+    "fifaCode": "GHA",
+    "name": "Ghana",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/GHA.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-ghana-2026-home-replica-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "HAI": {
+    "fifaCode": "HAI",
+    "name": "Haiti",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/HAI.webp",
+    "sourceUrl": "https://saeta.us/products/pre-sale-2026-mens-authentic-haiti-national-soccer-team-jersey-blue",
+    "sourceName": "Saeta"
+  },
+  "IRN": {
+    "fifaCode": "IRN",
+    "name": "Iran",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/IRN.webp",
+    "sourceUrl": "https://aztecasoccer.com/cdn/shop/files/majid-iran-mens-home-authentic-2026-soccer-jersey.jpg",
+    "sourceName": "Azteca Soccer"
+  },
+  "IRQ": {
+    "fifaCode": "IRQ",
+    "name": "Iraq",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/IRQ.jpg",
+    "sourceUrl": "https://www.jako.com/de-en/iraq-jersey-home-p37606/",
+    "sourceName": "JAKO"
+  },
+  "JOR": {
+    "fifaCode": "JOR",
+    "name": "Jordan",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/JOR.jpg",
+    "sourceUrl": "https://www.kelme.store/products/official-jordan-national-team-jersey-for-world-cup-2026-kelme-store",
+    "sourceName": "Kelme Store USA"
+  },
+  "JPN": {
+    "fifaCode": "JPN",
+    "name": "Japan",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/JPN.jpg",
+    "sourceUrl": "https://store.fifa.com/products/adidas-japan-202627-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "KOR": {
+    "fifaCode": "KOR",
+    "name": "South Korea",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/KOR.png",
+    "sourceUrl": "https://www.nike.com/t/south-korea-national-team-2026-stadium-home-mens-dri-fit-soccer-jersey-gA3fN7vg/IU3861-679",
+    "sourceName": "Nike"
+  },
+  "KSA": {
+    "fifaCode": "KSA",
+    "name": "Saudi Arabia",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/KSA.webp",
+    "sourceUrl": "https://www.adidas.com/us/saudi-arabia-26-home-jersey/JL6948.html",
+    "sourceName": "adidas"
+  },
+  "MAR": {
+    "fifaCode": "MAR",
+    "name": "Morocco",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/MAR.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-morocco-2026-home-replica-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "MEX": {
+    "fifaCode": "MEX",
+    "name": "Mexico",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/MEX.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-mexico-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "NED": {
+    "fifaCode": "NED",
+    "name": "Netherlands",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/NED.webp",
+    "sourceUrl": "https://store.fifa.com/products/netherlands-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "NOR": {
+    "fifaCode": "NOR",
+    "name": "Norway",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/NOR.png",
+    "sourceUrl": "https://www.nike.com/t/norway-national-team-2026-stadium-home-mens-dri-fit-soccer-jersey-XFHheFPZ/IB5316-673",
+    "sourceName": "Nike"
+  },
+  "NZL": {
+    "fifaCode": "NZL",
+    "name": "New Zealand",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/NZL.webp",
+    "sourceUrl": "https://us.puma.com/us/en/sport/soccer/new-zealand",
+    "sourceName": "PUMA"
+  },
+  "PAN": {
+    "fifaCode": "PAN",
+    "name": "Panama",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/PAN.webp",
+    "sourceUrl": "https://reebok.pa/products/rbk-home-jersey",
+    "sourceName": "Reebok Panama"
+  },
+  "PAR": {
+    "fifaCode": "PAR",
+    "name": "Paraguay",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/PAR.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-paraguay-26-home-replica-jersey",
+    "sourceName": "FIFA Store"
+  },
+  "POR": {
+    "fifaCode": "POR",
+    "name": "Portugal",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/POR.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-portugal-2026-home-authentic-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "QAT": {
+    "fifaCode": "QAT",
+    "name": "Qatar",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/QAT.webp",
+    "sourceUrl": "https://www.adidas.com/us/qatar-26-home-jersey/KF0824.html",
+    "sourceName": "adidas"
+  },
+  "RSA": {
+    "fifaCode": "RSA",
+    "name": "South Africa",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/RSA.jpg",
+    "sourceUrl": "https://store.fifa.com/products/south-africa-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "SCO": {
+    "fifaCode": "SCO",
+    "name": "Scotland",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/SCO.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-scotland-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "SEN": {
+    "fifaCode": "SEN",
+    "name": "Senegal",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/SEN.webp",
+    "sourceUrl": "https://store.fifa.com/products/puma-senegal-2026-home-replica-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "SUI": {
+    "fifaCode": "SUI",
+    "name": "Switzerland",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/SUI.webp",
+    "sourceUrl": "https://us.puma.com/us/en/search?q=783218-01",
+    "sourceName": "PUMA"
+  },
+  "SWE": {
+    "fifaCode": "SWE",
+    "name": "Sweden",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/SWE.webp",
+    "sourceUrl": "https://store.fifa.com/products/adidas-sweden-2026-authentic-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "TUN": {
+    "fifaCode": "TUN",
+    "name": "Tunisia",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/TUN.webp",
+    "sourceUrl": "https://www.kappa.com/en-row/products/active-jerseys-man-kombat-2027-home-tunisia-white-red-34255vw-tunisian-football-fed-a01",
+    "sourceName": "Kappa"
+  },
+  "TUR": {
+    "fifaCode": "TUR",
+    "name": "Turkey",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/TUR.png",
+    "sourceUrl": "https://www.nike.com/t/turkey-2026-stadium-home-mens-dri-fit-soccer-jersey-HGH2szQP",
+    "sourceName": "Nike"
+  },
+  "URU": {
+    "fifaCode": "URU",
+    "name": "Uruguay",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/URU.png",
+    "sourceUrl": "https://www.nike.com/t/uruguay-2026-stadium-home-mens-dri-fit-soccer-replica-jersey-gvpOmXFe",
+    "sourceName": "Nike"
+  },
+  "USA": {
+    "fifaCode": "USA",
+    "name": "USA",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/USA.webp",
+    "sourceUrl": "https://store.fifa.com/products/usa-2026-home-jersey-mens",
+    "sourceName": "FIFA Store"
+  },
+  "UZB": {
+    "fifaCode": "UZB",
+    "name": "Uzbekistan",
+    "shirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/UZB.webp",
+    "sourceUrl": "https://img4.dhresource.com/webp/m/0x0/f3/albu/ys/s/24/8ecb593b-fb4b-4f0a-931e-b203005260bc.jpg",
+    "sourceName": "DHresource"
+  }
+}

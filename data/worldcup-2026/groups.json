@@ -1,0 +1,122 @@
+{
+  "A": {
+    "id": "A",
+    "name": "Group A",
+    "teams": [
+      "MEX",
+      "RSA",
+      "KOR",
+      "CZE"
+    ]
+  },
+  "B": {
+    "id": "B",
+    "name": "Group B",
+    "teams": [
+      "CAN",
+      "BIH",
+      "QAT",
+      "SUI"
+    ]
+  },
+  "C": {
+    "id": "C",
+    "name": "Group C",
+    "teams": [
+      "BRA",
+      "MAR",
+      "HAI",
+      "SCO"
+    ]
+  },
+  "D": {
+    "id": "D",
+    "name": "Group D",
+    "teams": [
+      "USA",
+      "PAR",
+      "AUS",
+      "TUR"
+    ]
+  },
+  "E": {
+    "id": "E",
+    "name": "Group E",
+    "teams": [
+      "GER",
+      "CUW",
+      "CIV",
+      "ECU"
+    ]
+  },
+  "F": {
+    "id": "F",
+    "name": "Group F",
+    "teams": [
+      "NED",
+      "JPN",
+      "SWE",
+      "TUN"
+    ]
+  },
+  "G": {
+    "id": "G",
+    "name": "Group G",
+    "teams": [
+      "BEL",
+      "EGY",
+      "IRN",
+      "NZL"
+    ]
+  },
+  "H": {
+    "id": "H",
+    "name": "Group H",
+    "teams": [
+      "ESP",
+      "CPV",
+      "KSA",
+      "URU"
+    ]
+  },
+  "I": {
+    "id": "I",
+    "name": "Group I",
+    "teams": [
+      "FRA",
+      "SEN",
+      "IRQ",
+      "NOR"
+    ]
+  },
+  "J": {
+    "id": "J",
+    "name": "Group J",
+    "teams": [
+      "ARG",
+      "ALG",
+      "AUT",
+      "JOR"
+    ]
+  },
+  "K": {
+    "id": "K",
+    "name": "Group K",
+    "teams": [
+      "POR",
+      "COD",
+      "UZB",
+      "COL"
+    ]
+  },
+  "L": {
+    "id": "L",
+    "name": "Group L",
+    "teams": [
+      "ENG",
+      "CRO",
+      "GHA",
+      "PAN"
+    ]
+  }
+}

@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "M001",
+    "round": "Matchday 1",
+    "date": "2026-06-11",
+    "time": "13:00 UTC-6",
+    "venueId": "mexico-city",
+    "group": "A",
+    "participants": [
+      {
+        "type": "team",
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      {
+        "type": "team",
+        "code": "RSA",
+        "name": "South Africa"
+      }
+    ]
+  },
+  {
+    "id": "M002",
+    "round": "Matchday 1",
+    "date": "2026-06-11",
+    "time": "20:00 UTC-6",
+    "venueId": "guadalajara-zapopan",
+    "group": "A",
+    "participants": [
+      {
+        "type": "team",
+        "code": "KOR",
+        "name": "South Korea"
+      },
+      {
+        "type": "team",
+        "code": "CZE",
+        "name": "Czech Republic"
+      }
+    ]
+  },
+  {
+    "id": "M003",
+    "round": "Matchday 8",
+    "date": "2026-06-18",
+    "time": "12:00 UTC-4",
+    "venueId": "atlanta",
+    "group": "A",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CZE",
+        "name": "Czech Republic"
+      },
+      {
+        "type": "team",
+        "code": "RSA",
+        "name": "South Africa"
+      }
+    ]
+  },
+  {
+    "id": "M004",
+    "round": "Matchday 8",
+    "date": "2026-06-18",
+    "time": "19:00 UTC-6",
+    "venueId": "guadalajara-zapopan",
+    "group": "A",
+    "participants": [
+      {
+        "type": "team",
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      {
+        "type": "team",
+        "code": "KOR",
+        "name": "South Korea"
+      }
+    ]
+  },
+  {
+    "id": "M005",
+    "round": "Matchday 14",
+    "date": "2026-06-24",
+    "time": "19:00 UTC-6",
+    "venueId": "mexico-city",
+    "group": "A",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CZE",
+        "name": "Czech Republic"
+      },
+      {
+        "type": "team",
+        "code": "MEX",
+        "name": "Mexico"
+      }
+    ]
+  },
+  {
+    "id": "M006",
+    "round": "Matchday 14",
+    "date": "2026-06-24",
+    "time": "19:00 UTC-6",
+    "venueId": "monterrey-guadalupe",
+    "group": "A",
+    "participants": [
+      {
+        "type": "team",
+        "code": "RSA",
+        "name": "South Africa"
+      },
+      {
+        "type": "team",
+        "code": "KOR",
+        "name": "South Korea"
+      }
+    ]
+  },
+  {
+    "id": "M007",
+    "round": "Matchday 2",
+    "date": "2026-06-12",
+    "time": "15:00 UTC-4",
+    "venueId": "toronto",
+    "group": "B",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CAN",
+        "name": "Canada"
+      },
+      {
+        "type": "team",
+        "code": "BIH",
+        "name": "Bosnia & Herzegovina"
+      }
+    ]
+  },
+  {
+    "id": "M008",
+    "round": "Matchday 3",
+    "date": "2026-06-13",
+    "time": "12:00 UTC-7",
+    "venueId": "san-francisco-bay-area-santa-clara",
+    "group": "B",
+    "participants": [
+      {
+        "type": "team",
+        "code": "QAT",
+        "name": "Qatar"
+      },
+      {
+        "type": "team",
+        "code": "SUI",
+        "name": "Switzerland"
+      }
+    ]
+  },
+  {
+    "id": "M009",
+    "round": "Matchday 8",
+    "date": "2026-06-18",
+    "time": "12:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "group": "B",
+    "participants": [
+      {
+        "type": "team",
+        "code": "SUI",
+        "name": "Switzerland"
+      },
+      {
+        "type": "team",
+        "code": "BIH",
+        "name": "Bosnia & Herzegovina"
+      }
+    ]
+  },
+  {
+    "id": "M010",
+    "round": "Matchday 8",
+    "date": "2026-06-18",
+    "time": "15:00 UTC-7",
+    "venueId": "vancouver",
+    "group": "B",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CAN",
+        "name": "Canada"
+      },
+      {
+        "type": "team",
+        "code": "QAT",
+        "name": "Qatar"
+      }
+    ]
+  },
+  {
+    "id": "M011",
+    "round": "Matchday 14",
+    "date": "2026-06-24",
+    "time": "12:00 UTC-7",
+    "venueId": "vancouver",
+    "group": "B",
+    "participants": [
+      {
+        "type": "team",
+        "code": "SUI",
+        "name": "Switzerland"
+      },
+      {
+        "type": "team",
+        "code": "CAN",
+        "name": "Canada"
+      }
+    ]
+  },
+  {
+    "id": "M012",
+    "round": "Matchday 14",
+    "date": "2026-06-24",
+    "time": "12:00 UTC-7",
+    "venueId": "seattle",
+    "group": "B",
+    "participants": [
+      {
+        "type": "team",
+        "code": "BIH",
+        "name": "Bosnia & Herzegovina"
+      },
+      {
+        "type": "team",
+        "code": "QAT",
+        "name": "Qatar"
+      }
+    ]
+  },
+  {
+    "id": "M013",
+    "round": "Matchday 3",
+    "date": "2026-06-13",
+    "time": "18:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "group": "C",
+    "participants": [
+      {
+        "type": "team",
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      {
+        "type": "team",
+        "code": "MAR",
+        "name": "Morocco"
+      }
+    ]
+  },
+  {
+    "id": "M014",
+    "round": "Matchday 3",
+    "date": "2026-06-13",
+    "time": "21:00 UTC-4",
+    "venueId": "boston-foxborough",
+    "group": "C",
+    "participants": [
+      {
+        "type": "team",
+        "code": "HAI",
+        "name": "Haiti"
+      },
+      {
+        "type": "team",
+        "code": "SCO",
+        "name": "Scotland"
+      }
+    ]
+  },
+  {
+    "id": "M015",
+    "round": "Matchday 9",
+    "date": "2026-06-19",
+    "time": "18:00 UTC-4",
+    "venueId": "boston-foxborough",
+    "group": "C",
+    "participants": [
+      {
+        "type": "team",
+        "code": "SCO",
+        "name": "Scotland"
+      },
+      {
+        "type": "team",
+        "code": "MAR",
+        "name": "Morocco"
+      }
+    ]
+  },
+  {
+    "id": "M016",
+    "round": "Matchday 9",
+    "date": "2026-06-19",
+    "time": "20:30 UTC-4",
+    "venueId": "philadelphia",
+    "group": "C",
+    "participants": [
+      {
+        "type": "team",
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      {
+        "type": "team",
+        "code": "HAI",
+        "name": "Haiti"
+      }
+    ]
+  },
+  {
+    "id": "M017",
+    "round": "Matchday 14",
+    "date": "2026-06-24",
+    "time": "18:00 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "group": "C",
+    "participants": [
+      {
+        "type": "team",
+        "code": "SCO",
+        "name": "Scotland"
+      },
+      {
+        "type": "team",
+        "code": "BRA",
+        "name": "Brazil"
+      }
+    ]
+  },
+  {
+    "id": "M018",
+    "round": "Matchday 14",
+    "date": "2026-06-24",
+    "time": "18:00 UTC-4",
+    "venueId": "atlanta",
+    "group": "C",
+    "participants": [
+      {
+        "type": "team",
+        "code": "MAR",
+        "name": "Morocco"
+      },
+      {
+        "type": "team",
+        "code": "HAI",
+        "name": "Haiti"
+      }
+    ]
+  },
+  {
+    "id": "M019",
+    "round": "Matchday 2",
+    "date": "2026-06-12",
+    "time": "18:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "group": "D",
+    "participants": [
+      {
+        "type": "team",
+        "code": "USA",
+        "name": "USA"
+      },
+      {
+        "type": "team",
+        "code": "PAR",
+        "name": "Paraguay"
+      }
+    ]
+  },
+  {
+    "id": "M020",
+    "round": "Matchday 3",
+    "date": "2026-06-13",
+    "time": "21:00 UTC-7",
+    "venueId": "vancouver",
+    "group": "D",
+    "participants": [
+      {
+        "type": "team",
+        "code": "AUS",
+        "name": "Australia"
+      },
+      {
+        "type": "team",
+        "code": "TUR",
+        "name": "Turkey"
+      }
+    ]
+  },
+  {
+    "id": "M021",
+    "round": "Matchday 9",
+    "date": "2026-06-19",
+    "time": "12:00 UTC-7",
+    "venueId": "seattle",
+    "group": "D",
+    "participants": [
+      {
+        "type": "team",
+        "code": "USA",
+        "name": "USA"
+      },
+      {
+        "type": "team",
+        "code": "AUS",
+        "name": "Australia"
+      }
+    ]
+  },
+  {
+    "id": "M022",
+    "round": "Matchday 9",
+    "date": "2026-06-19",
+    "time": "20:00 UTC-7",
+    "venueId": "san-francisco-bay-area-santa-clara",
+    "group": "D",
+    "participants": [
+      {
+        "type": "team",
+        "code": "TUR",
+        "name": "Turkey"
+      },
+      {
+        "type": "team",
+        "code": "PAR",
+        "name": "Paraguay"
+      }
+    ]
+  },
+  {
+    "id": "M023",
+    "round": "Matchday 15",
+    "date": "2026-06-25",
+    "time": "19:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "group": "D",
+    "participants": [
+      {
+        "type": "team",
+        "code": "TUR",
+        "name": "Turkey"
+      },
+      {
+        "type": "team",
+        "code": "USA",
+        "name": "USA"
+      }
+    ]
+  },
+  {
+    "id": "M024",
+    "round": "Matchday 15",
+    "date": "2026-06-25",
+    "time": "19:00 UTC-7",
+    "venueId": "san-francisco-bay-area-santa-clara",
+    "group": "D",
+    "participants": [
+      {
+        "type": "team",
+        "code": "PAR",
+        "name": "Paraguay"
+      },
+      {
+        "type": "team",
+        "code": "AUS",
+        "name": "Australia"
+      }
+    ]
+  },
+  {
+    "id": "M025",
+    "round": "Matchday 4",
+    "date": "2026-06-14",
+    "time": "12:00 UTC-5",
+    "venueId": "houston",
+    "group": "E",
+    "participants": [
+      {
+        "type": "team",
+        "code": "GER",
+        "name": "Germany"
+      },
+      {
+        "type": "team",
+        "code": "CUW",
+        "name": "Curaçao"
+      }
+    ]
+  },
+  {
+    "id": "M026",
+    "round": "Matchday 4",
+    "date": "2026-06-14",
+    "time": "19:00 UTC-4",
+    "venueId": "philadelphia",
+    "group": "E",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CIV",
+        "name": "Ivory Coast"
+      },
+      {
+        "type": "team",
+        "code": "ECU",
+        "name": "Ecuador"
+      }
+    ]
+  },
+  {
+    "id": "M027",
+    "round": "Matchday 10",
+    "date": "2026-06-20",
+    "time": "16:00 UTC-4",
+    "venueId": "toronto",
+    "group": "E",
+    "participants": [
+      {
+        "type": "team",
+        "code": "GER",
+        "name": "Germany"
+      },
+      {
+        "type": "team",
+        "code": "CIV",
+        "name": "Ivory Coast"
+      }
+    ]
+  },
+  {
+    "id": "M028",
+    "round": "Matchday 10",
+    "date": "2026-06-20",
+    "time": "19:00 UTC-5",
+    "venueId": "kansas-city",
+    "group": "E",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      {
+        "type": "team",
+        "code": "CUW",
+        "name": "Curaçao"
+      }
+    ]
+  },
+  {
+    "id": "M029",
+    "round": "Matchday 15",
+    "date": "2026-06-25",
+    "time": "16:00 UTC-4",
+    "venueId": "philadelphia",
+    "group": "E",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CUW",
+        "name": "Curaçao"
+      },
+      {
+        "type": "team",
+        "code": "CIV",
+        "name": "Ivory Coast"
+      }
+    ]
+  },
+  {
+    "id": "M030",
+    "round": "Matchday 15",
+    "date": "2026-06-25",
+    "time": "16:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "group": "E",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      {
+        "type": "team",
+        "code": "GER",
+        "name": "Germany"
+      }
+    ]
+  },
+  {
+    "id": "M031",
+    "round": "Matchday 4",
+    "date": "2026-06-14",
+    "time": "15:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "group": "F",
+    "participants": [
+      {
+        "type": "team",
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      {
+        "type": "team",
+        "code": "JPN",
+        "name": "Japan"
+      }
+    ]
+  },
+  {
+    "id": "M032",
+    "round": "Matchday 4",
+    "date": "2026-06-14",
+    "time": "20:00 UTC-6",
+    "venueId": "monterrey-guadalupe",
+    "group": "F",
+    "participants": [
+      {
+        "type": "team",
+        "code": "SWE",
+        "name": "Sweden"
+      },
+      {
+        "type": "team",
+        "code": "TUN",
+        "name": "Tunisia"
+      }
+    ]
+  },
+  {
+    "id": "M033",
+    "round": "Matchday 10",
+    "date": "2026-06-20",
+    "time": "12:00 UTC-5",
+    "venueId": "houston",
+    "group": "F",
+    "participants": [
+      {
+        "type": "team",
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      {
+        "type": "team",
+        "code": "SWE",
+        "name": "Sweden"
+      }
+    ]
+  },
+  {
+    "id": "M034",
+    "round": "Matchday 10",
+    "date": "2026-06-20",
+    "time": "22:00 UTC-6",
+    "venueId": "monterrey-guadalupe",
+    "group": "F",
+    "participants": [
+      {
+        "type": "team",
+        "code": "TUN",
+        "name": "Tunisia"
+      },
+      {
+        "type": "team",
+        "code": "JPN",
+        "name": "Japan"
+      }
+    ]
+  },
+  {
+    "id": "M035",
+    "round": "Matchday 15",
+    "date": "2026-06-25",
+    "time": "18:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "group": "F",
+    "participants": [
+      {
+        "type": "team",
+        "code": "JPN",
+        "name": "Japan"
+      },
+      {
+        "type": "team",
+        "code": "SWE",
+        "name": "Sweden"
+      }
+    ]
+  },
+  {
+    "id": "M036",
+    "round": "Matchday 15",
+    "date": "2026-06-25",
+    "time": "18:00 UTC-5",
+    "venueId": "kansas-city",
+    "group": "F",
+    "participants": [
+      {
+        "type": "team",
+        "code": "TUN",
+        "name": "Tunisia"
+      },
+      {
+        "type": "team",
+        "code": "NED",
+        "name": "Netherlands"
+      }
+    ]
+  },
+  {
+    "id": "M037",
+    "round": "Matchday 5",
+    "date": "2026-06-15",
+    "time": "12:00 UTC-7",
+    "venueId": "seattle",
+    "group": "G",
+    "participants": [
+      {
+        "type": "team",
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      {
+        "type": "team",
+        "code": "EGY",
+        "name": "Egypt"
+      }
+    ]
+  },
+  {
+    "id": "M038",
+    "round": "Matchday 5",
+    "date": "2026-06-15",
+    "time": "18:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "group": "G",
+    "participants": [
+      {
+        "type": "team",
+        "code": "IRN",
+        "name": "Iran"
+      },
+      {
+        "type": "team",
+        "code": "NZL",
+        "name": "New Zealand"
+      }
+    ]
+  },
+  {
+    "id": "M039",
+    "round": "Matchday 11",
+    "date": "2026-06-21",
+    "time": "12:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "group": "G",
+    "participants": [
+      {
+        "type": "team",
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      {
+        "type": "team",
+        "code": "IRN",
+        "name": "Iran"
+      }
+    ]
+  },
+  {
+    "id": "M040",
+    "round": "Matchday 11",
+    "date": "2026-06-21",
+    "time": "18:00 UTC-7",
+    "venueId": "vancouver",
+    "group": "G",
+    "participants": [
+      {
+        "type": "team",
+        "code": "NZL",
+        "name": "New Zealand"
+      },
+      {
+        "type": "team",
+        "code": "EGY",
+        "name": "Egypt"
+      }
+    ]
+  },
+  {
+    "id": "M041",
+    "round": "Matchday 16",
+    "date": "2026-06-26",
+    "time": "20:00 UTC-7",
+    "venueId": "seattle",
+    "group": "G",
+    "participants": [
+      {
+        "type": "team",
+        "code": "EGY",
+        "name": "Egypt"
+      },
+      {
+        "type": "team",
+        "code": "IRN",
+        "name": "Iran"
+      }
+    ]
+  },
+  {
+    "id": "M042",
+    "round": "Matchday 16",
+    "date": "2026-06-26",
+    "time": "20:00 UTC-7",
+    "venueId": "vancouver",
+    "group": "G",
+    "participants": [
+      {
+        "type": "team",
+        "code": "NZL",
+        "name": "New Zealand"
+      },
+      {
+        "type": "team",
+        "code": "BEL",
+        "name": "Belgium"
+      }
+    ]
+  },
+  {
+    "id": "M043",
+    "round": "Matchday 5",
+    "date": "2026-06-15",
+    "time": "12:00 UTC-4",
+    "venueId": "atlanta",
+    "group": "H",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ESP",
+        "name": "Spain"
+      },
+      {
+        "type": "team",
+        "code": "CPV",
+        "name": "Cape Verde"
+      }
+    ]
+  },
+  {
+    "id": "M044",
+    "round": "Matchday 5",
+    "date": "2026-06-15",
+    "time": "18:00 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "group": "H",
+    "participants": [
+      {
+        "type": "team",
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      },
+      {
+        "type": "team",
+        "code": "URU",
+        "name": "Uruguay"
+      }
+    ]
+  },
+  {
+    "id": "M045",
+    "round": "Matchday 11",
+    "date": "2026-06-21",
+    "time": "12:00 UTC-4",
+    "venueId": "atlanta",
+    "group": "H",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ESP",
+        "name": "Spain"
+      },
+      {
+        "type": "team",
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      }
+    ]
+  },
+  {
+    "id": "M046",
+    "round": "Matchday 11",
+    "date": "2026-06-21",
+    "time": "18:00 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "group": "H",
+    "participants": [
+      {
+        "type": "team",
+        "code": "URU",
+        "name": "Uruguay"
+      },
+      {
+        "type": "team",
+        "code": "CPV",
+        "name": "Cape Verde"
+      }
+    ]
+  },
+  {
+    "id": "M047",
+    "round": "Matchday 16",
+    "date": "2026-06-26",
+    "time": "19:00 UTC-5",
+    "venueId": "houston",
+    "group": "H",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CPV",
+        "name": "Cape Verde"
+      },
+      {
+        "type": "team",
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      }
+    ]
+  },
+  {
+    "id": "M048",
+    "round": "Matchday 16",
+    "date": "2026-06-26",
+    "time": "18:00 UTC-6",
+    "venueId": "guadalajara-zapopan",
+    "group": "H",
+    "participants": [
+      {
+        "type": "team",
+        "code": "URU",
+        "name": "Uruguay"
+      },
+      {
+        "type": "team",
+        "code": "ESP",
+        "name": "Spain"
+      }
+    ]
+  },
+  {
+    "id": "M049",
+    "round": "Matchday 6",
+    "date": "2026-06-16",
+    "time": "15:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "group": "I",
+    "participants": [
+      {
+        "type": "team",
+        "code": "FRA",
+        "name": "France"
+      },
+      {
+        "type": "team",
+        "code": "SEN",
+        "name": "Senegal"
+      }
+    ]
+  },
+  {
+    "id": "M050",
+    "round": "Matchday 6",
+    "date": "2026-06-16",
+    "time": "18:00 UTC-4",
+    "venueId": "boston-foxborough",
+    "group": "I",
+    "participants": [
+      {
+        "type": "team",
+        "code": "IRQ",
+        "name": "Iraq"
+      },
+      {
+        "type": "team",
+        "code": "NOR",
+        "name": "Norway"
+      }
+    ]
+  },
+  {
+    "id": "M051",
+    "round": "Matchday 12",
+    "date": "2026-06-22",
+    "time": "17:00 UTC-4",
+    "venueId": "philadelphia",
+    "group": "I",
+    "participants": [
+      {
+        "type": "team",
+        "code": "FRA",
+        "name": "France"
+      },
+      {
+        "type": "team",
+        "code": "IRQ",
+        "name": "Iraq"
+      }
+    ]
+  },
+  {
+    "id": "M052",
+    "round": "Matchday 12",
+    "date": "2026-06-22",
+    "time": "20:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "group": "I",
+    "participants": [
+      {
+        "type": "team",
+        "code": "NOR",
+        "name": "Norway"
+      },
+      {
+        "type": "team",
+        "code": "SEN",
+        "name": "Senegal"
+      }
+    ]
+  },
+  {
+    "id": "M053",
+    "round": "Matchday 16",
+    "date": "2026-06-26",
+    "time": "15:00 UTC-4",
+    "venueId": "boston-foxborough",
+    "group": "I",
+    "participants": [
+      {
+        "type": "team",
+        "code": "NOR",
+        "name": "Norway"
+      },
+      {
+        "type": "team",
+        "code": "FRA",
+        "name": "France"
+      }
+    ]
+  },
+  {
+    "id": "M054",
+    "round": "Matchday 16",
+    "date": "2026-06-26",
+    "time": "15:00 UTC-4",
+    "venueId": "toronto",
+    "group": "I",
+    "participants": [
+      {
+        "type": "team",
+        "code": "SEN",
+        "name": "Senegal"
+      },
+      {
+        "type": "team",
+        "code": "IRQ",
+        "name": "Iraq"
+      }
+    ]
+  },
+  {
+    "id": "M055",
+    "round": "Matchday 6",
+    "date": "2026-06-16",
+    "time": "20:00 UTC-5",
+    "venueId": "kansas-city",
+    "group": "J",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      {
+        "type": "team",
+        "code": "ALG",
+        "name": "Algeria"
+      }
+    ]
+  },
+  {
+    "id": "M056",
+    "round": "Matchday 6",
+    "date": "2026-06-16",
+    "time": "21:00 UTC-7",
+    "venueId": "san-francisco-bay-area-santa-clara",
+    "group": "J",
+    "participants": [
+      {
+        "type": "team",
+        "code": "AUT",
+        "name": "Austria"
+      },
+      {
+        "type": "team",
+        "code": "JOR",
+        "name": "Jordan"
+      }
+    ]
+  },
+  {
+    "id": "M057",
+    "round": "Matchday 12",
+    "date": "2026-06-22",
+    "time": "12:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "group": "J",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      {
+        "type": "team",
+        "code": "AUT",
+        "name": "Austria"
+      }
+    ]
+  },
+  {
+    "id": "M058",
+    "round": "Matchday 12",
+    "date": "2026-06-22",
+    "time": "20:00 UTC-7",
+    "venueId": "san-francisco-bay-area-santa-clara",
+    "group": "J",
+    "participants": [
+      {
+        "type": "team",
+        "code": "JOR",
+        "name": "Jordan"
+      },
+      {
+        "type": "team",
+        "code": "ALG",
+        "name": "Algeria"
+      }
+    ]
+  },
+  {
+    "id": "M059",
+    "round": "Matchday 17",
+    "date": "2026-06-27",
+    "time": "21:00 UTC-5",
+    "venueId": "kansas-city",
+    "group": "J",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ALG",
+        "name": "Algeria"
+      },
+      {
+        "type": "team",
+        "code": "AUT",
+        "name": "Austria"
+      }
+    ]
+  },
+  {
+    "id": "M060",
+    "round": "Matchday 17",
+    "date": "2026-06-27",
+    "time": "21:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "group": "J",
+    "participants": [
+      {
+        "type": "team",
+        "code": "JOR",
+        "name": "Jordan"
+      },
+      {
+        "type": "team",
+        "code": "ARG",
+        "name": "Argentina"
+      }
+    ]
+  },
+  {
+    "id": "M061",
+    "round": "Matchday 7",
+    "date": "2026-06-17",
+    "time": "12:00 UTC-5",
+    "venueId": "houston",
+    "group": "K",
+    "participants": [
+      {
+        "type": "team",
+        "code": "POR",
+        "name": "Portugal"
+      },
+      {
+        "type": "team",
+        "code": "COD",
+        "name": "DR Congo"
+      }
+    ]
+  },
+  {
+    "id": "M062",
+    "round": "Matchday 7",
+    "date": "2026-06-17",
+    "time": "20:00 UTC-6",
+    "venueId": "mexico-city",
+    "group": "K",
+    "participants": [
+      {
+        "type": "team",
+        "code": "UZB",
+        "name": "Uzbekistan"
+      },
+      {
+        "type": "team",
+        "code": "COL",
+        "name": "Colombia"
+      }
+    ]
+  },
+  {
+    "id": "M063",
+    "round": "Matchday 13",
+    "date": "2026-06-23",
+    "time": "12:00 UTC-5",
+    "venueId": "houston",
+    "group": "K",
+    "participants": [
+      {
+        "type": "team",
+        "code": "POR",
+        "name": "Portugal"
+      },
+      {
+        "type": "team",
+        "code": "UZB",
+        "name": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "id": "M064",
+    "round": "Matchday 13",
+    "date": "2026-06-23",
+    "time": "20:00 UTC-6",
+    "venueId": "guadalajara-zapopan",
+    "group": "K",
+    "participants": [
+      {
+        "type": "team",
+        "code": "COL",
+        "name": "Colombia"
+      },
+      {
+        "type": "team",
+        "code": "COD",
+        "name": "DR Congo"
+      }
+    ]
+  },
+  {
+    "id": "M065",
+    "round": "Matchday 17",
+    "date": "2026-06-27",
+    "time": "19:30 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "group": "K",
+    "participants": [
+      {
+        "type": "team",
+        "code": "COL",
+        "name": "Colombia"
+      },
+      {
+        "type": "team",
+        "code": "POR",
+        "name": "Portugal"
+      }
+    ]
+  },
+  {
+    "id": "M066",
+    "round": "Matchday 17",
+    "date": "2026-06-27",
+    "time": "19:30 UTC-4",
+    "venueId": "atlanta",
+    "group": "K",
+    "participants": [
+      {
+        "type": "team",
+        "code": "COD",
+        "name": "DR Congo"
+      },
+      {
+        "type": "team",
+        "code": "UZB",
+        "name": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "id": "M067",
+    "round": "Matchday 7",
+    "date": "2026-06-17",
+    "time": "15:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "group": "L",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ENG",
+        "name": "England"
+      },
+      {
+        "type": "team",
+        "code": "CRO",
+        "name": "Croatia"
+      }
+    ]
+  },
+  {
+    "id": "M068",
+    "round": "Matchday 7",
+    "date": "2026-06-17",
+    "time": "19:00 UTC-4",
+    "venueId": "toronto",
+    "group": "L",
+    "participants": [
+      {
+        "type": "team",
+        "code": "GHA",
+        "name": "Ghana"
+      },
+      {
+        "type": "team",
+        "code": "PAN",
+        "name": "Panama"
+      }
+    ]
+  },
+  {
+    "id": "M069",
+    "round": "Matchday 13",
+    "date": "2026-06-23",
+    "time": "16:00 UTC-4",
+    "venueId": "boston-foxborough",
+    "group": "L",
+    "participants": [
+      {
+        "type": "team",
+        "code": "ENG",
+        "name": "England"
+      },
+      {
+        "type": "team",
+        "code": "GHA",
+        "name": "Ghana"
+      }
+    ]
+  },
+  {
+    "id": "M070",
+    "round": "Matchday 13",
+    "date": "2026-06-23",
+    "time": "19:00 UTC-4",
+    "venueId": "toronto",
+    "group": "L",
+    "participants": [
+      {
+        "type": "team",
+        "code": "PAN",
+        "name": "Panama"
+      },
+      {
+        "type": "team",
+        "code": "CRO",
+        "name": "Croatia"
+      }
+    ]
+  },
+  {
+    "id": "M071",
+    "round": "Matchday 17",
+    "date": "2026-06-27",
+    "time": "17:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "group": "L",
+    "participants": [
+      {
+        "type": "team",
+        "code": "PAN",
+        "name": "Panama"
+      },
+      {
+        "type": "team",
+        "code": "ENG",
+        "name": "England"
+      }
+    ]
+  },
+  {
+    "id": "M072",
+    "round": "Matchday 17",
+    "date": "2026-06-27",
+    "time": "17:00 UTC-4",
+    "venueId": "philadelphia",
+    "group": "L",
+    "participants": [
+      {
+        "type": "team",
+        "code": "CRO",
+        "name": "Croatia"
+      },
+      {
+        "type": "team",
+        "code": "GHA",
+        "name": "Ghana"
+      }
+    ]
+  },
+  {
+    "id": "M073",
+    "upstreamNum": 73,
+    "round": "Round of 32",
+    "date": "2026-06-28",
+    "time": "12:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "2A"
+      },
+      {
+        "type": "slot",
+        "value": "2B"
+      }
+    ]
+  },
+  {
+    "id": "M074",
+    "upstreamNum": 74,
+    "round": "Round of 32",
+    "date": "2026-06-29",
+    "time": "16:30 UTC-4",
+    "venueId": "boston-foxborough",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1E"
+      },
+      {
+        "type": "slot",
+        "value": "3A/B/C/D/F"
+      }
+    ]
+  },
+  {
+    "id": "M075",
+    "upstreamNum": 75,
+    "round": "Round of 32",
+    "date": "2026-06-29",
+    "time": "19:00 UTC-6",
+    "venueId": "monterrey-guadalupe",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1F"
+      },
+      {
+        "type": "slot",
+        "value": "2C"
+      }
+    ]
+  },
+  {
+    "id": "M076",
+    "upstreamNum": 76,
+    "round": "Round of 32",
+    "date": "2026-06-29",
+    "time": "12:00 UTC-5",
+    "venueId": "houston",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1C"
+      },
+      {
+        "type": "slot",
+        "value": "2F"
+      }
+    ]
+  },
+  {
+    "id": "M077",
+    "upstreamNum": 77,
+    "round": "Round of 32",
+    "date": "2026-06-30",
+    "time": "17:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1I"
+      },
+      {
+        "type": "slot",
+        "value": "3C/D/F/G/H"
+      }
+    ]
+  },
+  {
+    "id": "M078",
+    "upstreamNum": 78,
+    "round": "Round of 32",
+    "date": "2026-06-30",
+    "time": "12:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "2E"
+      },
+      {
+        "type": "slot",
+        "value": "2I"
+      }
+    ]
+  },
+  {
+    "id": "M079",
+    "upstreamNum": 79,
+    "round": "Round of 32",
+    "date": "2026-06-30",
+    "time": "19:00 UTC-6",
+    "venueId": "mexico-city",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1A"
+      },
+      {
+        "type": "slot",
+        "value": "3C/E/F/H/I"
+      }
+    ]
+  },
+  {
+    "id": "M080",
+    "upstreamNum": 80,
+    "round": "Round of 32",
+    "date": "2026-07-01",
+    "time": "12:00 UTC-4",
+    "venueId": "atlanta",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1L"
+      },
+      {
+        "type": "slot",
+        "value": "3E/H/I/J/K"
+      }
+    ]
+  },
+  {
+    "id": "M081",
+    "upstreamNum": 81,
+    "round": "Round of 32",
+    "date": "2026-07-01",
+    "time": "17:00 UTC-7",
+    "venueId": "san-francisco-bay-area-santa-clara",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1D"
+      },
+      {
+        "type": "slot",
+        "value": "3B/E/F/I/J"
+      }
+    ]
+  },
+  {
+    "id": "M082",
+    "upstreamNum": 82,
+    "round": "Round of 32",
+    "date": "2026-07-01",
+    "time": "13:00 UTC-7",
+    "venueId": "seattle",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1G"
+      },
+      {
+        "type": "slot",
+        "value": "3A/E/H/I/J"
+      }
+    ]
+  },
+  {
+    "id": "M083",
+    "upstreamNum": 83,
+    "round": "Round of 32",
+    "date": "2026-07-02",
+    "time": "19:00 UTC-4",
+    "venueId": "toronto",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "2K"
+      },
+      {
+        "type": "slot",
+        "value": "2L"
+      }
+    ]
+  },
+  {
+    "id": "M084",
+    "upstreamNum": 84,
+    "round": "Round of 32",
+    "date": "2026-07-02",
+    "time": "12:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1H"
+      },
+      {
+        "type": "slot",
+        "value": "2J"
+      }
+    ]
+  },
+  {
+    "id": "M085",
+    "upstreamNum": 85,
+    "round": "Round of 32",
+    "date": "2026-07-02",
+    "time": "20:00 UTC-7",
+    "venueId": "vancouver",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1B"
+      },
+      {
+        "type": "slot",
+        "value": "3E/F/G/I/J"
+      }
+    ]
+  },
+  {
+    "id": "M086",
+    "upstreamNum": 86,
+    "round": "Round of 32",
+    "date": "2026-07-03",
+    "time": "18:00 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1J"
+      },
+      {
+        "type": "slot",
+        "value": "2H"
+      }
+    ]
+  },
+  {
+    "id": "M087",
+    "upstreamNum": 87,
+    "round": "Round of 32",
+    "date": "2026-07-03",
+    "time": "20:30 UTC-5",
+    "venueId": "kansas-city",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "1K"
+      },
+      {
+        "type": "slot",
+        "value": "3D/E/I/J/L"
+      }
+    ]
+  },
+  {
+    "id": "M088",
+    "upstreamNum": 88,
+    "round": "Round of 32",
+    "date": "2026-07-03",
+    "time": "13:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "2D"
+      },
+      {
+        "type": "slot",
+        "value": "2G"
+      }
+    ]
+  },
+  {
+    "id": "M089",
+    "upstreamNum": 89,
+    "round": "Round of 16",
+    "date": "2026-07-04",
+    "time": "17:00 UTC-4",
+    "venueId": "philadelphia",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W74"
+      },
+      {
+        "type": "slot",
+        "value": "W77"
+      }
+    ]
+  },
+  {
+    "id": "M090",
+    "upstreamNum": 90,
+    "round": "Round of 16",
+    "date": "2026-07-04",
+    "time": "12:00 UTC-5",
+    "venueId": "houston",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W73"
+      },
+      {
+        "type": "slot",
+        "value": "W75"
+      }
+    ]
+  },
+  {
+    "id": "M091",
+    "upstreamNum": 91,
+    "round": "Round of 16",
+    "date": "2026-07-05",
+    "time": "16:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W76"
+      },
+      {
+        "type": "slot",
+        "value": "W78"
+      }
+    ]
+  },
+  {
+    "id": "M092",
+    "upstreamNum": 92,
+    "round": "Round of 16",
+    "date": "2026-07-05",
+    "time": "18:00 UTC-6",
+    "venueId": "mexico-city",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W79"
+      },
+      {
+        "type": "slot",
+        "value": "W80"
+      }
+    ]
+  },
+  {
+    "id": "M093",
+    "upstreamNum": 93,
+    "round": "Round of 16",
+    "date": "2026-07-06",
+    "time": "14:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W83"
+      },
+      {
+        "type": "slot",
+        "value": "W84"
+      }
+    ]
+  },
+  {
+    "id": "M094",
+    "upstreamNum": 94,
+    "round": "Round of 16",
+    "date": "2026-07-06",
+    "time": "17:00 UTC-7",
+    "venueId": "seattle",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W81"
+      },
+      {
+        "type": "slot",
+        "value": "W82"
+      }
+    ]
+  },
+  {
+    "id": "M095",
+    "upstreamNum": 95,
+    "round": "Round of 16",
+    "date": "2026-07-07",
+    "time": "12:00 UTC-4",
+    "venueId": "atlanta",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W86"
+      },
+      {
+        "type": "slot",
+        "value": "W88"
+      }
+    ]
+  },
+  {
+    "id": "M096",
+    "upstreamNum": 96,
+    "round": "Round of 16",
+    "date": "2026-07-07",
+    "time": "13:00 UTC-7",
+    "venueId": "vancouver",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W85"
+      },
+      {
+        "type": "slot",
+        "value": "W87"
+      }
+    ]
+  },
+  {
+    "id": "M097",
+    "upstreamNum": 97,
+    "round": "Quarter-final",
+    "date": "2026-07-09",
+    "time": "16:00 UTC-4",
+    "venueId": "boston-foxborough",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W89"
+      },
+      {
+        "type": "slot",
+        "value": "W90"
+      }
+    ]
+  },
+  {
+    "id": "M098",
+    "upstreamNum": 98,
+    "round": "Quarter-final",
+    "date": "2026-07-10",
+    "time": "12:00 UTC-7",
+    "venueId": "los-angeles-inglewood",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W93"
+      },
+      {
+        "type": "slot",
+        "value": "W94"
+      }
+    ]
+  },
+  {
+    "id": "M099",
+    "upstreamNum": 99,
+    "round": "Quarter-final",
+    "date": "2026-07-11",
+    "time": "17:00 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W91"
+      },
+      {
+        "type": "slot",
+        "value": "W92"
+      }
+    ]
+  },
+  {
+    "id": "M100",
+    "upstreamNum": 100,
+    "round": "Quarter-final",
+    "date": "2026-07-11",
+    "time": "20:00 UTC-5",
+    "venueId": "kansas-city",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W95"
+      },
+      {
+        "type": "slot",
+        "value": "W96"
+      }
+    ]
+  },
+  {
+    "id": "M101",
+    "upstreamNum": 101,
+    "round": "Semi-final",
+    "date": "2026-07-14",
+    "time": "14:00 UTC-5",
+    "venueId": "dallas-arlington",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W97"
+      },
+      {
+        "type": "slot",
+        "value": "W98"
+      }
+    ]
+  },
+  {
+    "id": "M102",
+    "upstreamNum": 102,
+    "round": "Semi-final",
+    "date": "2026-07-15",
+    "time": "15:00 UTC-4",
+    "venueId": "atlanta",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W99"
+      },
+      {
+        "type": "slot",
+        "value": "W100"
+      }
+    ]
+  },
+  {
+    "id": "M103",
+    "upstreamNum": 103,
+    "round": "Match for third place",
+    "date": "2026-07-18",
+    "time": "17:00 UTC-4",
+    "venueId": "miami-miami-gardens",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "L101"
+      },
+      {
+        "type": "slot",
+        "value": "L102"
+      }
+    ]
+  },
+  {
+    "id": "M104",
+    "upstreamNum": 104,
+    "round": "Final",
+    "date": "2026-07-19",
+    "time": "15:00 UTC-4",
+    "venueId": "new-york-new-jersey-east-rutherford",
+    "participants": [
+      {
+        "type": "slot",
+        "value": "W101"
+      },
+      {
+        "type": "slot",
+        "value": "W102"
+      }
+    ]
+  }
+]

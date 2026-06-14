@@ -1,0 +1,67 @@
+{
+  "upstream": {
+    "directoryUrl": "https://github.com/openfootball/worldcup.json/tree/master/2026",
+    "commit": "8f0f877f99a2b702dfdcce06357de9570dbf1fd6",
+    "snapshotRawFiles": {
+      "teams": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.teams.json",
+      "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.groups.json",
+      "stadiums": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.stadiums.json",
+      "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.json",
+      "squads": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.squads.json",
+      "qualifyingPlayoffs": "https://raw.githubusercontent.com/openfootball/worldcup.json/8f0f877f99a2b702dfdcce06357de9570dbf1fd6/2026/worldcup.quali_playoffs.json"
+    },
+    "currentRawFiles": {
+      "teams": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.teams.json",
+      "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
+      "stadiums": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.stadiums.json",
+      "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "squads": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.squads.json",
+      "qualifyingPlayoffs": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.quali_playoffs.json"
+    }
+  },
+  "policy": {
+    "dynamicValuesAreNotCachedLocally": true,
+    "generatedStaticSnapshotUsesPinnedCommit": true,
+    "refreshChecksShouldUseMasterDirectory": "https://github.com/openfootball/worldcup.json/tree/master/2026"
+  },
+  "dynamicFieldPaths": {
+    "worldcup.json": [
+      "matches[].score",
+      "matches[].score.ft",
+      "matches[].score.ht",
+      "matches[].score.et",
+      "matches[].score.p",
+      "matches[].goals1",
+      "matches[].goals1[].name",
+      "matches[].goals1[].minute",
+      "matches[].goals1[].penalty",
+      "matches[].goals1[].owngoal",
+      "matches[].goals2",
+      "matches[].goals2[].name",
+      "matches[].goals2[].minute",
+      "matches[].goals2[].penalty",
+      "matches[].goals2[].owngoal",
+      "matches[knockout].team1 resolved team",
+      "matches[knockout].team2 resolved team"
+    ],
+    "worldcup.squads.json": [
+      "[].players",
+      "[].players[].number",
+      "[].players[].pos",
+      "[].players[].name",
+      "[].players[].date_of_birth"
+    ],
+    "worldcup.quali_playoffs.json": [
+      "matches[].score",
+      "matches[].goals1",
+      "matches[].goals2"
+    ]
+  },
+  "staticFilesGeneratedLocally": [
+    "teams.json",
+    "groups.json",
+    "stadiums.json",
+    "matches.json",
+    "notification-data.json"
+  ]
+}

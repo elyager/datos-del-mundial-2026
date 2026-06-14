@@ -49,6 +49,14 @@ https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/ima
 
 El archivo `n8n-openrouter-image-card-workflow.json` contiene un workflow importable en n8n para generar una tarjeta cuadrada de enfrentamiento con OpenRouter.
 
+El script `scripts/n8n-match-card-parser.js` se puede pegar en un nodo `Code` de n8n antes de `Validate card input` para convertir un texto de 3 lineas en el formato estructurado requerido. El texto debe llegar en `$json.text`, por ejemplo:
+
+```text
+Brasil 🇧🇷 vs 🇲🇦 Marruecos
+Nikito vs Noe
+MetLife Stadium, New York/New Jersey (East Rutherford), Estados Unidos 🇺🇸
+```
+
 Requisitos:
 
 - Crear una credencial de n8n tipo `HTTP Header Auth` llamada `OpenRouter Bearer Token`.

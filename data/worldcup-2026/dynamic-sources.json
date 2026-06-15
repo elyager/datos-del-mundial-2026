@@ -62,6 +62,7 @@
     "groups.json",
     "stadiums.json",
     "matches.json",
+    "people.json",
     "notification-data.json"
   ]
 }

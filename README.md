@@ -30,6 +30,8 @@ node scripts/generate-worldcup-static.mjs
 
 El archivo `data/worldcup-2026/notification-data.json` es el bundle publico para n8n.
 
+El archivo `data/worldcup-2026/people.json` es la fuente canonica para participantes de tarjetas. Cada entrada usa una llave normalizada, como `nikito` o `noe`, e incluye `name`, `imageUrl` y opcionalmente `imageInstruction`. Usa `imageInstruction` para instrucciones visuales reutilizables de esa persona; el workflow las agrega al prompt, pero no las renderiza como texto visible.
+
 ## Static assets
 
 Las imagenes publicas del repositorio viven en `assets/images/`.
@@ -47,7 +49,7 @@ https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/ima
 
 ## Workflow de tarjetas con OpenRouter
 
-El archivo `n8n-openrouter-image-card-workflow.json` contiene un workflow importable en n8n para generar una tarjeta cuadrada de enfrentamiento con OpenRouter.
+El archivo local `workflows/World Cup 2026 match alerts v1.0.5.json` contiene el workflow importable en n8n para generar alertas de partidos, enviar mensajes y crear una tarjeta cuadrada de enfrentamiento con OpenRouter.
 
 El script `scripts/n8n-match-card-parser.js` se puede pegar en un nodo `Code` de n8n antes de `Validate card input` para convertir un texto de 3 lineas en el formato estructurado requerido. El texto debe llegar en `$json.text`, por ejemplo:
 
@@ -62,7 +64,7 @@ Requisitos:
 - Crear una credencial de n8n tipo `HTTP Header Auth` llamada `OpenRouter Bearer Token`.
   - `Name`: `Authorization`
   - `Value`: `Bearer sk-or-tu-api-key`
-- Importar `n8n-openrouter-image-card-workflow.json` en n8n.
+- Importar `workflows/World Cup 2026 match alerts v1.0.5.json` en n8n.
 - Seleccionar la credencial `OpenRouter Bearer Token` en el nodo HTTP de OpenRouter si n8n no la enlaza automaticamente al importar.
 - Para una prueba rapida desde n8n, ejecutar el nodo `Manual test trigger`; este usa el nodo `Mock image card input` como entrada de ejemplo.
 - Enviar un `POST` al webhook `openrouter-image-card` con los campos estructurados de la tarjeta.
@@ -77,14 +79,15 @@ Ejemplo de cuerpo:
   "person2Name": "Noe",
   "venue": "MetLife Stadium",
   "location": "New York/New Jersey",
-  "person1Url": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/yager.jpeg",
-  "person2Url": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nere.jpeg",
-  "team1ShirtUrl": "https://store.fifa.com/cdn/shop/files/image_02047e33-3b4e-41f2-869b-ac361dd4b283.jpg",
-  "team2ShirtUrl": "https://store.fifa.com/cdn/shop/files/image_54f59fd1-10b1-4430-b581-a46bbd87255c.jpg",
-  "templateUrl": "https://picsum.photos/seed/world-cup-card-template/1024/1024"
+  "person1Url": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nikito.png",
+  "person2Url": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/noe.png",
+  "team1ShirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/BRA.webp",
+  "team2ShirtUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/jerseys/MAR.webp",
+  "person1ImageInstruction": "Optional visual instruction for Nikito",
+  "person2ImageInstruction": "Optional visual instruction for Noe"
 }
 ```
 
-El workflow valida que los campos requeridos existan y que las cinco URLs usen `http` o `https` antes de llamar a `openai/gpt-5.4-image-2` via `https://openrouter.ai/api/v1/chat/completions`.
+El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `google/gemini-3.1-flash-image-preview` via `https://openrouter.ai/api/v1/chat/completions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales.
 
 El nodo `Extract generated image` convierte la respuesta `data:image/png;base64,...` a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, agregar un nodo WhatsApp de media upload despues de `Extract generated image` y usar `data` como binary/input data field.

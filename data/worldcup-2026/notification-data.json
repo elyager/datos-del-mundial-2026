@@ -83,6 +83,7 @@
       "groups.json",
       "stadiums.json",
       "matches.json",
+      "people.json",
       "notification-data.json"
     ]
   },
@@ -7053,5 +7054,56 @@
         }
       }
     }
-  ]
+  ],
+  "people": {
+    "cotty": {
+      "name": "Cotty",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/cotty.png"
+    },
+    "eddy": {
+      "name": "Eddy",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/eddy.png"
+    },
+    "manuel": {
+      "name": "Manuel",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/manuel.png"
+    },
+    "nere": {
+      "name": "Nere",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nere.jpeg"
+    },
+    "nico": {
+      "name": "Nico",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nico.png"
+    },
+    "nikito": {
+      "name": "Nikito",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nikito.png"
+    },
+    "nikol": {
+      "name": "Nikol",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nikol.png"
+    },
+    "noe": {
+      "name": "Noe",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/noe.png",
+      "imageInstruction": "he is holding an old-looking Tecate glass beer bottle"
+    },
+    "oswaldo": {
+      "name": "Oswaldo",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/oswaldo.png"
+    },
+    "oto": {
+      "name": "Oto",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/oto.png"
+    },
+    "vero": {
+      "name": "Vero",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/vero.png"
+    },
+    "yager": {
+      "name": "Yager",
+      "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/yager.jpeg"
+    }
+  }
 }

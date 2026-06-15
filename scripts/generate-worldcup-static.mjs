@@ -520,6 +520,7 @@ function buildDynamicSources() {
       "groups.json",
       "stadiums.json",
       "matches.json",
+      "people.json",
       "notification-data.json",
     ],
   };
@@ -550,7 +551,7 @@ function buildNotificationParticipant(participant, teams) {
   };
 }
 
-function buildNotificationData({ teams, groups, stadiums, matches, dynamicSources }) {
+function buildNotificationData({ teams, groups, stadiums, matches, dynamicSources, people }) {
   const notificationMatches = matches.map((match) => {
     const kickoff = parseMatchDateTime(match.date, match.time);
     const alertAt = new Date(kickoff.getTime() - 10 * 60 * 1000);
@@ -587,6 +588,7 @@ function buildNotificationData({ teams, groups, stadiums, matches, dynamicSource
     notificationLocales,
     dynamicSources,
     teams,
+    people,
     groups,
     stadiums: Object.fromEntries(
       Object.entries(stadiums).map(([id, stadium]) => [
@@ -605,10 +607,19 @@ function buildNotificationData({ teams, groups, stadiums, matches, dynamicSource
 
 function validateNotificationData(notificationData) {
   const cronExpressions = new Set();
+  const ownerKeys = new Set();
 
   for (const team of Object.values(notificationData.teams)) {
     assert(team.flagIcon, `Team ${team.fifaCode} is missing flagIcon`);
     assert(team.assignmentOwner, `Team ${team.fifaCode} is missing assignmentOwner`);
+    ownerKeys.add(slugify(team.assignmentOwner));
+  }
+
+  for (const ownerKey of ownerKeys) {
+    const person = notificationData.people[ownerKey];
+    assert(person, `People data is missing assigned owner ${ownerKey}`);
+    assert(person.name, `People data ${ownerKey} is missing name`);
+    assert(person.imageUrl, `People data ${ownerKey} is missing imageUrl`);
   }
 
   for (const [stadiumId, stadium] of Object.entries(notificationData.stadiums)) {
@@ -644,8 +655,9 @@ function validateNotificationData(notificationData) {
 }
 
 async function main() {
-  const [assignmentsRaw, teamsData, groupsData, stadiumsData, matchesData] = await Promise.all([
+  const [assignmentsRaw, people, teamsData, groupsData, stadiumsData, matchesData] = await Promise.all([
     readFile(path.join(rootDir, "equipos-asignados.json"), "utf8").then(JSON.parse),
+    readFile(path.join(outputDir, "people.json"), "utf8").then(JSON.parse),
     fetchJson(upstreamFiles.teams),
     fetchJson(upstreamFiles.groups),
     fetchJson(upstreamFiles.stadiums),
@@ -659,7 +671,7 @@ async function main() {
   const stadiums = normalizeStadiums(stadiumsData);
   const matches = normalizeMatches(matchesData, stadiums, teamCodeByName);
   const dynamicSources = buildDynamicSources();
-  const notificationData = buildNotificationData({ teams, groups, stadiums, matches, dynamicSources });
+  const notificationData = buildNotificationData({ teams, groups, stadiums, matches, dynamicSources, people });
   const cronExpressions = validateNotificationData(notificationData);
 
   validateOutput({

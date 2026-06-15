@@ -1,53 +1,5 @@
 const DATA_BASE_URL = "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/data/worldcup-2026";
-const ASSET_BASE_URL = "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images";
 const N8N_HELPERS = typeof this !== "undefined" && this.helpers ? this.helpers : null;
-
-const PEOPLE = {
-  manuel: {
-    name: "Manuel",
-    url: `${ASSET_BASE_URL}/people/manuel.png`,
-  },
-  nikito: {
-    name: "Nikito",
-    url: `${ASSET_BASE_URL}/people/nikito.png`,
-  },
-  yager: {
-    name: "Yager",
-    url: `${ASSET_BASE_URL}/people/yager.jpeg`,
-  },
-  noe: {
-    name: "Noe",
-    url: `${ASSET_BASE_URL}/people/noe.png`,
-  },
-  nico: {
-    name: "Nico",
-    url: `${ASSET_BASE_URL}/people/nico.png`,
-  },
-  oto: {
-    name: "Oto",
-    url: `${ASSET_BASE_URL}/people/oto.png`,
-  },
-  nere: {
-    name: "Nere",
-    url: `${ASSET_BASE_URL}/people/nere.jpeg`,
-  },
-  cotty: {
-    name: "Cotty",
-    url: `${ASSET_BASE_URL}/people/cotty.png`,
-  },
-  oswaldo: {
-    name: "Oswaldo",
-    url: `${ASSET_BASE_URL}/people/oswaldo.png`,
-  },
-  nikol: {
-    name: "Nikol",
-    url: `${ASSET_BASE_URL}/people/nikol.png`,
-  },
-  vero: {
-    name: "Vero",
-    url: `${ASSET_BASE_URL}/people/vero.png`,
-  },
-};
 
 function normalizeText(value) {
   return String(value ?? "")
@@ -134,16 +86,20 @@ function findTeam(teamText, teamIndex) {
   throw new Error(`Unknown team: ${teamText}`);
 }
 
-function findPerson(personText) {
+function findPerson(personText, people) {
   const key = normalizeText(personText);
-  const person = PEOPLE[key];
+  const person = people[key];
   if (!person) {
-    throw new Error(`Unknown person: ${personText}. Add it to the PEOPLE map in this Code node.`);
+    throw new Error(`Unknown person: ${personText}. Add it to people.json.`);
   }
-  return {
-    name: removeFlags(personText),
-    url: person.url,
+  const result = {
+    name: person.name,
+    url: person.imageUrl,
   };
+  if (typeof person.imageInstruction === "string" && person.imageInstruction.trim()) {
+    result.imageInstruction = person.imageInstruction.trim();
+  }
+  return result;
 }
 
 function findStadium(venueLine, stadiums) {
@@ -175,7 +131,7 @@ function findStadium(venueLine, stadiums) {
   throw new Error(`Unknown stadium: ${venueLine}`);
 }
 
-function parseMatchCardText(text, teams, jerseys, stadiums) {
+function parseMatchCardText(text, teams, jerseys, stadiums, people) {
   const lines = String(text ?? "")
     .split(/\r?\n/)
     .map((line) => line.trim())
@@ -192,8 +148,8 @@ function parseMatchCardText(text, teams, jerseys, stadiums) {
   const teamIndex = buildTeamIndex(teams);
   const team1 = findTeam(team1Text, teamIndex);
   const team2 = findTeam(team2Text, teamIndex);
-  const person1 = findPerson(person1Text);
-  const person2 = findPerson(person2Text);
+  const person1 = findPerson(person1Text, people);
+  const person2 = findPerson(person2Text, people);
   const stadium = findStadium(venueLine, stadiums);
 
   const team1Jersey = jerseys[team1.fifaCode];
@@ -205,7 +161,7 @@ function parseMatchCardText(text, teams, jerseys, stadiums) {
     throw new Error(`Missing jersey URL for ${team2.spanishName} (${team2.fifaCode})`);
   }
 
-  return {
+  const cardInput = {
     team1: team1.spanishName,
     team2: team2.spanishName,
     person1Name: person1.name,
@@ -218,6 +174,13 @@ function parseMatchCardText(text, teams, jerseys, stadiums) {
     team2ShirtUrl: team2Jersey.shirtUrl,
     templateUrl: stadium.imageUrl,
   };
+  if (person1.imageInstruction) {
+    cardInput.person1ImageInstruction = person1.imageInstruction;
+  }
+  if (person2.imageInstruction) {
+    cardInput.person2ImageInstruction = person2.imageInstruction;
+  }
+  return cardInput;
 }
 
 function getInputText(item) {
@@ -243,10 +206,11 @@ function getInputText(item) {
   );
 }
 
-const [teams, jerseys, stadiums] = await Promise.all([
+const [teams, jerseys, stadiums, people] = await Promise.all([
   fetchJson("teams.json"),
   fetchJson("team-jerseys.json"),
   fetchJson("stadiums.json"),
+  fetchJson("people.json"),
 ]);
 
 const inputItems = typeof $input !== "undefined" ? $input.all() : [{ json: $json }];
@@ -255,6 +219,6 @@ return inputItems.map((item) => {
   const text = getInputText(item);
 
   return {
-    json: parseMatchCardText(text, teams, jerseys, stadiums),
+    json: parseMatchCardText(text, teams, jerseys, stadiums, people),
   };
 });

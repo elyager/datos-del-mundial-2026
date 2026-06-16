@@ -69,6 +69,45 @@ Requisitos:
 - Para una prueba rapida desde n8n, ejecutar el nodo `Manual test trigger`; este usa el nodo `Mock image card input` como entrada de ejemplo.
 - Enviar un `POST` al webhook de tarjetas configurado en n8n con los campos estructurados de la tarjeta.
 
+## Subir workflows con la API de n8n
+
+El script `scripts/n8n-workflow-upload.mjs` permite crear workflows nuevos o actualizar un workflow existente por ID usando la API publica de n8n. Usa `X-N8N-API-KEY`, no `Authorization: Bearer`; las credenciales internas del workflow, como `Replicate Bearer Token`, se mantienen como referencias de n8n y no se crean ni modifican con este script.
+
+Variables locales esperadas en `.env` o en el entorno del proceso:
+
+```sh
+N8N_API_KEY=tu_api_key_de_n8n
+N8N_BASE_URL=https://tu-instancia.app.n8n.cloud
+```
+
+`N8N_BASE_URL` puede ser la URL de la instancia o la raiz de la API, por ejemplo `https://tu-instancia.app.n8n.cloud/api/v1`. Si el API key tiene scopes, necesita `workflow:create`, `workflow:update` y `workflow:activate` para crear, actualizar y sincronizar el estado activo del workflow.
+
+Crear un workflow nuevo:
+
+```sh
+node scripts/n8n-workflow-upload.mjs create --file "workflows/World Cup 2026 match alerts v1.0.8-riverflow-v2.5-pro-replicate.json"
+```
+
+Actualizar un workflow existente por ID:
+
+```sh
+node scripts/n8n-workflow-upload.mjs update --id PokqZb2u3y17O1fW --file "workflows/World Cup 2026 match alerts v1.0.8-riverflow-v2.5-pro-replicate.json"
+```
+
+Validar sin subir cambios:
+
+```sh
+node scripts/n8n-workflow-upload.mjs update --id PokqZb2u3y17O1fW --file "workflows/World Cup 2026 match alerts v1.0.8-riverflow-v2.5-pro-replicate.json" --dry-run
+```
+
+Opciones utiles:
+
+- `--base-url <url>` sobrescribe `N8N_BASE_URL`.
+- `--api-key-env <name>` lee la API key desde otra variable.
+- `--dry-run` imprime las llamadas planeadas y el resumen del payload sin llamar a n8n.
+
+El script elimina campos administrados por n8n como `id`, `versionId`, `meta`, `tags` y timestamps antes de enviar el workflow. Tambien filtra `settings` para enviar solo propiedades aceptadas por la API publica de n8n. Despues de crear o actualizar, sincroniza el estado con el valor local de `"active"`; si el archivo esta activo, n8n puede publicar webhooks inmediatamente.
+
 Ejemplo de cuerpo:
 
 ```json
@@ -91,3 +130,18 @@ Ejemplo de cuerpo:
 El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales. Los mensajes de texto se expanden a los dos numeros configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario de imagen configurado.
 
 El workflow espera hasta 60 segundos en la llamada inicial a Replicate y, si la prediccion sigue en proceso, consulta el estado cada 20 segundos hasta 30 veces. Cuando Replicate devuelve la URL final, el nodo `Download Replicate image` descarga la imagen a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, usar `data` como binary/input data field.
+
+## Workflow con ventana de respuesta de WhatsApp
+
+El workflow local `workflows/World Cup 2026 match alerts v1.0.9-24h-reply-window-template.json` agrega control de ventana de respuesta de 24 horas y fue subido a n8n como `8MM47MpTtqYqanmt` con el nombre `World Cup 2026 match alerts - 24h reply window template`.
+
+Este workflow usa la tabla de n8n `worldcup_whatsapp_contact_state` (`ySSXtg9FkL3rsrJB`) para guardar `phone_number`, `last_inbound_at`, `last_inbound_message_id` y `updated_at`.
+
+Comportamiento:
+
+- El trigger `WhatsApp inbound messages` registra cada mensaje entrante y actualiza `last_inbound_at`.
+- Si `last_inbound_at` tiene menos de 24 horas, `Send match alert` envia el mensaje normal.
+- Si no existe registro o ya pasaron 24 horas, `Send reply-to-continue template` envia el template aprobado para pedir que la persona responda y continue.
+- `Allow generated image recipient` evita mandar la imagen generada al destinatario fijo cuando ese destinatario esta fuera de la ventana de 24 horas.
+
+Antes de activar este workflow, confirmar que el nodo `Route alert recipients by reply window` usa el template aprobado correcto en `TEMPLATE_NAME` y `TEMPLATE_LANGUAGE`. El valor inicial es `world_cup_reply_to_continue|es_MX`. Mantener desactivado el workflow anterior o este workflow para evitar alertas duplicadas.

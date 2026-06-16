@@ -47,9 +47,9 @@ https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/ima
 https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/nere.jpeg
 ```
 
-## Workflow de tarjetas con OpenRouter
+## Workflow de tarjetas con Replicate
 
-El archivo local `workflows/World Cup 2026 match alerts v1.0.5.json` contiene el workflow importable en n8n para generar alertas de partidos, enviar mensajes y crear una tarjeta cuadrada de enfrentamiento con OpenRouter.
+El archivo local `workflows/World Cup 2026 match alerts v1.0.8-riverflow-v2.5-pro-replicate.json` contiene el workflow importable en n8n para generar alertas de partidos, enviar mensajes y crear una tarjeta cuadrada de enfrentamiento con Replicate.
 
 El script `scripts/n8n-match-card-parser.js` se puede pegar en un nodo `Code` de n8n antes de `Validate card input` para convertir un texto de 3 lineas en el formato estructurado requerido. El texto debe llegar en `$json.text`, por ejemplo:
 
@@ -61,13 +61,13 @@ MetLife Stadium, New York/New Jersey (East Rutherford), Estados Unidos 🇺🇸
 
 Requisitos:
 
-- Crear una credencial de n8n tipo `HTTP Header Auth` llamada `OpenRouter Bearer Token`.
+- Crear una credencial de n8n tipo `HTTP Header Auth` llamada `Replicate Bearer Token`.
   - `Name`: `Authorization`
-  - `Value`: `Bearer sk-or-tu-api-key`
-- Importar `workflows/World Cup 2026 match alerts v1.0.5.json` en n8n.
-- Seleccionar la credencial `OpenRouter Bearer Token` en el nodo HTTP de OpenRouter si n8n no la enlaza automaticamente al importar.
+  - `Value`: `Bearer r8_tu_api_key`
+- Importar `workflows/World Cup 2026 match alerts v1.0.8-riverflow-v2.5-pro-replicate.json` en n8n.
+- Seleccionar la credencial `Replicate Bearer Token` en los nodos HTTP de Replicate si n8n no la enlaza automaticamente al importar.
 - Para una prueba rapida desde n8n, ejecutar el nodo `Manual test trigger`; este usa el nodo `Mock image card input` como entrada de ejemplo.
-- Enviar un `POST` al webhook `openrouter-image-card` con los campos estructurados de la tarjeta.
+- Enviar un `POST` al webhook de tarjetas configurado en n8n con los campos estructurados de la tarjeta.
 
 Ejemplo de cuerpo:
 
@@ -88,6 +88,6 @@ Ejemplo de cuerpo:
 }
 ```
 
-El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `google/gemini-3.1-flash-image-preview` via `https://openrouter.ai/api/v1/chat/completions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales.
+El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales. Los mensajes de texto se expanden a los dos numeros configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario de imagen configurado.
 
-El nodo `Extract generated image` convierte la respuesta `data:image/png;base64,...` a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, agregar un nodo WhatsApp de media upload despues de `Extract generated image` y usar `data` como binary/input data field.
+El workflow espera hasta 60 segundos en la llamada inicial a Replicate y, si la prediccion sigue en proceso, consulta el estado cada 20 segundos hasta 30 veces. Cuando Replicate devuelve la URL final, el nodo `Download Replicate image` descarga la imagen a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, usar `data` como binary/input data field.

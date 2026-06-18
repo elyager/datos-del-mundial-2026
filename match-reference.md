@@ -1,27 +1,27 @@
 # World Cup 2026 Match Reference
 
-2026-06-11 - Mexico vs South Africa - Nikol vs Nikito - 12:00 America/Hermosillo - Estadio Azteca
-2026-06-11 - South Korea vs Czech Republic - Nikito vs Eddy - 19:00 America/Hermosillo - Estadio Akron
-2026-06-12 - Canada vs Bosnia & Herzegovina - Oswaldo vs Cotty - 12:00 America/Hermosillo - BMO Field
-2026-06-12 - USA vs Paraguay - Yager vs Noe - 18:00 America/Hermosillo - SoFi Stadium
-2026-06-13 - Qatar vs Switzerland - Nico vs Oswaldo - 12:00 America/Hermosillo - Levi's Stadium
-2026-06-13 - Brazil vs Morocco - Nikito vs Noe - 15:00 America/Hermosillo - MetLife Stadium
-2026-06-13 - Haiti vs Scotland - Cotty vs Oswaldo - 18:00 America/Hermosillo - Gillette Stadium
-2026-06-13 - Australia vs Turkey - Vero vs Nikol - 21:00 America/Hermosillo - BC Place
-2026-06-14 - Germany vs Curacao - Eddy vs Vero - 10:00 America/Hermosillo - NRG Stadium
-2026-06-14 - Netherlands vs Japan - Vero vs Eddy - 13:00 America/Hermosillo - AT&T Stadium
-2026-06-14 - Ivory Coast vs Ecuador - Yager vs Nikol - 16:00 America/Hermosillo - Lincoln Financial Field
-2026-06-14 - Sweden vs Tunisia - Manuel vs Nico - 19:00 America/Hermosillo - Estadio BBVA
-2026-06-15 - Spain vs Cape Verde - Oto vs Eddy - 09:00 America/Hermosillo - Mercedes-Benz Stadium
-2026-06-15 - Belgium vs Egypt - Manuel vs Vero - 12:00 America/Hermosillo - Lumen Field
-2026-06-15 - Saudi Arabia vs Uruguay - Oto vs Nere - 15:00 America/Hermosillo - Hard Rock Stadium
-2026-06-15 - Iran vs New Zealand - Manuel vs Yager - 18:00 America/Hermosillo - SoFi Stadium
-2026-06-16 - France vs Senegal - Nere vs Cotty - 12:00 America/Hermosillo - MetLife Stadium
-2026-06-16 - Iraq vs Norway - Nere vs Nikito - 15:00 America/Hermosillo - Gillette Stadium
-2026-06-16 - Argentina vs Algeria - Cotty vs Oto - 18:00 America/Hermosillo - Arrowhead Stadium
-2026-06-16 - Austria vs Jordan - Yager vs Nikol - 21:00 America/Hermosillo - Levi's Stadium
-2026-06-17 - Portugal vs DR Congo - Noe vs Manuel - 10:00 America/Hermosillo - NRG Stadium
-2026-06-17 - England vs Croatia - Nico vs Nico - 13:00 America/Hermosillo - AT&T Stadium
+2026-06-11 - Mexico vs South Africa - Final: 2-0 - Nikol vs Nikito - 12:00 America/Hermosillo - Estadio Azteca
+2026-06-11 - South Korea vs Czech Republic - Final: 2-1 - Nikito vs Eddy - 19:00 America/Hermosillo - Estadio Akron
+2026-06-12 - Canada vs Bosnia & Herzegovina - Final: 1-1 - Oswaldo vs Cotty - 12:00 America/Hermosillo - BMO Field
+2026-06-12 - USA vs Paraguay - Final: 4-1 - Yager vs Noe - 18:00 America/Hermosillo - SoFi Stadium
+2026-06-13 - Qatar vs Switzerland - Final: 1-1 - Nico vs Oswaldo - 12:00 America/Hermosillo - Levi's Stadium
+2026-06-13 - Brazil vs Morocco - Final: 1-1 - Nikito vs Noe - 15:00 America/Hermosillo - MetLife Stadium
+2026-06-13 - Haiti vs Scotland - Final: 0-1 - Cotty vs Oswaldo - 18:00 America/Hermosillo - Gillette Stadium
+2026-06-13 - Australia vs Turkey - Final: 2-0 - Vero vs Nikol - 21:00 America/Hermosillo - BC Place
+2026-06-14 - Germany vs Curacao - Final: 7-1 - Eddy vs Vero - 10:00 America/Hermosillo - NRG Stadium
+2026-06-14 - Netherlands vs Japan - Final: 2-2 - Vero vs Eddy - 13:00 America/Hermosillo - AT&T Stadium
+2026-06-14 - Ivory Coast vs Ecuador - Final: 1-0 - Yager vs Nikol - 16:00 America/Hermosillo - Lincoln Financial Field
+2026-06-14 - Sweden vs Tunisia - Final: 5-1 - Manuel vs Nico - 19:00 America/Hermosillo - Estadio BBVA
+2026-06-15 - Spain vs Cape Verde - Final: 0-0 - Oto vs Eddy - 09:00 America/Hermosillo - Mercedes-Benz Stadium
+2026-06-15 - Belgium vs Egypt - Final: 1-1 - Manuel vs Vero - 12:00 America/Hermosillo - Lumen Field
+2026-06-15 - Saudi Arabia vs Uruguay - Final: 1-1 - Oto vs Nere - 15:00 America/Hermosillo - Hard Rock Stadium
+2026-06-15 - Iran vs New Zealand - Final: 2-2 - Manuel vs Yager - 18:00 America/Hermosillo - SoFi Stadium
+2026-06-16 - France vs Senegal - Final: 3-1 - Nere vs Cotty - 12:00 America/Hermosillo - MetLife Stadium
+2026-06-16 - Iraq vs Norway - Final: 1-4 - Nere vs Nikito - 15:00 America/Hermosillo - Gillette Stadium
+2026-06-16 - Argentina vs Algeria - Final: 3-0 - Cotty vs Oto - 18:00 America/Hermosillo - Arrowhead Stadium
+2026-06-16 - Austria vs Jordan - Final: 3-1 - Yager vs Nikol - 21:00 America/Hermosillo - Levi's Stadium
+2026-06-17 - Portugal vs DR Congo - Final: 1-1 - Noe vs Manuel - 10:00 America/Hermosillo - NRG Stadium
+2026-06-17 - England vs Croatia - Final: 4-2 - Nico vs Nico - 13:00 America/Hermosillo - AT&T Stadium
 2026-06-17 - Ghana vs Panama - Oswaldo vs Nere - 16:00 America/Hermosillo - BMO Field
 2026-06-17 - Uzbekistan vs Colombia - Noe vs Oto - 19:00 America/Hermosillo - Estadio Azteca
 2026-06-18 - Czech Republic vs South Africa - Eddy vs Nikito - 09:00 America/Hermosillo - Mercedes-Benz Stadium

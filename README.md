@@ -140,6 +140,17 @@ Comportamiento:
 - El trigger `WhatsApp inbound messages` registra cada mensaje entrante y actualiza `last_inbound_at`.
 - Si `last_inbound_at` tiene menos de 24 horas, `Send match alert` envia el mensaje normal.
 - Si no existe registro o ya pasaron 24 horas, `Send reply-to-continue template` envia el template aprobado para pedir que la persona responda y continue.
-- `Allow generated image recipient` evita mandar la imagen generada al destinatario fijo cuando ese destinatario esta fuera de la ventana de 24 horas.
+- `Allow generated image recipient` evita mandar la imagen generada al destinatario fijo cuando ese destinatario esta fuera de la ventana de 24 horas. La salida falsa conserva `last_inbound_at` y `templateReason` para mostrar el motivo sin marcar la ejecucion como fallida.
 
 Antes de activar este workflow, confirmar que el nodo `Route alert recipients by reply window` usa el template aprobado correcto en `TEMPLATE_NAME` y `TEMPLATE_LANGUAGE`. El valor inicial es `world_cup_reply_to_continue|es_MX`. Mantener desactivado el workflow anterior o este workflow para evitar alertas duplicadas.
+
+Para probar manualmente sin generar una imagen con Replicate, el nodo `Manual test time` incluye `useStaticTestImage: true` y `staticTestImageUrl`. `Select image source` envia esa URL por `Download static test image` y omite completamente los nodos de Replicate. Las ejecuciones programadas no pasan por `Manual test time`, por lo que siguen generando la imagen normalmente. Cambiar `useStaticTestImage` a `false` para probar Replicate desde el trigger manual.
+
+## Resumen diario de partidos
+
+El archivo `workflows/World Cup 2026 daily match summary v1.0.0.json` contiene un workflow independiente que todos los dias a las 8:00 AM (`America/Mexico_City`) arma un solo mensaje con los partidos de la fecha y sus horarios para Sonora 🥩 y Guadalajara/Michoacan 🍓.
+
+- Importar el JSON en n8n y confirmar la credencial `WhatsApp account` y la tabla `worldcup_whatsapp_contact_state`.
+- Para probar otra jornada, editar `testDate` en el nodo `Manual test date` con formato `YYYY-MM-DD` y ejecutar `Manual test trigger`.
+- El workflow no envia nada en fechas sin partidos. Si un destinatario esta fuera de la ventana de respuesta de 24 horas, envia `world_cup_reply_to_continue|es_MX` en lugar del resumen.
+- Activar este workflow solo despues de validar manualmente los destinatarios y el template. El workflow v1.0.9 debe conservar su trigger de mensajes entrantes para actualizar la tabla de estado.

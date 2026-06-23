@@ -125,7 +125,7 @@ Ejemplo de cuerpo:
 }
 ```
 
-El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales; si no llegan en el webhook, el workflow los toma de `people.json` cuando el participante tiene `imageInstruction`. Los mensajes de texto se expanden a los dos numeros configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario de imagen configurado.
+El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales; si no llegan en el webhook, el workflow los toma de `people.json` cuando el participante tiene `imageInstruction`. Los mensajes de texto se expanden a los destinatarios configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario marcado con `sendGeneratedImage`.
 
 El workflow espera hasta 60 segundos en la llamada inicial a Replicate y, si la prediccion sigue en proceso, consulta el estado cada 20 segundos hasta 30 veces. Cuando Replicate devuelve la URL final, el nodo `Download Replicate image` descarga la imagen a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, usar `data` como binary/input data field.
 
@@ -134,6 +134,8 @@ El workflow espera hasta 60 segundos en la llamada inicial a Replicate y, si la 
 El workflow local `workflows/World Cup 2026 match alerts v1.0.9-24h-reply-window-template.json` agrega control de ventana de respuesta de 24 horas y fue subido a n8n como `8MM47MpTtqYqanmt` con el nombre `World Cup 2026 match alerts - 24h reply window template`.
 
 Este workflow usa la tabla de n8n `worldcup_whatsapp_contact_state` (`ySSXtg9FkL3rsrJB`) para guardar `phone_number`, `last_inbound_at`, `last_inbound_message_id` y `updated_at`.
+
+Los telefonos mexicanos se guardan y comparan con el `wa_id` canonico que devuelve Meta. Por ejemplo, `526441253654` se normaliza a `5216441253654` y se propaga como `phone_number` y `recipientWaId`. El campo de envio `recipientPhoneNumber` se deriva como `526441253654`, porque el endpoint de WhatsApp acepta ese formato y responde con el `wa_id` canonico `5216441253654`.
 
 Comportamiento:
 

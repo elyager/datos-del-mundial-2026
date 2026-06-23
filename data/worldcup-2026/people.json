@@ -36,7 +36,8 @@
   },
   "oswaldo": {
     "name": "Oswaldo",
-    "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/oswaldo.png"
+    "imageUrl": "https://raw.githubusercontent.com/elyager/datos-del-mundial-2026/main/assets/images/people/oswaldo.png",
+    "imageInstruction": "add a padel raquet in one hand"
   },
   "oto": {
     "name": "Oto",

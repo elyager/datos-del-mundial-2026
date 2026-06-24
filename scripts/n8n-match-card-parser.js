@@ -96,9 +96,6 @@ function findPerson(personText, people) {
     name: person.name,
     url: person.imageUrl,
   };
-  if (typeof person.imageInstruction === "string" && person.imageInstruction.trim()) {
-    result.imageInstruction = person.imageInstruction.trim();
-  }
   return result;
 }
 
@@ -174,12 +171,6 @@ function parseMatchCardText(text, teams, jerseys, stadiums, people) {
     team2ShirtUrl: team2Jersey.shirtUrl,
     templateUrl: stadium.imageUrl,
   };
-  if (person1.imageInstruction) {
-    cardInput.person1ImageInstruction = person1.imageInstruction;
-  }
-  if (person2.imageInstruction) {
-    cardInput.person2ImageInstruction = person2.imageInstruction;
-  }
   return cardInput;
 }
 

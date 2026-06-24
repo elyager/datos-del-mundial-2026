@@ -30,7 +30,7 @@ node scripts/generate-worldcup-static.mjs
 
 El archivo `data/worldcup-2026/notification-data.json` es el bundle publico para n8n.
 
-El archivo `data/worldcup-2026/people.json` es la fuente canonica para participantes de tarjetas. Cada entrada usa una llave normalizada, como `nikito` o `noe`, e incluye `name`, `imageUrl` y opcionalmente `imageInstruction`. Usa `imageInstruction` para instrucciones visuales reutilizables de esa persona; el workflow las agrega al prompt, pero no las renderiza como texto visible.
+El archivo `data/worldcup-2026/people.json` es la fuente canonica para participantes de tarjetas. Cada entrada usa una llave normalizada, como `nikito` o `noe`, e incluye `name` e `imageUrl`. Las instrucciones visuales personalizadas se guardan exclusivamente en la tabla de n8n `worldcup_custom_image_instructions`.
 
 ## Static assets
 
@@ -125,7 +125,7 @@ Ejemplo de cuerpo:
 }
 ```
 
-El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los campos `person1ImageInstruction` y `person2ImageInstruction` son opcionales; si no llegan en el webhook, el workflow los toma de `people.json` cuando el participante tiene `imageInstruction`. Los mensajes de texto se expanden a los destinatarios configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario marcado con `sendGeneratedImage`.
+El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los mensajes de texto se expanden a los destinatarios configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario marcado con `sendGeneratedImage`.
 
 El workflow espera hasta 60 segundos en la llamada inicial a Replicate y, si la prediccion sigue en proceso, consulta el estado cada 20 segundos hasta 30 veces. Cuando Replicate devuelve la URL final, el nodo `Download Replicate image` descarga la imagen a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, usar `data` como binary/input data field.
 
@@ -147,6 +147,48 @@ Comportamiento:
 Antes de activar este workflow, confirmar que el nodo `Route alert recipients by reply window` usa el template aprobado correcto en `TEMPLATE_NAME` y `TEMPLATE_LANGUAGE`. El valor inicial es `world_cup_reply_to_continue|es_MX`. Mantener desactivado el workflow anterior o este workflow para evitar alertas duplicadas.
 
 Para probar manualmente sin generar una imagen con Replicate, el nodo `Manual test time` incluye `useStaticTestImage: true` y `staticTestImageUrl`. `Select image source` envia esa URL por `Download static test image` y omite completamente los nodos de Replicate. Las ejecuciones programadas no pasan por `Manual test time`, por lo que siguen generando la imagen normalmente. Cambiar `useStaticTestImage` a `false` para probar Replicate desde el trigger manual.
+
+## Instrucciones visuales publicas
+
+La interfaz publica vive en `docs/` y se publica con GitHub Pages desde la rama `main`:
+
+```text
+https://elyager.github.io/datos-del-mundial-2026/
+```
+
+La pagina permite:
+
+1. Elegir una persona usando los nombres e imagenes de `people.json`.
+2. Elegir `Todas las selecciones` o una seleccion asignada que conserve partidos pendientes.
+3. Agregar una instruccion visual de hasta 500 caracteres.
+
+El navegador envia las instrucciones al workflow independiente de n8n `World Cup 2026 public custom instructions API` (`TEXPHGaOxUgUhNzk`):
+
+```text
+POST https://workflows.loboyosa.com/webhook/worldcup-custom-instructions
+GET  https://workflows.loboyosa.com/webhook/worldcup-custom-instructions
+```
+
+El `POST` acepta:
+
+```json
+{
+  "personKey": "nikito",
+  "teamCode": "*",
+  "instruction": "Agrega una bandera de Brasil en la mano derecha.",
+  "website": ""
+}
+```
+
+`teamCode: "*"` aplica a todas las selecciones asignadas a la persona. El campo `website` es un honeypot y debe permanecer vacio.
+
+Las filas se guardan en la tabla de n8n `worldcup_custom_image_instructions` (`GxRHepJNUSLkccE2`) con `person_key`, `team_code`, `instruction`, `active`, `created_at` y `source_hash`. Para retirar una instruccion sin borrar el historial, cambiar su campo `active` a `false`.
+
+El endpoint limita cada origen a cinco instrucciones por hora usando un hash SHA-256; no guarda la IP original. El `GET` devuelve solo filas activas y nunca expone `source_hash`.
+
+El workflow de alertas v1.0.9 consulta este endpoint antes de construir la tarjeta. Para cada persona agrega primero las instrucciones con `team_code="*"` y despues las de la seleccion actual, conservando el orden de creacion. Si el endpoint no responde, la alerta continua sin instrucciones publicas.
+
+`people.json` y `notification-data.json.people` no guardan instrucciones personalizadas. La tabla de n8n es la unica fuente persistente.
 
 ## Resumen diario de partidos
 

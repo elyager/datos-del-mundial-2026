@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Agrega instrucciones visuales personalizadas para las tarjetas del Mundial 2026."
+    />
+    <title>Mundial 2026 · Instrucciones personalizadas</title>
+    <link rel="preconnect" href="https://raw.githubusercontent.com" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <p class="brand">Mundial 2026</p>
+        <ol class="steps" aria-label="Progreso">
+          <li class="step is-current" data-step-indicator="1">
+            <span>1</span>
+            <strong>Persona</strong>
+          </li>
+          <li class="step" data-step-indicator="2">
+            <span>2</span>
+            <strong>Selección</strong>
+          </li>
+          <li class="step" data-step-indicator="3">
+            <span>3</span>
+            <strong>Instrucción</strong>
+          </li>
+        </ol>
+      </header>
+
+      <div id="loading-state" class="status-message" role="status">
+        Cargando participantes…
+      </div>
+
+      <div id="load-error" class="status-message status-message--error" role="alert" hidden>
+        <p>No fue posible cargar los datos del Mundial.</p>
+        <button class="text-button" id="retry-load" type="button">Intentar de nuevo</button>
+      </div>
+
+      <section class="panel" data-step-panel="1" hidden>
+        <h1>¿Para quién es la instrucción?</h1>
+        <div id="people-list" class="people-grid" role="radiogroup" aria-label="Personas"></div>
+        <div class="actions actions--end">
+          <button class="primary-button" id="person-continue" type="button" disabled>
+            Continuar
+          </button>
+        </div>
+      </section>
+
+      <section class="panel" data-step-panel="2" hidden>
+        <div class="selected-person" id="selected-person-summary"></div>
+        <h1 id="team-step-title">Elige una selección</h1>
+        <div id="teams-list" class="option-list" role="radiogroup" aria-labelledby="team-step-title"></div>
+        <div class="actions">
+          <button class="text-button back-button" data-back-to="1" type="button">
+            <span aria-hidden="true">←</span> Atrás
+          </button>
+          <button class="primary-button" id="team-continue" type="button">Continuar</button>
+        </div>
+      </section>
+
+      <section class="panel" data-step-panel="3" hidden>
+        <h1>Escribe la instrucción</h1>
+        <p id="selection-summary" class="selection-summary"></p>
+
+        <form id="instruction-form" novalidate>
+          <label for="instruction">Instrucción personalizada</label>
+          <textarea
+            id="instruction"
+            name="instruction"
+            maxlength="500"
+            rows="7"
+            placeholder="Ejemplo: agrega una bandera de Brasil en la mano derecha…"
+            required
+          ></textarea>
+          <div class="field-meta">
+            <p id="instruction-help">
+              Describe únicamente detalles visuales. La instrucción se agregará a las existentes.
+            </p>
+            <output id="character-count" for="instruction">0 / 500</output>
+          </div>
+          <p id="form-error" class="form-error" role="alert" hidden></p>
+          <input
+            class="honeypot"
+            type="text"
+            id="website"
+            name="website"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+
+          <div class="actions">
+            <button class="text-button back-button" data-back-to="2" type="button">
+              <span aria-hidden="true">←</span> Atrás
+            </button>
+            <button class="primary-button" id="submit-instruction" type="submit" disabled>
+              Agregar instrucción
+            </button>
+          </div>
+        </form>
+
+        <div id="success-state" class="success-state" role="status" hidden>
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <h2>Instrucción agregada</h2>
+          <p>Se usará en las próximas tarjetas que coincidan con tu selección.</p>
+          <button class="primary-button" id="add-another" type="button">Agregar otra</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

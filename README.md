@@ -125,28 +125,35 @@ Ejemplo de cuerpo:
 }
 ```
 
-El workflow valida que los campos requeridos existan, que las cuatro URLs usen `http` o `https`, y que los nombres conocidos de participantes usen su imagen correspondiente antes de llamar a `sourceful/riverflow-v2.5-pro` via `https://api.replicate.com/v1/models/sourceful/riverflow-v2.5-pro/predictions`. Los mensajes de texto se expanden a los destinatarios configurados antes del nodo WhatsApp, mientras que la tarjeta generada se envia una sola vez al destinatario marcado con `sendGeneratedImage`.
+El workflow valida los campos y las cuatro URLs de referencia antes de llamar a `openai/gpt-image-2` en Replicate. Los mensajes se expanden por partido y destinatario, y cada tarjeta conserva esa misma correlacion durante toda la rama de imagen.
 
 El workflow espera hasta 60 segundos en la llamada inicial a Replicate y, si la prediccion sigue en proceso, consulta el estado cada 20 segundos hasta 30 veces. Cuando Replicate devuelve la URL final, el nodo `Download Replicate image` descarga la imagen a binario de n8n en la propiedad `data`. Para subirlo a WhatsApp, usar `data` como binary/input data field.
 
 ## Workflow con ventana de respuesta de WhatsApp
 
-El workflow local `workflows/World Cup 2026 match alerts v1.0.9-24h-reply-window-template.json` agrega control de ventana de respuesta de 24 horas y fue subido a n8n como `8MM47MpTtqYqanmt` con el nombre `World Cup 2026 match alerts - 24h reply window template`.
+El workflow local `workflows/World Cup 2026 match alerts v1.0.9-24h-reply-window-template.json` corresponde al workflow n8n `8MM47MpTtqYqanmt`.
 
-Este workflow usa la tabla de n8n `worldcup_whatsapp_contact_state` (`ySSXtg9FkL3rsrJB`) para guardar `phone_number`, `last_inbound_at`, `last_inbound_message_id` y `updated_at`.
+Usa dos tablas:
 
-Los telefonos mexicanos se guardan y comparan con el `wa_id` canonico que devuelve Meta. Por ejemplo, `526441253654` se normaliza a `5216441253654` y se propaga como `phone_number` y `recipientWaId`. El campo de envio `recipientPhoneNumber` se deriva como `526441253654`, porque el endpoint de WhatsApp acepta ese formato y responde con el `wa_id` canonico `5216441253654`.
+- `worldcup_whatsapp_contact_state` (`ySSXtg9FkL3rsrJB`) conserva el mensaje entrante mas reciente por `wa_id`.
+- `worldcup_whatsapp_match_alert_state` (`jYxndE3gFhKPqwU3`) conserva estado por `match_id + recipient_wa_id`, incluyendo resultados del template, texto e imagen.
+
+Los telefonos mexicanos se guardan y comparan con el `wa_id` canonico que devuelve Meta. El workflow normaliza el identificador recibido, lo propaga como `phone_number` y `recipientWaId`, y deriva `recipientPhoneNumber` en el formato aceptado por el endpoint de WhatsApp.
 
 Comportamiento:
 
-- El trigger `WhatsApp inbound messages` registra cada mensaje entrante y actualiza `last_inbound_at`.
-- Si `last_inbound_at` tiene menos de 24 horas, `Send match alert` envia el mensaje normal.
-- Si no existe registro o ya pasaron 24 horas, `Send reply-to-continue template` envia el template aprobado para pedir que la persona responda y continue.
-- `Allow generated image recipient` evita mandar la imagen generada al destinatario fijo cuando ese destinatario esta fuera de la ventana de 24 horas. La salida falsa conserva `last_inbound_at` y `templateReason` para mostrar el motivo sin marcar la ejecucion como fallida.
+- La ventana de 24 horas se abre solo con mensajes entrantes.
+- Con ventana abierta, el texto se envia primero y completa la alerta cuando WhatsApp lo acepta.
+- Con ventana cerrada, se guarda una alerta pendiente y se envia `world_cup_reply_to_continue|es_MX` una sola vez por partido.
+- Una respuesta reanuda solamente el partido pendiente mas reciente. Los anteriores se marcan como reemplazados.
+- Ningun partido pendiente se reenvia despues de 90 minutos de su hora de inicio.
+- La imagen se procesa despues del texto. Dos partidos simultaneos conservan dos textos y dos imagenes independientes.
+- El envio inicial de imagen se guarda como `accepted` cuando Meta devuelve el `wamid`. El trigger de WhatsApp recibe despues los estados `sent`, `delivered`, `read` o `failed` y actualiza `image_status` usando ese mismo `wamid`. `delivered` confirma que la imagen llego al dispositivo del destinatario; `read` confirma apertura cuando los recibos de lectura estan disponibles.
+- Las imagenes usan `openai/gpt-image-2`: espera inicial de 60 segundos y consultas cada 20 segundos, hasta 30 veces.
 
-Antes de activar este workflow, confirmar que el nodo `Route alert recipients by reply window` usa el template aprobado correcto en `TEMPLATE_NAME` y `TEMPLATE_LANGUAGE`. El valor inicial es `world_cup_reply_to_continue|es_MX`. Mantener desactivado el workflow anterior o este workflow para evitar alertas duplicadas.
+`Manual test settings` usa `2026-06-24T18:50:00.000Z`, que selecciona M011 y M012 simultaneamente. Por defecto descarga una imagen estatica y no escribe estado persistente. Cambiar `useStaticTestImage` a `false` para probar Replicate. La prueba manual todavia envia mensajes reales de WhatsApp.
 
-Para probar manualmente sin generar una imagen con Replicate, el nodo `Manual test time` incluye `useStaticTestImage: true` y `staticTestImageUrl`. `Select image source` envia esa URL por `Download static test image` y omite completamente los nodos de Replicate. Las ejecuciones programadas no pasan por `Manual test time`, por lo que siguen generando la imagen normalmente. Cambiar `useStaticTestImage` a `false` para probar Replicate desde el trigger manual.
+Antes de activar, verificar credenciales, IDs de tablas, aprobacion del template y que no exista otro workflow de alertas activo.
 
 ## Instrucciones visuales publicas
 

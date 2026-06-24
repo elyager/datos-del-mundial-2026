@@ -149,7 +149,8 @@ Comportamiento:
 - Ningun partido pendiente se reenvia despues de 90 minutos de su hora de inicio.
 - La imagen se procesa despues del texto. Dos partidos simultaneos conservan dos textos y dos imagenes independientes.
 - El envio inicial de imagen se guarda como `accepted` cuando Meta devuelve el `wamid`. El trigger de WhatsApp recibe despues los estados `sent`, `delivered`, `read` o `failed` y actualiza `image_status` usando ese mismo `wamid`. `delivered` confirma que la imagen llego al dispositivo del destinatario; `read` confirma apertura cuando los recibos de lectura estan disponibles.
-- Las imagenes usan `openai/gpt-image-2`: espera inicial de 60 segundos y consultas cada 20 segundos, hasta 30 veces.
+- Las imagenes usan `openai/gpt-image-2`: espera inicial de 60 segundos y consultas cada 20 segundos, hasta 30 veces. Replicate entrega JPEG (`image/jpeg`) para que WhatsApp acepte el archivo como imagen.
+- Los estados de imagen cuyo `wamid` no existe en la tabla salen por la rama falsa de `Image status matched?` con `statusMatched: false` y `statusDiagnosticReason`; esa rama no escribe filas incompletas.
 
 `Manual test settings` usa `2026-06-24T18:50:00.000Z`, que selecciona M011 y M012 simultaneamente. Por defecto descarga una imagen estatica y no escribe estado persistente. Cambiar `useStaticTestImage` a `false` para probar Replicate. La prueba manual todavia envia mensajes reales de WhatsApp.
 

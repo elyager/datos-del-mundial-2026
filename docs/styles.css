@@ -5,6 +5,7 @@
   --muted: #657086;
   --border: #dce1e8;
   --border-strong: #b8c1ce;
+  --control-border: #6f7b8d;
   --accent: #178447;
   --accent-soft: #edf8f1;
   --danger: #b42318;
@@ -191,20 +192,23 @@ button {
 
 .option-check {
   display: grid;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   place-items: center;
-  border: 1px solid var(--border-strong);
+  border: 2px solid var(--control-border);
   border-radius: 50%;
   color: transparent;
+  background: #fff;
   font-size: 0.72rem;
   font-weight: 900;
+  box-shadow: 0 0 0 1px rgb(18 33 58 / 4%);
 }
 
 .is-selected .option-check {
-  border-color: var(--accent);
+  border-color: #0f6f3a;
   color: #fff;
   background: var(--accent);
+  box-shadow: 0 0 0 3px rgb(23 132 71 / 14%);
 }
 
 .selected-person {

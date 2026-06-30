@@ -3,6 +3,14 @@ const DATA_BASE_URL =
 const SUBMISSION_URL =
   "https://workflows.loboyosa.com/webhook/worldcup-custom-instructions";
 const MAX_INSTRUCTION_LENGTH = 500;
+const KNOCKOUT_ROUNDS = new Set([
+  "round of 32",
+  "round of 16",
+  "quarter final",
+  "semi final",
+  "match for third place",
+  "final",
+]);
 
 const state = {
   step: 1,
@@ -146,22 +154,40 @@ function selectPerson(personKey) {
 }
 
 function getActiveTeamCodes(personName) {
+  const teamCodeByName = new Map();
+  for (const team of Object.values(state.teams)) {
+    for (const name of [team.name, team.spanishName, ...(team.aliases ?? [])]) {
+      teamCodeByName.set(normalize(name), team.fifaCode);
+    }
+  }
+
+  const activeTeamCodes = new Set();
+  for (const match of state.currentMatches) {
+    if (!KNOCKOUT_ROUNDS.has(normalize(match.round))) continue;
+
+    const teamCodes = [match.team1, match.team2].map((name) =>
+      teamCodeByName.get(normalize(name)),
+    );
+
+    if (match.score == null) {
+      teamCodes.filter(Boolean).forEach((code) => activeTeamCodes.add(code));
+      continue;
+    }
+
+    const decisiveScore = [match.score.p, match.score.et, match.score.ft].find(
+      (score) => Array.isArray(score) && score.length === 2 && score[0] !== score[1],
+    );
+    if (!decisiveScore) continue;
+
+    const winnerIndex = decisiveScore[0] > decisiveScore[1] ? 0 : 1;
+    if (teamCodes[winnerIndex]) activeTeamCodes.add(teamCodes[winnerIndex]);
+  }
+
   const assignedCodes = Object.values(state.teams)
     .filter((team) => normalize(team.assignmentOwner) === normalize(personName))
     .map((team) => team.fifaCode);
 
-  return assignedCodes.filter((code) =>
-    state.matches.some((match, index) => {
-      const includesTeam = match.participants?.some(
-        (participant) => participant.type === "team" && participant.code === code,
-      );
-      if (!includesTeam) return false;
-
-      const currentMatch = state.currentMatches[index];
-      if (currentMatch) return currentMatch.score == null;
-      return new Date(match.kickoffUtc).getTime() > Date.now();
-    }),
-  );
+  return assignedCodes.filter((code) => activeTeamCodes.has(code));
 }
 
 function renderTeams() {

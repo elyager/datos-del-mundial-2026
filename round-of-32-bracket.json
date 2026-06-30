@@ -1,0 +1,535 @@
+{
+  "name": "World Cup 2026 - Round of 32 bracket",
+  "asOf": "2026-06-30T04:49:36Z",
+  "timezone": "America/Hermosillo",
+  "backgroundColor": "#000000",
+  "source": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+  "playerColors": {
+    "Cotty": "#FF5C5C",
+    "Eddy": "#5B8CFF",
+    "Manuel": "#3DDB87",
+    "Nere": "#B86BFF",
+    "Nico": "#FF9F43",
+    "Nikito": "#2DE2C5",
+    "Nikol": "#FF5FA2",
+    "Noe": "#FFD93D",
+    "Oswaldo": "#8C7CFF",
+    "Oto": "#F15BFF",
+    "Vero": "#32C5FF",
+    "Yager": "#B8F34A"
+  },
+  "matches": [
+    {
+      "matchNumber": 74,
+      "date": "2026-06-29",
+      "time": "13:30",
+      "status": "final",
+      "teams": [
+        {
+          "code": "GER",
+          "name": "Germany",
+          "player": "Eddy",
+          "playerColor": "#5B8CFF"
+        },
+        {
+          "code": "PAR",
+          "name": "Paraguay",
+          "player": "Noe",
+          "playerColor": "#FFD93D"
+        }
+      ],
+      "venue": {
+        "stadium": "Gillette Stadium",
+        "location": "Boston (Foxborough)"
+      },
+      "result": {
+        "score": "1-1",
+        "extraTime": "1-1",
+        "penalties": "3-4",
+        "winner": "PAR"
+      },
+      "bracket": {
+        "side": "left",
+        "position": 1,
+        "nextMatchNumber": 89,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 77,
+      "date": "2026-06-30",
+      "time": "14:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "FRA",
+          "name": "France",
+          "player": "Nere",
+          "playerColor": "#B86BFF"
+        },
+        {
+          "code": "SWE",
+          "name": "Sweden",
+          "player": "Manuel",
+          "playerColor": "#3DDB87"
+        }
+      ],
+      "venue": {
+        "stadium": "MetLife Stadium",
+        "location": "New York/New Jersey (East Rutherford)"
+      },
+      "result": null,
+      "bracket": {
+        "side": "left",
+        "position": 2,
+        "nextMatchNumber": 89,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 73,
+      "date": "2026-06-28",
+      "time": "12:00",
+      "status": "final",
+      "teams": [
+        {
+          "code": "RSA",
+          "name": "South Africa",
+          "player": "Nikito",
+          "playerColor": "#2DE2C5"
+        },
+        {
+          "code": "CAN",
+          "name": "Canada",
+          "player": "Oswaldo",
+          "playerColor": "#8C7CFF"
+        }
+      ],
+      "venue": {
+        "stadium": "SoFi Stadium",
+        "location": "Los Angeles (Inglewood)"
+      },
+      "result": {
+        "score": "0-1",
+        "winner": "CAN"
+      },
+      "bracket": {
+        "side": "left",
+        "position": 3,
+        "nextMatchNumber": 90,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 75,
+      "date": "2026-06-29",
+      "time": "18:00",
+      "status": "final",
+      "teams": [
+        {
+          "code": "NED",
+          "name": "Netherlands",
+          "player": "Vero",
+          "playerColor": "#32C5FF"
+        },
+        {
+          "code": "MAR",
+          "name": "Morocco",
+          "player": "Noe",
+          "playerColor": "#FFD93D"
+        }
+      ],
+      "venue": {
+        "stadium": "Estadio BBVA",
+        "location": "Monterrey (Guadalupe)"
+      },
+      "result": {
+        "score": "1-1",
+        "extraTime": "1-1",
+        "penalties": "2-3",
+        "winner": "MAR"
+      },
+      "bracket": {
+        "side": "left",
+        "position": 4,
+        "nextMatchNumber": 90,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 83,
+      "date": "2026-07-02",
+      "time": "16:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "POR",
+          "name": "Portugal",
+          "player": "Noe",
+          "playerColor": "#FFD93D"
+        },
+        {
+          "code": "CRO",
+          "name": "Croatia",
+          "player": "Nico",
+          "playerColor": "#FF9F43"
+        }
+      ],
+      "venue": {
+        "stadium": "BMO Field",
+        "location": "Toronto"
+      },
+      "result": null,
+      "bracket": {
+        "side": "left",
+        "position": 5,
+        "nextMatchNumber": 93,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 84,
+      "date": "2026-07-02",
+      "time": "12:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "ESP",
+          "name": "Spain",
+          "player": "Oto",
+          "playerColor": "#F15BFF"
+        },
+        {
+          "code": "AUT",
+          "name": "Austria",
+          "player": "Yager",
+          "playerColor": "#B8F34A"
+        }
+      ],
+      "venue": {
+        "stadium": "SoFi Stadium",
+        "location": "Los Angeles (Inglewood)"
+      },
+      "result": null,
+      "bracket": {
+        "side": "left",
+        "position": 6,
+        "nextMatchNumber": 93,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 81,
+      "date": "2026-07-01",
+      "time": "17:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "USA",
+          "name": "USA",
+          "player": "Yager",
+          "playerColor": "#B8F34A"
+        },
+        {
+          "code": "BIH",
+          "name": "Bosnia & Herzegovina",
+          "player": "Cotty",
+          "playerColor": "#FF5C5C"
+        }
+      ],
+      "venue": {
+        "stadium": "Levi's Stadium",
+        "location": "San Francisco Bay Area (Santa Clara)"
+      },
+      "result": null,
+      "bracket": {
+        "side": "left",
+        "position": 7,
+        "nextMatchNumber": 94,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 82,
+      "date": "2026-07-01",
+      "time": "13:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "BEL",
+          "name": "Belgium",
+          "player": "Manuel",
+          "playerColor": "#3DDB87"
+        },
+        {
+          "code": "SEN",
+          "name": "Senegal",
+          "player": "Cotty",
+          "playerColor": "#FF5C5C"
+        }
+      ],
+      "venue": {
+        "stadium": "Lumen Field",
+        "location": "Seattle"
+      },
+      "result": null,
+      "bracket": {
+        "side": "left",
+        "position": 8,
+        "nextMatchNumber": 94,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 76,
+      "date": "2026-06-29",
+      "time": "10:00",
+      "status": "final",
+      "teams": [
+        {
+          "code": "BRA",
+          "name": "Brazil",
+          "player": "Nikito",
+          "playerColor": "#2DE2C5"
+        },
+        {
+          "code": "JPN",
+          "name": "Japan",
+          "player": "Eddy",
+          "playerColor": "#5B8CFF"
+        }
+      ],
+      "venue": {
+        "stadium": "NRG Stadium",
+        "location": "Houston"
+      },
+      "result": {
+        "score": "2-1",
+        "winner": "BRA"
+      },
+      "bracket": {
+        "side": "right",
+        "position": 1,
+        "nextMatchNumber": 91,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 78,
+      "date": "2026-06-30",
+      "time": "10:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "CIV",
+          "name": "Ivory Coast",
+          "player": "Yager",
+          "playerColor": "#B8F34A"
+        },
+        {
+          "code": "NOR",
+          "name": "Norway",
+          "player": "Nikito",
+          "playerColor": "#2DE2C5"
+        }
+      ],
+      "venue": {
+        "stadium": "AT&T Stadium",
+        "location": "Dallas (Arlington)"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 2,
+        "nextMatchNumber": 91,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 79,
+      "date": "2026-06-30",
+      "time": "18:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "MEX",
+          "name": "Mexico",
+          "player": "Nikol",
+          "playerColor": "#FF5FA2"
+        },
+        {
+          "code": "ECU",
+          "name": "Ecuador",
+          "player": "Nikol",
+          "playerColor": "#FF5FA2"
+        }
+      ],
+      "venue": {
+        "stadium": "Estadio Azteca",
+        "location": "Mexico City"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 3,
+        "nextMatchNumber": 92,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 80,
+      "date": "2026-07-01",
+      "time": "09:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "ENG",
+          "name": "England",
+          "player": "Nico",
+          "playerColor": "#FF9F43"
+        },
+        {
+          "code": "COD",
+          "name": "DR Congo",
+          "player": "Manuel",
+          "playerColor": "#3DDB87"
+        }
+      ],
+      "venue": {
+        "stadium": "Mercedes-Benz Stadium",
+        "location": "Atlanta"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 4,
+        "nextMatchNumber": 92,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 86,
+      "date": "2026-07-03",
+      "time": "15:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "ARG",
+          "name": "Argentina",
+          "player": "Cotty",
+          "playerColor": "#FF5C5C"
+        },
+        {
+          "code": "CPV",
+          "name": "Cape Verde",
+          "player": "Eddy",
+          "playerColor": "#5B8CFF"
+        }
+      ],
+      "venue": {
+        "stadium": "Hard Rock Stadium",
+        "location": "Miami (Miami Gardens)"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 5,
+        "nextMatchNumber": 95,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 88,
+      "date": "2026-07-03",
+      "time": "11:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "AUS",
+          "name": "Australia",
+          "player": "Vero",
+          "playerColor": "#32C5FF"
+        },
+        {
+          "code": "EGY",
+          "name": "Egypt",
+          "player": "Vero",
+          "playerColor": "#32C5FF"
+        }
+      ],
+      "venue": {
+        "stadium": "AT&T Stadium",
+        "location": "Dallas (Arlington)"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 6,
+        "nextMatchNumber": 95,
+        "nextMatchSlot": 2
+      }
+    },
+    {
+      "matchNumber": 85,
+      "date": "2026-07-02",
+      "time": "20:00",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "SUI",
+          "name": "Switzerland",
+          "player": "Oswaldo",
+          "playerColor": "#8C7CFF"
+        },
+        {
+          "code": "ALG",
+          "name": "Algeria",
+          "player": "Oto",
+          "playerColor": "#F15BFF"
+        }
+      ],
+      "venue": {
+        "stadium": "BC Place",
+        "location": "Vancouver"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 7,
+        "nextMatchNumber": 96,
+        "nextMatchSlot": 1
+      }
+    },
+    {
+      "matchNumber": 87,
+      "date": "2026-07-03",
+      "time": "18:30",
+      "status": "scheduled",
+      "teams": [
+        {
+          "code": "COL",
+          "name": "Colombia",
+          "player": "Oto",
+          "playerColor": "#F15BFF"
+        },
+        {
+          "code": "GHA",
+          "name": "Ghana",
+          "player": "Oswaldo",
+          "playerColor": "#8C7CFF"
+        }
+      ],
+      "venue": {
+        "stadium": "Arrowhead Stadium",
+        "location": "Kansas City"
+      },
+      "result": null,
+      "bracket": {
+        "side": "right",
+        "position": 8,
+        "nextMatchNumber": 96,
+        "nextMatchSlot": 2
+      }
+    }
+  ]
+}

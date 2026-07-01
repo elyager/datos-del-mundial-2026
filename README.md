@@ -192,7 +192,7 @@ El `POST` acepta:
 
 Las filas se guardan en la tabla de n8n `worldcup_custom_image_instructions` (`GxRHepJNUSLkccE2`) con `person_key`, `team_code`, `instruction`, `active`, `created_at` y `source_hash`. Para retirar una instruccion sin borrar el historial, cambiar su campo `active` a `false`.
 
-El endpoint limita cada origen a cinco instrucciones por hora usando un hash SHA-256; no guarda la IP original. El `GET` devuelve solo filas activas y nunca expone `source_hash`.
+El endpoint limita cada origen a veinte instrucciones por hora usando un hash SHA-256; no guarda la IP original. El `GET` devuelve solo filas activas y nunca expone `source_hash`.
 
 El workflow de alertas v1.0.9 consulta este endpoint antes de construir la tarjeta. Para cada persona agrega primero las instrucciones con `team_code="*"` y despues las de la seleccion actual, conservando el orden de creacion. Si el endpoint no responde, la alerta continua sin instrucciones publicas.
 
